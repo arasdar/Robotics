@@ -1,0 +1,35 @@
+
+
+<targets>
+
+	<finroclibrary name="sensorProcessing_stereoSUGV_capture_finroc" libs="pcl opencv_all flycap">
+		<sources>
+			gSensorProcessing.cpp
+			
+			mStereo.cpp
+			mStereo_convertImageToOpenCV.cpp
+			mStereo_stereoCapture.cpp
+			mStereo_stereoRectify.cpp
+			mStereo_processCloud.cpp
+			mStereo_run.cpp
+			mStereo_gridmap.cpp
+			mStereo_secletmap.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name="icarus_sensorProcessing_stereoSUGV_capture">
+		<sources>
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>
+
+
+
+<!--
+			mStereoToSectorMap.cpp
+			mStereoToSector_secletmapStereo.cpp
+			mStereoToSector_gridmapStereo.cpp
+			mStereoToSector_drawSectorPolar.cpp
+-->

@@ -1,0 +1,19 @@
+<targets>
+	<finroclibrary name = "stereoProcessing" libs = "opencv_all pcl vtk">
+		<sources>
+			mStereoProcessing.cpp
+			tStereoProcessing_callbacks.cpp
+			tStereoProc_stereo_reconst.cpp
+			tStereoProc_stereo_rectify.cpp
+			tStereoProc_run_visualize.cpp
+			tStereoProc_processCloud_normals.cpp
+			tStereoProc_processCloud_segm.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_processCloud_trav.cpp
+			tStereoProc_processCloud_trav_segm2plane.cpp
+			tStereoProc_processCloud_trav_slopeAnalysis.cpp
+			tStereoProc_processCloud_trav_dominGroundPlane.cpp
+			tStereoProc_processCloud_trav_analysis.cpp
+		</sources>
+	</finroclibrary>
+</targets>

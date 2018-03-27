@@ -1,0 +1,40 @@
+<sync_config>
+
+	<username>
+  		icarus
+	</username>
+
+  <directories>
+    <bin>finroc_aras_laptop/bin</bin>
+    <lib>finroc_aras_laptop/lib</lib>
+    <etc>finroc_aras_laptop/etc</etc>
+  </directories>
+
+  <misc relative_to="$FINROC_HOME/export/$FINROC_TARGET/lib" subdir="finroc_aras_laptop/lib">
+    libenum_strings.so
+    libfinroc_plugins_structure.so
+  </misc>
+
+  <target name="icarus-sugv">
+    
+    <hostname>
+		10.160.33.1
+    </hostname>
+    
+    <programs>
+	   icarus_control
+	   icarus_sensorProcessing_kinect_capture
+	   icarus_sensorProcessing_stereoSUGV_capture
+    </programs>
+    
+    <config>
+      icarus_control_config.xml
+      log_icarus.xml
+      extrinsics.yml
+      intrinsics.yml
+    </config>
+    
+  </target>
+
+</sync_config>
+

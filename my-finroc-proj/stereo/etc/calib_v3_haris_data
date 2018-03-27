@@ -1,0 +1,13 @@
+
+
+    calibration.x = 0
+    calibration.y = 0
+    calibration.z = 1
+    calibration.yaw = 0
+    calibration.pitch = 0
+    calibration.roll = 0
+    calibration.u0 = 644.292
+    calibration.v0 = 491.472
+    calibration.ku = 961.074
+    calibration.kv = 961.074
+    calibration.baseline = 0.120098

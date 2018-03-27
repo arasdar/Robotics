@@ -1,0 +1,12 @@
+This is for replaying or playing back the recorded sequence using finroc plugin recorder.
+
+Using play-back functionality, we can start writing down every data details in each index at the same time and create an XML file.
+
+Directions on how to execute or run this module: //CHECKED and used OK
+~/finroc/sources/cpp/projects/stereo_traversability_experiments$ forklift_write_player /mnt/bigtmp/ARAS/database/robot_control/recorded_IO_data_ 
+aras@pasithee:~/Desktop$ fingui ~/finroc/sources/cpp/projects/stereo_traversability_experiments/MLR/write/forklift_write.fingui &
+
+// learning afterwards
+aras@pasithee:/mnt/bigtmp/ARAS/database$ mlr_main_wrapper robot_control/recorded_IO_data_2016-03-26T20.19.20.bin_/
+
+

@@ -1,0 +1,14 @@
+low-level_control
+
+
+
+<!-- 
+###### Directions on how to run and use --> checked and used OK
+~/finroc/sources/cpp/projects/stereo_traversability_experiments$ forklift_record --simulation-standalone -c MLR/record/record_config.xml 
+aras@pasithee:~/Desktop$ fingui ~/finroc/sources/cpp/projects/stereo_traversability_experiments/MLR/record/forklift_record.fingui &
+-->
+
+The data will be recorded based on rcord_config.xml file --> <sink type="binary" file="/home/aras/database/robot_control/recorded_IO_data_${TIMESTAMP}.bin" start_paused="true">
+
+
+This one is recording a sequence in finroc and it is used to demonstrate the sequence job and show people what it exactly does and how to record a sequence.

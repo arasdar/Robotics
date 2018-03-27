@@ -1,0 +1,48 @@
+<targets>  
+
+	  <finroclibrary name="sensorProcessing_stereoGray_offline_test" libs="opencv_all pcl vtk">
+    <sources>
+        gSensorProcessing.cpp
+        mStereoGrayOffline.cpp
+        mStereoProc_stereoRectify.cpp
+        mStereoProc_cropping.cpp
+        mStereoProc_processCloud.cpp
+        mStereoProc_processCloud_disp.cpp
+        mStereoProc_run.cpp
+        mStereoProc_run_all.cpp
+        mStereoProc_callbacks.cpp
+        mStereoProc_gridmap.cpp
+        mStereoProc_secletmap.cpp
+        
+        mStereoToSectorMap.cpp
+        mStereoToSector_drawSectorPolar.cpp
+        mStereoToSector_gridmapStereo.cpp
+        mStereoToSector_secletmapStereo.cpp
+    </sources>
+  </finroclibrary>
+
+
+	<finrocprogram name="icarus_sensorProcessing_stereoGRAY_offline_test">
+		<sources>
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+		
+</targets>
+
+
+
+<!--         
+
+        mStereoGrayOffline.cpp
+
+	<finrocprogram name="icarus_sensorProcessing_stereoGray_offline_finroc" libs="opencv_all pcl vtk">
+		<sources>
+			gSensorProcessing.cpp
+			mStereoGrayOffline.cpp
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+
+
+-->

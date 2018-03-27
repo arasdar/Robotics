@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rrlib_logging PUBLIC "-//RRLIB//DTD logging 1.0" "http://rrlib.org/xml/1.0/logging.dtd">
+<rrlib_logging>
+  <domain name=".rrlib.rtti" prints_time="true" prints_name="true" prints_level="true" max_level="debug_verbose_1">
+    <sink output="stdout" />
+  </domain>
+</rrlib_logging>

@@ -1,0 +1,13 @@
+<targets>
+ 	<finroclibrary name="aras_libfeature" libs="pcl eigen">
+ 		<sources>
+ 			tFeature.cpp
+ 			tIntegralImage2D.cpp
+ 			tIntegralImageNormalEstimation.cpp
+ 		</sources>
+ 	</finroclibrary>
+</targets>
+
+<!--
+
+-->

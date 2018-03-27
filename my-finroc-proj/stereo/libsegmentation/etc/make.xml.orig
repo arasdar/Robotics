@@ -1,0 +1,19 @@
+<targets>
+
+	<finroclibrary name = "sensorProcessing_libsegmentation_tests" libs = "">
+		<sources>
+			tPointCloudProcessing.cpp
+			tPointCloudProcessing_proc-run-orig.cpp
+		</sources>
+	</finroclibrary>
+
+		<finrocprogram name= "aras_icarus_sensorProcessing_libsegmentation_test" libs= "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+	<!--
+	-->
+	
+</targets>

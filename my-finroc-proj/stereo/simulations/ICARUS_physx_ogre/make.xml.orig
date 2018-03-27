@@ -1,0 +1,31 @@
+<targets>  
+  <finroclibrary name="simulation_ogre">
+    <sources>
+        gSimulation.cpp
+        gSUGV.cpp
+        mIcarusSUGV.cpp
+        mTrackVelocityController.cpp
+    </sources>
+  </finroclibrary>
+
+  <finrocprogram name="stereoTravExp_simulation_ogre">
+    <sources>
+      pSimulation.cpp
+    </sources>
+  </finrocprogram>
+ 
+</targets>
+
+
+        <!-- 
+        mProcessedSensorDataToMapping.cpp
+        mTrackVelocityController.cpp
+        gLUGV.cpp
+        gSUGV.cpp
+        mIcarusLUGV.cpp
+        mIcarusSUGV.cpp
+        mRumblePad.cpp
+        mGUIJoystick.cpp
+        mIcarusControlInterface.cpp
+         -->
+

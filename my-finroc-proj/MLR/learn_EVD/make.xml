@@ -1,0 +1,52 @@
+<targets>
+
+	<!-- EigenValueAnalysis -->
+	<library name="mlr_learn_EVD" libs="opencv_all">
+		<sources>
+			EigenValueDecomposition.hpp
+			helper.hpp
+			helper.cpp
+		</sources>
+	</library>
+
+</targets>
+
+<!--
+
+	<program name="mlr_learn_EVD_main_wrapper" libs="opencv_all">
+		<sources>
+			main_wrapper_EVD.cpp
+		</sources>
+	</program>
+	
+	<program name="mlr_learn_EVD_main_wrapper_eigenlib_SVD" libs="eigen opencv_all">
+		<sources>
+			main_wrapper_eigenlib_SVD.cpp
+		</sources>
+	</program>
+
+	<program name="mlr_learn_EVD_main_wrapper_opencv_SVD" libs="opencv_all">
+		<sources>
+			main_wrapper_opencv_SVD.cpp
+		</sources>
+	</program>
+		
+	<program name="mlr_learn_EVD_main_wrapper_opencv_eigen" libs="opencv_all">
+		<sources>
+			main_wrapper_opencv_eigen.cpp
+		</sources>
+	</program>
+
+	<program name="mlr_learn_EVD_main_wrapper_gsl_eigen" libs="gsl">
+		<sources>
+			main_wrapper_gsl_eigen.cpp
+		</sources>
+	</program>
+
+	<program name="mlr_learn_EVD_main_wrapper_gsl_eigen_2" libs="gsl">
+		<sources>
+			main_wrapper_gsl_eigen_2.cpp
+		</sources>
+	</program>
+
+-->

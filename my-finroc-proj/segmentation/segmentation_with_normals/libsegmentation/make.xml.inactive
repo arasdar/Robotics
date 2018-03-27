@@ -1,0 +1,10 @@
+
+<targets>
+
+	<finroclibrary name = "daniel_segmentation_with_normals_libsegm" libs="pcl">
+		<sources>
+			tOrganizedConnectedComponentSegmentation.h
+		</sources>
+	</finroclibrary>
+		
+</targets>

@@ -1,0 +1,28 @@
+
+
+<targets>
+
+	<finroclibrary name = "aras_openTraverse_pointCloudProcessing" libs = "pcl vtk eigen">
+		<sources>
+			tStereoProcessing.cpp
+			tStereoProc_callbacks.cpp
+			tStereoProc_run_visualize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_test.cpp
+		
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "aras_stereoTravExp_openTraverse_pointCloudProcessing" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>
+
+
+<!--
+
+-->

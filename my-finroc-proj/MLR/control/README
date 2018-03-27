@@ -1,0 +1,13 @@
+low-level_control simulation (robot and scene) and interface - HAL
+
+high-level_control - online recognition
+
+
+This is basically is doing Online - recognition for robot control using the intelligence which is created by the off-line learning and written into memory.
+
+<!-- 
+######Direction on to run and use --> checked and used OK
+MAKE sure the recorded data is already learned.
+aras@pasithee:~/finroc/sources/cpp/projects/stereo_traversability_experiments$ forklift_control --simulation-standalone /mnt/bigtmp/ARAS/database/robot_control/recorded_IO_data_2016-03-26T20.19.20.bin_BEST/
+aras@pasithee:~/Desktop$ fingui ~/finroc/sources/cpp/projects/stereo_traversability_experiments/MLR/control/forklift_control.fingui &
+-->

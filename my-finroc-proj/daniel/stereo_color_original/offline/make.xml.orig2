@@ -1,0 +1,42 @@
+<targets>
+
+	<finroclibrary name = "daniel_stereoColor_original_offline" libs = "vtk">
+		<sources>
+			tStereoProcessing.cpp
+			tStereoProcessing_callbacks.cpp
+
+			tStereoProc_stereo_cropping.cpp
+			tStereoProc_stereo_reconst.cpp
+			tStereoProc_stereo_rectify.cpp
+
+			tStereoProc_processCloud_normals.cpp
+			tStereoProc_processCloud_segm.cpp
+			tStereoProc_processCloud_trav.cpp
+			tStereoProc_processCloud_trav_segm2plane.cpp
+			tStereoProc_processCloud_trav_slopeAnalysis.cpp
+			tStereoProc_processCloud_trav_dominGroundPlane.cpp
+			tStereoProc_processCloud_trav_stepAnalysis.cpp
+			
+			tStereoProc_run.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+			tStereoProc_run_saveCloud.cpp
+			tStereoProc_run_visualize.cpp
+			
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name = "daniel_stereoTravExp_daniel_stereoColor_original_offline" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+		
+</targets>
+
+
+
+<!--		
+
+-->

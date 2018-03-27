@@ -1,0 +1,4 @@
+This folder is generally used for all gray scale stereo cameras such as:
+stereo_ravon which is the point grey stereo camera which was used on RAVON 
+and 
+stereo_sugv which is the point gray camera used on SUGV.

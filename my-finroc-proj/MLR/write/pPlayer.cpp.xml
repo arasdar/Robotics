@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Finstructable>
+  <edge src="DataPlayback/Sensor Output/Pose" dest="Write/Pose_to_X/Input/Input 0"/>
+  <edge src="DataPlayback/Sensor Output/Pose" dest="Write/Pose_to_Y/Input/Input 0"/>
+  <edge src="DataPlayback/Sensor Output/Pose" dest="Write/Pose_to_Yaw/Input/Input 0"/>
+  <edge src="DataPlayback/Sensor Output/Camera Image" dest="Write/Input/Camera Image"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance Front" dest="Write/Input/IR Distance Front"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance L" dest="Write/Input/IR Distance L"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance LL" dest="Write/Input/IR Distance LL"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance LLL" dest="Write/Input/IR Distance LLL"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance R" dest="Write/Input/IR Distance R"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance RR" dest="Write/Input/IR Distance RR"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance RRR" dest="Write/Input/IR Distance RRR"/>
+  <edge src="DataPlayback/Sensor Output/IR Distance Rear" dest="Write/Input/IR Distance Rear"/>
+  <edge src="DataPlayback/Controller Input/Velocity" dest="Write/Input/Desired Velocity"/>
+  <edge src="DataPlayback/Controller Input/Angular Velocity" dest="Write/Input/Desired Angular Velocity"/>
+  <edge src="DataPlayback/Controller Input/Fork Position" dest="Write/Input/Desired Fork Position"/>
+  <edge src="Write/Pose_to_X/Output/Output 0" dest="Write/Input/Pose X"/>
+  <edge src="Write/Pose_to_Y/Output/Output 0" dest="Write/Input/Pose Y"/>
+  <edge src="Write/Pose_to_Yaw/Output/Output 0" dest="Write/Input/Pose Yaw"/>
+</Finstructable>

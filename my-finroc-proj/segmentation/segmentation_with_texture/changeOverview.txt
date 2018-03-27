@@ -1,0 +1,29 @@
+
+
+Texture computation:
+
+test.cpp:							no changes
+tStereoProc_run.cpp:				processImage_texture(left_images) instead of processCloud_normals(prev_cloud);
+add file that implements processImage_texture(compute texture in otb, convert to pcd, normalize vectors)
+tStereoProc_processCloud_segm.cpp:	no changes necessary, perhaps name changes (comp->setInputTexture() instead of comp->setInputNormals())
+add file implementing comparator similar to tGroundPlaneComparator (also inherited from tComparator.h), with slightly adapted compare-function(converting to eigen, dot product, converting back)
+tStereoProcessing.h (.cpp):			replace pcl::Normal by HaralickPointType
+tOrganizedConnectedComponentSegmentation.h (.cpp): no changes
+
+In general, some name changes (tetxure instead of normal) lead to less confusion, but are not really necessary
+
+
+
+
+
+Visualization:	
+
+Actually, important is:
+tStereoProc_run_visualize.cpp:	image_viewer_proc_segm->addRGBImage<PointT>(prev_cloud_segm);
+								image_viewer_proc_segm->spinOnce(1);
+Any other viewer can be removed (from all files declaring/initializing/using the viewers)!
+
+
+
+Alternative: keep all the viewers, and add one for texture image (image_viewer_proc_segm). Then, normal computation must stay in the code, and some code using
+normals must be duplicated (not changed, however )for texture (e.g. second segm and comp object)

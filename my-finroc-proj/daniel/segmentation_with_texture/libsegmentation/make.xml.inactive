@@ -1,0 +1,11 @@
+
+<targets>
+
+	<finroclibrary name = "daniel_segmentation_with_texture_libsegm" libs="pcl">
+		<sources>
+			tOrganizedConnectedComponentSegmentation.h
+			tGroundPlaneComparator.h
+		</sources>
+	</finroclibrary>
+		
+</targets>

@@ -1,0 +1,114 @@
+material "GatorXUVTire"
+{
+	technique GatorXUVTire_technique
+	{
+		pass GatorXUVTire_Ambient
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0.0057 0.0057 0.0057 0.06 7.65
+			emissive 0 0 0 1
+
+			illumination_stage ambient
+			vertex_program_ref vsAmbGEN0
+			{
+			}
+			fragment_program_ref fpAmbGENDIFF0
+			{
+			}
+
+			texture_unit GatorXUVTire_Diffuse#0
+			{
+				texture tire.jpg
+				tex_coord_set 0
+				mipmap_bias -1
+				colour_op modulate
+				scale 0.833333 0.833333
+				scroll 0.1 -0.1
+			}
+		}
+		pass GatorXUVTire_Light
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0.0057 0.0057 0.0057 0.06 7.65
+			emissive 0 0 0 1
+
+			scene_blend add
+
+			iteration once_per_light
+
+			illumination_stage per_light
+			depth_write off
+			vertex_program_ref vsLightGENNORM0
+			{
+			}
+			fragment_program_ref fpLightGENDIFF0NORM0
+			{
+				param_named normalMul float 1
+			}
+
+			texture_unit GatorXUVTire_Diffuse#1
+			{
+				texture tire.jpg
+				tex_coord_set 0
+				mipmap_bias -1
+				colour_op modulate
+				scale 0.833333 0.833333
+				scroll 0.1 -0.1
+			}
+
+			texture_unit GatorXUVTire_Normal#2
+			{
+				texture tire_bump_map.jpg
+				tex_coord_set 0
+				mipmap_bias -1
+				colour_op modulate
+			}
+		}
+	}
+	technique GatorXUVTire_basic_technique
+	{
+	scheme basic_mat
+		pass GatorXUVTire_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0.0057 0.0057 0.0057 0.06 7.65
+			emissive 0 0 0 1
+
+			texture_unit GatorXUVTire_Diffuse#3
+			{
+				texture tire.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 0.833333 0.833333
+				scroll 0.1 -0.1
+			}
+		}
+	}
+}
+material "GatorXUVWheel"
+{
+	technique GatorXUVWheel_technique
+	{
+		pass GatorXUVWheel_standard
+		{
+			shading phong
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0.235 0.235 0.235 1 175.95
+			emissive 0 0 0 1
+
+			texture_unit GatorXUVWheel_Diffuse#0
+			{
+				texture wheel.jpg
+				tex_coord_set 0
+				colour_op modulate
+			}
+		}
+	}
+}

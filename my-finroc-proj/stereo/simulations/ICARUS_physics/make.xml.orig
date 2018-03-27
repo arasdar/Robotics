@@ -1,0 +1,19 @@
+<targets>
+	<finroclibrary name = "simulationPhysics_test">
+		<sources>
+			gRoboticNavigation.cpp
+			mSimulationPhysics.cpp
+			gSensing.cpp
+			gPerception.cpp
+			gPlanning.cpp
+			gControl.cpp
+			gActuation.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "stereoTravExp_simulationPhysics_test">
+		<sources>
+			pRoboticNavigation.cpp
+		</sources>
+	</finrocprogram>
+</targets>

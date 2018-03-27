@@ -1,0 +1,10 @@
+
+<targets>
+
+	<finroclibrary name = "aras_libsegmentation" libs="pcl">
+		<sources>
+			tOrganizedConnectedComponentSegmentation.hpp
+		</sources>
+	</finroclibrary>
+		
+</targets>

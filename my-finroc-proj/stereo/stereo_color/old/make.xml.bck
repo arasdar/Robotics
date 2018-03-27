@@ -1,0 +1,15 @@
+<targets>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoColor_offline" libs="opencv_all pcl vtk eigen boost_filesystem ">
+		<sources>
+			stereo_color_offline.cpp
+		</sources>
+	</finrocprogram>
+	
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoColor_offline_bb" libs="opencv_all pcl vtk eigen boost_filesystem ">
+		<sources>
+			stereo_color_offline_bb.cpp
+		</sources>
+	</finrocprogram>
+		
+</targets>

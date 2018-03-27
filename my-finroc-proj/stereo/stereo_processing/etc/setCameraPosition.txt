@@ -1,0 +1,59 @@
+//  viewer->setBackgroundColor(0, 0, 0);
+//  viewer->setCameraPosition(0, 0, -2, 0, -1, 0, 0);
+  /*
+    Clipping plane [near,far] 0.01, 1000.01
+    Focal point [x,y,z] 0, 0, 0
+    Position [x,y,z] 0, 0, -2
+    View up [x,y,z] 0, -1, 0
+    Camera view angle [degrees] 30
+    Window size [x,y] 1760, 600
+    Window position [x,y] 2, 23
+  */
+
+  /*
+    Clipping plane [near,far] 0.0413486, 41.3486
+    Focal point [x,y,z] 0.9, -1.35, 13.865
+    Position [x,y,z] -0.548085, -1.16907, -8.15224
+    View up [x,y,z] 0.0522617, -0.998566, -0.0116433
+    Camera view angle [degrees] 30
+    Window size [x,y] 1760, 600
+    Window position [x,y] 1872, 174
+
+
+  void pcl::visualization::PCLVisualizer::setCameraPosition ( double  pos_x,
+  double  pos_y,
+  double  pos_z,
+  double  up_x,
+  double  up_y,
+  double  up_z,
+  int   viewport = 0
+  )
+  Set the camera location and viewup according to the given arguments.
+
+  Parameters
+  [in]  pos_x the x coordinate of the camera location
+  [in]  pos_y the y coordinate of the camera location
+  [in]  pos_z the z coordinate of the camera location
+  [in]  up_x  the x component of the view up direction of the camera
+  [in]  up_y  the y component of the view up direction of the camera
+  [in]  up_z  the z component of the view up direction of the camera
+  [in]  viewport  the viewport to modify camera of (0 modifies all cameras)
+  */
+
+//  double pos_x = -0.55, pos_y = -1.17, pos_z = -8.15;   //Position [x,y,z] -0.548085, -1.16907, -8.15224
+//
+//  double up_x = 0.05, up_y = -1, up_z = -0.012;   //View up [x,y,z] 0.0522617, -0.998566, -0.0116433
+// viewer->setCameraPosition(pos_x, pos_y, pos_z, up_x, up_y, up_z,0);
+
+
+  /*
+   OpenMP implementation   : Time: 0.1704s
+   Clipping plane [near,far] 0.01, 1000.01
+   Focal point [x,y,z] 0, 0, 0
+   Position [x,y,z] -0.55, -1.17, -8.15
+   View up [x,y,z] 0.049934, -0.998681, -0.0119842
+   Camera view angle [degrees] 30
+   Window size [x,y] 1760, 600
+   Window position [x,y] 2, 23
+   OpenMP version using 8 threads
+  */

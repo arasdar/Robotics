@@ -1,0 +1,38 @@
+<targets>
+	<library name = "mlr_learn_tPCA" libs="opencv_all eigen">
+		<sources>
+			tPCA.hpp
+			tPCA_compute_EVD.cpp
+			tPCA_recompute.cpp
+			tPCA_compute_opencv_PCA.cpp
+			tPCA_compute_opencv_SVD.cpp
+			tPCA_compute_eigenlib_SVD.cpp
+		</sources>
+	</library>
+</targets>
+
+<!--
+	<program name = "mlr_learn_PCA_main_wrapper_EVD" libs="opencv_all">
+		<sources>
+			main_wrapper_EVD.cpp
+		</sources>
+	</program>
+	
+	<program name = "mlr_learn_PCA_main_wrapper_eigenlib_SVD" libs="opencv_all eigen">
+		<sources>
+			main_wrapper_eigenlib_SVD.cpp
+		</sources>
+	</program>
+	
+	<program name = "mlr_learn_PCA_main_wrapper_opencv_PCA" libs="opencv_all">
+		<sources>
+			main_wrapper_opencv_PCA.cpp
+		</sources>
+	</program>
+	
+	<program name = "mlr_learn_PCA_main_wrapper_opencv_SVD" libs="opencv_all eigen">
+		<sources>
+			main_wrapper_opencv_SVD.cpp
+		</sources>
+	</program>
+-->

@@ -1,0 +1,29 @@
+<targets>
+
+	
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoGray_capture" libs="pcl vtk eigen opencv_all boost_filesystem ">
+		<sources>
+			stereo_capture.cpp
+		</sources>
+	</finrocprogram>
+	
+	
+</targets>
+
+
+<!--
+
+		<finrocprogram name="aras_icarus_sensorProcessing_stereoGray_capture_bb" libs="pcl_aras vtk_aras eigen openni opencv_all boost_filesystem">
+		<sources>
+			stereo_capture_bb.cpp
+		</sources>
+	</finrocprogram>
+
+		<finrocprogram name="aras_icarus_sensorProcessing_stereo_capture_camera" libs="pcl_aras vtk_aras eigen openni opencv_all boost_filesystem">
+		<sources>
+			stereo_capture_camera.cpp
+		</sources>
+	</finrocprogram>
+
+
+-->

@@ -1,0 +1,32 @@
+<targets>
+	
+	<finroclibrary name = "daniel_segmentation_normals" libs = "pcl vtk">
+		<sources>
+
+			tStereoProcessing.cpp
+			tStereoProc_callbacks.cpp
+
+			tStereoProc_stereo_cropping.cpp
+			tStereoProc_stereo_rectify.cpp
+			tStereoProc_stereo_reconst.cpp
+			
+			tStereoProc_processCloud_normals.cpp
+
+			tStereoProc_processCloud_segm.cpp
+
+			tStereoProc_run.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_visualize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+
+		</sources>
+	</finroclibrary>
+
+	
+	<finrocprogram name = "daniel_stereoTravExp_segmentation_normals" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>

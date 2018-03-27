@@ -1,0 +1,15 @@
+<targets>
+	
+	<finroclibrary name = "aras_libstereo_test_cpu" libs = "opencv_all">
+		<sources>
+			cpu_part.cpp
+		</sources>
+	</finroclibrary>
+	
+		<finrocprogram name = "aras_stereoTravExp_aras_libstereo_test_cpu">
+		<sources>
+			test_cpu.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>

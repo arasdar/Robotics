@@ -1,0 +1,8 @@
+
+	cmake -D CMAKE_INSTALL_PREFIX=/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/build ../
+	cmake -D CMAKE_INSTALL_PREFIX=/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/lib/otb ../
+	
+	
+	// to run the executable in export
+	export LD_LIBRARY_PATH='/home/aras//mine/daniel/libs_daniel/OTB-4.0.0/export/lib/otb' 
+	

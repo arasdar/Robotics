@@ -1,0 +1,2 @@
+This is the main used PCA learning functionality from OpenCV library.
+Also planning to use SVD from this library as well for fair comparison of the results.

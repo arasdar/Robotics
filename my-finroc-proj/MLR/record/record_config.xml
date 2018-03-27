@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+ <!-- Plugin configuration section -->
+  <runtime>
+
+    <!-- You might need that for configuring compression with algorithms not known at program startup -->
+    <load_library name="rrlib_coviroa_opencv"/>
+
+    <plugin name="data_recording">
+
+    <rule data_type="rrlib.coviroa.Image">jpg</rule>
+
+      <!-- Example for recording to a binary file with JPEG compression for images (start_paused is optional and false by default) -->
+      <sink type="binary" file="/mnt/bigtmp/ARAS/database/robot_control/recorded_IO_data_${TIMESTAMP}.bin" start_paused="true">
+        <port>/Forklift/RobotInterface/Sensor Output/Camera Image</port>
+		<compression data_type="rrlib.coviroa.Image" format="jpeg"/>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance Front</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance L</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance LL</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance LLL</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance R</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance RR</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance RRR</port>
+		<port>/Forklift/RobotInterface/Sensor Output/IR Distance Rear</port>
+		<port>/Forklift/RobotInterface/Sensor Output/Pose</port>
+		<port>/Forklift/RobotInterface/Controller Input/Angular Velocity</port>
+		<port>/Forklift/RobotInterface/Controller Input/Velocity</port>
+		<port>/Forklift/RobotInterface/Controller Input/Fork Position</port>
+      </sink>
+      
+      
+    </plugin>
+  </runtime>
+  
+<value name="IR Sensor Arrangement">
+  <element>(0.05, 0, 0.025, 0°, 0°, 0°)</element>       <!--front-->
+  <element>(0.06, 0.0625, 0.025, 0°, 0°, 0°)</element>  <!--L-->
+  <element>(0.05, 0.1, 0.025, 0°, 0°, 35°)</element>    <!--LL-->
+  <element>(-0.2, 0.05, 0.08, 0°, 0°, 35°)</element>   <!--LLL-->
+  <element>(0.06, -0.0625, 0.025, 0°, 0°, 0°)</element> <!--R-->
+  <element>(0.05, -0.1, 0.025, 0°, 0°, -35°)</element>  <!--RR-->
+  <element>(-0.2, -0.05, 0.08, 0°, 0°, -35°)</element> <!--RRR-->
+  <element>(-0.2, -0, 0.025, 0°, 0°, 180°)</element>    <!--rear-->
+</value>
+
+</root>

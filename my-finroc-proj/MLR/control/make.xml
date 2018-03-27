@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE targets PUBLIC "-//RRLIB//DTD make 14.05" "http://finroc.org/xml/14.05/make.dtd">
+<targets>
+
+	<library name = "recognition" libs = "eigen opencv_all boost_filesystem">
+		<sources>
+			mRecognition.cpp
+
+			recognizer/load.cpp
+			recognizer/process.cpp
+			recognizer/search.cpp
+			recognizer/output.cpp
+			<!-- compare core is shared on and off (mlr and MLR) -->
+			
+		</sources>	
+	</library>
+	
+	<program name = "forklift_control">
+		<sources>
+			pForklift.cpp
+		</sources>
+	</program>
+
+</targets>
+
+
+	
+<!--  to comment out stuff in xml file!!	-->

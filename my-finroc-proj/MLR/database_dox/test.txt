@@ -1,0 +1,1 @@
+/home/aras/database/facerec/yale/yalefaces/subject01.normal;1

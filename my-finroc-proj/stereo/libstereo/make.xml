@@ -1,0 +1,45 @@
+<targets>
+
+	<finroclibrary name="aras_libstereo" libs="pcl opencv_all eigen">
+	    <sources>
+	    	tTestStereoMatching.cpp
+
+	    	tTestStereoMatch_preProcessing_openmp.cpp
+	    	tTestStereoMatch_preProcessing.cpp
+	    	tTestStereoMatch_postProcessing.cpp
+	    	tTestStereoMatch_getPointCloud.cpp
+	    	tTestStereoMatch_getVisualMap.cpp
+	    	tTestStereoMatch_compute.cpp
+
+	    	tTestACSO.cpp
+	    	tTestACSO_computeImpl_openmp.cpp
+	    	
+	    	tBlockBasedStereoMatching.cpp
+
+ 	    </sources>
+	  </finroclibrary>
+
+</targets>
+
+
+
+<!--
+
+libs="opencv_all openmp pcl eigen vtk"
+
+	    	tTestStereoProcessing.cpp
+
+	    	tTestStereoProc_stereoRectify.cpp
+	    	tTestStereoProc_processCloud.cpp
+	    	tTestStereoProc_processCloud_segm.cpp
+	    	tTestStereoProc_run.cpp
+
+
+	  
+	<finrocprogram name="aras_icarus_sensorProcessing_libstereo_test" libs="opencv_all vtk eigen openni boost_filesystem pcl">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+
+-->

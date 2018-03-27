@@ -1,0 +1,707 @@
+
+//2014-02-14
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+
+//2014-01-29
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+
+
+
+//2014-01-20
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+
+
+//2014-01-10
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+
+
+//2014-01-07 revised
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+
+
+//2014-01-07
+pcl_aras: -I/home/aras/pcl/pcl_git/export_test_2/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test_2/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export_test_2/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export_test_2/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export_test_2/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test_2/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+
+
+//2013-12-10
+pcl_aras: -I/home/aras/pcl/pcl_git/export_test_2/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test_2/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export_test_2/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export_test_2/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-12-10  //compiled and working
+pcl_aras: -I/home/aras/pcl/pcl_git/export_test_2/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test_2/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export_test_2/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export_test_2/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkHybrid -lvtkRendering
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-12-09 testing new ubuntu and finroc
+pcl_aras: -I/home/aras/pcl/pcl_git/export_test_2/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test_2/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo -lpcl_apps -lpcl_registration -lpcl_keypoints -lpcl_kdtree -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export_test/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export_test/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid -lvtkCharts
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export_test_2/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export_test_2/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-11-29
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo -lpcl_apps -lpcl_registration -lpcl_keypoints -lpcl_kdtree -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid -lvtkCharts
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+
+//2013-11-05
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo -lpcl_apps -lpcl_registration -lpcl_keypoints -lpcl_kdtree -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid -lvtkCharts
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+//2013-11-01
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo -lpcl_apps
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid -lvtkCharts
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+
+//2013-10-29
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid -lvtkCharts
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+
+
+//laptop 2013-10-28
+pcl_aras: -I/home/aras/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+pcl_aras_flann: -I/home/aras/pcl/pcl_git/export_test/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export_test/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+
+
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras_test: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+
+
+
+
+//2013-10-21 //laptop agrosy
+pcl_aras: -I/home/aras/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid
+opencv_aras: -I/home/aras/opencv/opencv-2.4.5/export/include/opencv-2.4.5 -L/home/aras/opencv/opencv-2.4.5/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-10-21
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics -lvtkHybrid
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-10-19 adapted to new changes in finroc
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-10-17
+//2013-10-11
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface -lpcl_people
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+
+
+//2013-10-09
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus -lpcl_surface
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkIO -lvtkImaging -lvtkGraphics
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl: -I/usr/include/pcl-1.7 -I/usr/include/pcl-1.7/pcl/ -I/usr/include/eigen3/ -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus
+
+//2013-10-07
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features -lpcl_sample_consensus
+pcl: -I/usr/include/pcl-1.7 -I/usr/include/pcl-1.7/pcl/ -I/usr/include/eigen3/ 				  -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+
+//2013-10-04
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+pcl: -I/usr/include/pcl-1.7 -I/usr/include/pcl-1.7/pcl/ -I/usr/include/eigen3/ -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common  (-lpcl_search -lpcl_visualization -lpcl_features)
+
+
+//2013-10-03
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+pcl: -I/usr/include/pcl-1.7 -I/usr/include/pcl-1.7/pcl/ -I/usr/include/eigen3/ -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_visualization -lpcl_features
+vtk: -I/usr/include/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkRendering
+
+
+//2013-09-11
+//2013-09-05
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_git/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+
+
+//2013-09-04
+pcl_stereo: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_stereo
+pcl_system_extra: -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+vtk_system: -I/usr/include/vtk-5.8 -L/usr/lib -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+//2013-08-29
+//2013-08-19
+// benutzt am 2013-08-14
+//benutzt am 2013-08-02
+//new //used and checked couple of times
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_git/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+//2013-06-04 //working
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_git/export/include/pcl-1.7 -L/home/aras/pcl/pcl_git/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_git/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opencv_sys_aras: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I/usr/include/opencv -I/usr/include/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib -lopencv_legacy -lopencv_video -lopencv_ml
+
+
+//2013-05-27 ==> working!!
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opencv_sys_aras: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I/usr/include/opencv -I/usr/include/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib -lopencv_legacy -lopencv_video -lopencv_ml
+
+
+//2013-05-03
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opencv_sys_aras: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I/usr/include/opencv -I/usr/include/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib -lopencv_legacy -lopencv_video -lopencv_ml
+
+
+//2013-04-30
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opencv_sys_aras: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I/usr/include/opencv -I/usr/include/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib -lopencv_legacy -lopencv_video -lopencv_ml
+
+
+
+
+//2013-04-19 //used
+//2013-04-18 --> untouched and working  
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opencv_sys_aras: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I/usr/include/opencv -I/usr/include/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib -lopencv_legacy -lopencv_video -lopencv_ml
+
+
+
+
+//2013-04-12
+libcam_aras: -I/home/aras/libv4l2cam_trunk/libv4l2cam/ -L/home/aras/libv4l2cam_trunk/libv4l2cam/ -lcam
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opencv_aras_2: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4/opencv2
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+// pc_buro-new
+opencv_aras: -I/home/aras/opencv/opencv_main/export/include/opencv-2.4.9 -L/home/aras/opencv/opencv_main/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+//2013-04-09 ///laptop_agrosy8 //funktioniert!!!!!!!!
+opencv_aras: -I/home/aras/opencv/opencv-2.4.4/export/include/opencv-2.4.4 -L/home/aras/opencv/opencv-2.4.4/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+////// 2013-04-04  --- make_builder/etc
+-----------//libdb.search.default
+//# aras home built libs  //not useful for me
+find -L /home/aras/opencv/opencv_main/export/lib -regex '.*\(\([.]\(h\|so\|hpp\|jar\|a\)\)\|moc\)'
+find -L /home/aras/pcl/pcl_trunk/export/lib/ -regex '.*\(\([.]\(h\|so\|hpp\|jar\|a\)\)\|moc\)'
+find -L /home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -regex '.*\(\([.]\(h\|so\|hpp\|jar\|a\)\)\|moc\)'
+------------//libdb.txt
+opencv_aras: -I/home/aras/opencv/opencv_main/export/include/opencv-2.4.9 -L/home/aras/opencv/opencv_main/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+
+//////2013-03-26
+opencv_aras: -I/home/aras/opencv/opencv_main/export/include/opencv-2.4.9 -L/home/aras/opencv/opencv_main/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering -lvtkGraphics
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+////2013-03-25
+opencv_aras: -I/home/aras/opencv/opencv_main/export/include/opencv-2.4.9 -L/home/aras/opencv/opencv_main/export/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/pcl/pcl_trunk/export/include/pcl-1.7 -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/pcl/pcl_trunk/export/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10 -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+
+////////////////2013-01-11
+opencv_aras: -I/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-09/include/opencv-2.4.9 -L/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-09/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+
+
+///////////////2013-01-08
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+////////////2013-01-07 //950am
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+///////////2012-12-13 //4pm
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtklibxml2 -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+/////////414pm
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/2012-12-13/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtklibxml2 -lvtkalglib -lvtkRendering
+
+
+////////12-10 //1239pm //224 //7pm
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtklibxml2 -lvtkalglib -lvtkRendering
+vtk_aras_3: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10/lib/vtk-5.10 -lvtkWidgets -lvtkImaging -lvtkHybrid    -lvtkalglib -lvtkParallel -lVPIC -lCosmo   -lvtkGraphics
+///////
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtklibxml2 -lvtkalglib -lvtkRendering
+vtk_aras_3: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkWidgets -lvtkImaging -lvtkHybrid    -lvtkalglib -lvtkParallel -lVPIC -lCosmo   -lvtkGraphics
+///////12-10_release //821pm
+pcl_aras: -I/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/include/pcl-1.7 -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/export_12-10_release/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/include/vtk-5.10 -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkCommon -lvtkIO -lvtkFiltering -lvtksys -lvtkDICOMParser -lvtkNetCDF -lvtkNetCDF_cxx -lLSDyna
+vtk_aras_2: -L/home/aras/libs_aras/vtk/VTK-5.10.1/export/export_12-10_release/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkverdict -lvtkVolumeRendering -lvtkexoIIc -lvtkViews -lvtkInfovis  -lvtkhdf5 -lvtkhdf5_hl -lvtklibxml2 -lvtkalglib -lvtkRendering
+eigen_aras: -I/usr/include/eigen3/
+
+
+
+
+///////////////12-07 //1014am //219pm
+opencv_aras: -I/home/aras/libs_aras/opencv/export_12-05/include -L/home/aras/libs_aras/opencv/export_12-05/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+pcl_aras_stereo: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_stereo -lpcl_common -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_segmentation -lpcl_features
+vtk_aras: -I/home/aras/libs_aras/vtk/exprot_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_aras_2: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering -lvtkParallel -lVPIC -lCosmo
+vtk_aras_3: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO -lvtkhdf5 -lvtkWidgets -lvtkImaging -lvtkNetCDF_cxx -lvtkHybrid
+vtk_aras_stereo: -I/home/aras/libs_aras/vtk/exprot_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+eigen_aras: -I/home/aras/libs_aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/libs_aras/gtest/gtest-1.6.0/include -L/home/aras/libs_aras/gtest/gtest-1.6.0/build -lgtest -lgtest_main
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opengl_all: -I/usr/include/ -I/usr/include/nvidia-current/
+////////5pm
+png_aras: -I/home/aras/libs_aras/png/export/include/libpng15 -L/home/aras/libs_aras/png/export/lib
+pcl_aras_stereo: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_stereo -lpcl_common -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_segmentation -lpcl_features
+vtk_aras_stereo: -I/home/aras/libs_aras/vtk/exprot_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+////////647pm
+pcl_aras: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/exprot_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_aras_2: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering -lvtkParallel -lVPIC -lCosmo
+vtk_aras_3: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO -lvtkhdf5 -lvtkWidgets -lvtkImaging -lvtkNetCDF_cxx -lvtkHybrid
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+////////////12-06 //12
+pcl_aras: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/exprot_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_aras_2: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering -lvtkParallel -lVPIC -lCosmo
+vtk_aras_3: -L/home/aras/libs_aras/vtk/exprot_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO -lvtkhdf5 -lvtkWidgets -lvtkImaging -lvtkNetCDF_cxx -lvtkHybrid
+eigen_aras: -I/home/aras/libs_aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/libs_aras/gtest/gtest-1.6.0/include -L/home/aras/libs_aras/gtest/gtest-1.6.0/build -lgtest -lgtest_main
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opengl_all: -I/usr/include/ -I/usr/include/nvidia-current/
+
+
+
+////////////////12-05 //219pm //321pm //421pm //630pm
+opencv_aras: -I/home/aras/libs_aras/opencv/export_12-05/include -L/home/aras/libs_aras/opencv/export_12-05/lib -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+pcl_aras: -I/home/aras/libs_aras/pcl/export_12-05/include/pcl-1.7 -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -L/home/aras/libs_aras/pcl/export_12-05/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/libs_aras/vtk/export_12-05/include/vtk-5.10 -L/home/aras/libs_aras/vtk/export_12-05/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_aras_2: -L/home/aras/libs_aras/vtk/export_12-05/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_aras_3: -L/home/aras/libs_aras/vtk/export_12-05/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO -lvtkhdf5 -lvtkWidgets -lvtkImaging -lvtkNetCDF_cxx -lvtkHybrid
+eigen_aras: -I/home/aras/libs_aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/libs_aras/gtest/gtest-1.6.0/include -L/home/aras/libs_aras/gtest/gtest-1.6.0/build -lgtest -lgtest_main
+boost_all: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+opengl_all: -I/usr/include/ -I/usr/include/nvidia-current/
+
+////////////////11-30 //334pm //changed from ubuntu 12.04 to 12.10
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+boost_aras_2: -I/boost-1.52.0/include -L/boost-1.52.0/lib -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+/////////////////////11-27 //6pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+boost_aras_2: -I/boost-1.52.0/include -L/boost-1.52.0/lib -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+/////////////////////////11-22 //11am
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+
+///////////////////////11-15 //3pm //5pm //8pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition -lpcl_stereo
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics -lvtkIO
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+///////////11-14 //10am //5pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+////////////////11-13 //2pm //5pm	
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+boost_aras: -lboost_date_time -lboost_filesystem -lboost_iostreams -lboost_regex -lboost_system -lboost_thread
+
+
+////////////////////11-08 //2pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus -lpcl_recognition
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkGraphics
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+
+///////////////11-08 //7pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype -lvtkexoIIc -lvtkViews -lvtkInfovis -lvtkalglib -lvtkVolumeRendering
+vtk_5.10.1_aras_3: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkRendering
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+///////////11-08 //6pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtksys -lvtkDICOMParser -lvtkNetCDF -lLSDyna -lvtkNetCDF -lvtkverdict -lvtkhdf5_hl 
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkmetaio -lvtksqlite -lvtkexpat -lvtkftgl -lvtkfreetype
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+
+///////11-08 //5pm
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/ 
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+pcl_1.7_aras: -I/home/aras/pcl-1.7/include/pcl-1.7 -L/home/aras/pcl-1.7/lib -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_1.7_aras_2: -L/home/aras/pcl-1.7/lib -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+vtk_5.10.1_aras: -I/home/aras/vtk-5.10.1/include/vtk-5.10 -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksyseigen_aras: -I/home/aras/eigen/include/eigen3/
+vtk_5.10.1_aras_2: -L/home/aras/vtk-5.10.1/lib/vtk-5.10 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+
+
+
+//////11-07
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/ 
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface -lpcl_sample_consensus
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+
+
+/////////11-06
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/ 
+pcl_aras: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints
+pcl_aras_2: -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_visualization -lpcl_segmentation -lpcl_keypoints -lpcl_surface
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+eigen_aras: -I/home/aras/eigen/include/eigen3/
+gtest_aras: -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+
+
+///////11-01
+opencv_aras: -I/home/aras/opencv/include/opencv-2.4.2/ -L/home/aras/opencv/lib/ -lopencv_highgui -lopencv_imgproc -lopencv_video -lopencv_core -lopencv_objdetect -lopencv_calib3d -lopencv_features2d -lopencv_contrib
+opengl_aras: -I/usr/include/ -I/usr/include/nvidia-current/ 
+pcl_aras: -I/usr/include/eigen3/ -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+pcl_aras_2: -L/home/aras/pcl/lib/ -lpcl_visualization
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+
+
+
+
+
+
+
+
+
+
+//////system
+vtk_aras: -I/usr/include/vtk-5.8/ -L/usr/lib/ -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets
+//////mine
+vtk_aras: -I/home/aras/vtk/include/vtk-5.8/ -L/home/aras/vtk/lib/vtk-5.8/ -lvtkCommon -lvtkFiltering -lvtkCharts -lvtkDICOMParser -lvtkGraphics -lvtkGeovis -lvtkGenericFiltering -lvtkHybrid -lvtkViews -lvtkVolumeRendering -lvtkInfovis -lvtkIO -lvtkImaging -lvtkParallel -lvtkRendering -lvtkWidgets -lvtkDICOMParser -lvtkexoIIc -lvtkexpat -lvtkfreetype -lvtkftgl -lvtkhdf5 -lvtkHybrid -lvtkImaging -lvtkInfovis -lvtkjpeg -lvtksys
+vtk_aras_2: -L/home/aras/vtk/lib/vtk-5.8 -lvtklibxml2 -lvtkNetCDF -lvtkNetCDF_cxx -lvtksqlite -lvtktiff -lvtkzlib -lvtkpng
+
+
+//////////opengl
+aras@aitne:/usr/include$ find | grep gl.h
+./nvidia-current/GL/gl.h
+./nvidia-current/CL/cl_gl.h
+./GL/gl.h
+./CL/cl_gl.h
+./vtk-5.8/vtkgl.h
+./Inventor/system/gl.h
+./Inventor/system/gl-headers.h
+./Inventor/C/glue/gl.h
+./CGAL/gl.h
+./qt4/Qt/qglshaderprogram.h
+./qt4/Qt/qgl.h
+./qt4/QtOpenGL/qglshaderprogram.h
+./qt4/QtOpenGL/qgl.h
+aras@aitne:/usr/include$ 
+
+
+
+
+
+pcl_aras: -I/usr/include/eigen3/ -I/home/aras/pcl/include/pcl-1.6/ -L/home/aras/pcl/lib/ -lpcl_io -lpcl_kdtree -lpcl_search -lpcl_features -lpcl_octree -lpcl_io_ply -lpcl_geometry -lpcl_apps -lpcl_common -lpcl_filters -lpcl_keypoints -I/home/aras/gtest/gtest-1.6.0/include/ -L/home/aras/gtest/gtest-1.6.0/build/ -lgtest -lgtest_main
+
+opencv_all_aras:  -D_LIB_OPENCV_PRESENT_ -I/home/aras/opencv/include -I/home/aras/opencv/include/opencv -I/home/aras/opencv/include/opencv2 -L/home/aras/opencv/lib  -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect -lopencv_legacy -lopencv_highgui
+opencv_core_aras: -D_LIB_OPENCV_PRESENT_ -I/home/aras/opencv/include -I/home/aras/opencv/include/opencv -I/home/aras/opencv/include/opencv2 -L/home/aras/opencv/lib  -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect
+
+
+txt
+opencv_all_aras: D_LIB_OPENCV_PRESENT_ D_LIB_OPENCV_SVN_PRESENT_ -I/home/aras/opencv/include -L/home/aras/opencv/lib -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect -lopencv_legacy -lopencv_highgui -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect
+raw
+opencv_all_aras: -I/home/aras/opencv/include -L/home/aras/opencv/lib  -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect -lopencv_legacy -lopencv_highgui -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect
+
+
+-I/usr/include/opencv/
+
+
+//libdb.txt
+opencv_all: -D_LIB_OPENCV_PRESENT_  -I/home/aras/opencv/include/ -I/home/aras/opencv/include/opencv -I/home/aras/opencv/include/opencv2 -I/home/aras/opencv/lib -lcxcore -lcv -lcvaux -lhighgui
+opencv_core: -D_LIB_OPENCV_PRESENT_ -I/home/aras/opencv/include/ -I/home/aras/opencv/include/opencv -I/home/aras/opencv/include/opencv2 -I/home/aras/opencv/lib -lcxcore -lcv
+pcl: -L/home/aras/pcl/lib
+
+
+////////original
+opencv_all: -D_LIB_OPENCV_PRESENT_ -I/usr/include/opencv -lcxcore -lcv -lcvaux -lhighgui
+opencv_core: -D_LIB_OPENCV_PRESENT_ -I/usr/include/opencv -lcxcore -lcv
+////new
+opencv_all:  -D_LIB_OPENCV_PRESENT_ -I/usr/include/ -I/home/aras/opencv/include/opencv/ -I/home/aras/opencv/include/opencv2 -L/home/aras/opencv/lib  -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect -lopencv_legacy -lopencv_highgui
+opencv_core: -D_LIB_OPENCV_PRESENT_ -I/usr/include/ -I/home/aras/opencv/include/opencv/ -I/home/aras/opencv/include/opencv2 -L/home/aras/opencv/lib  -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect

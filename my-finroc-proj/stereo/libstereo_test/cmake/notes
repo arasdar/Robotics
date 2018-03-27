@@ -1,0 +1,7 @@
+
+
+
+
+aras@pasithee:~/mine/finroc/sources/cpp/projects/stereo_traversability_experiments/aras/libstereo_test/cmake/build$ ./nwcc7 ~/mine/stereo_images/stereo_lugv-haris/2014-09-08_MeF_DS/left_rect/006-catas/left_rectified-006280.ppm ~/mine/stereo_images/stereo_lugv-haris/2014-09-08_MeF_DS/right_rect/006-catas/right_rectified-006280.ppm 
+./nwcc7 ~/mine/stereo_images/stereo_lugv-haris/2014-09-08_MeF_DS/left_rect/006-catas/left_rectified-006280.ppm ~/mine/stereo_images/stereo_lugv-haris/2014-09-08_MeF_DS/right_rect/006-catas/right_rectified-006280.ppm 
+

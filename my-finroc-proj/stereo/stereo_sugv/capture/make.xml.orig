@@ -1,0 +1,37 @@
+<targets>
+
+	<finroclibrary name="sensorProcessing_stereoSUGV_capture" libs="pcl flycap opencv_all">
+		<sources>
+			tStereoProcessing.cpp
+			tStereoProc_convertImageToOpenCV.cpp
+			tStereoProc_stereoCapture.cpp
+			tStereoProc_stereoRectify.cpp
+			tStereoProc_processCloud.cpp
+			tStereoProc_run.cpp
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoSUGV_capture" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>
+
+
+<!--
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoSUGV_capture" libs="opencv_all flycap pcl vtk boost_filesystem eigen">
+		<sources>
+			stereo_capture.cpp
+		</sources>
+	</finrocprogram>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoSUGV_capture" libs="opencv_all flycap pcl_aras vtk_aras boost_filesystem">
+		<sources>
+			stereo_capture.cpp
+		</sources>
+	</finrocprogram>
+	
+-->

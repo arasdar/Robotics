@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Finstructable>
+  <edge src="simulated robot &amp; environment/Sensor Output/lugv_1_chassi_obj_forklift - Pose" dest="Sensing/OdometrySensors/Controller Input/Pose"/>
+  <edge src="simulated robot &amp; environment/Sensor Output/lugv_2_wheel_front_left_obj_joint - Torque" dest="Sensing/OdometrySensors/Sensor Input/Angular Velocity"/>
+  <edge src="simulated robot &amp; environment/Sensor Output/lugv_2_wheel_front_left_obj_joint - Speed" dest="Sensing/OdometrySensors/Sensor Input/Velocity"/>
+  <edge src="Sensing/stereo camera/Sensor Output/Image" dest="Perception/mapping-stereo/Input/Images"/>
+  <edge src="Sensing/OdometrySensors/Controller Input/Pose" dest="simulated robot &amp; environment/Sensor Output/lugv_1_chassi_obj_forklift - Pose"/>
+  <edge src="Sensing/OdometrySensors/Sensor Input/Velocity" dest="simulated robot &amp; environment/Sensor Output/lugv_2_wheel_front_left_obj_joint - Speed"/>
+  <edge src="Sensing/OdometrySensors/Sensor Input/Angular Velocity" dest="simulated robot &amp; environment/Sensor Output/lugv_2_wheel_front_left_obj_joint - Torque"/>
+  <edge src="Control/DifferentialDriveKinematics/Controller Output/Velocity Left" dest="Actuation/VelocityToOmega/Input/Input 0"/>
+  <edge src="Control/DifferentialDriveKinematics/Controller Output/Velocity Right" dest="Actuation/VelocityToOmega/Input/Input 1"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 0" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_front_left_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 0" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_rear_left_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 0" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_front_left_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 0" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_rear_left_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 1" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_front_right_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 1" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_rear_right_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 1" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_front_right_obj_joint - Target Omega"/>
+  <edge src="Actuation/VelocityToOmega/Output/Output 1" dest="simulated robot &amp; environment/Controller Input/lugv_2_wheel_rear_right_obj_joint - Target Omega"/>
+</Finstructable>

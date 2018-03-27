@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinstructableGroup>
+  <edge src="WheelVelocityToOmega/Output/Output 0" dest="ExtendedPhysicsSimulationNewton/Controller Input/sugv_2_wheel_front_left_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega/Output/Output 0" dest="ExtendedPhysicsSimulationNewton/Controller Input/sugv_2_wheel_middle_left_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega/Output/Output 1" dest="ExtendedPhysicsSimulationNewton/Controller Input/sugv_2_wheel_front_right_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega/Output/Output 1" dest="ExtendedPhysicsSimulationNewton/Controller Input/sugv_2_wheel_middle_right_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega_lugv/Output/Output 0" dest="ExtendedPhysicsSimulationNewton/Controller Input/lugv_2_wheel_front_left_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega_lugv/Output/Output 0" dest="ExtendedPhysicsSimulationNewton/Controller Input/lugv_2_wheel_rear_left_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega_lugv/Output/Output 1" dest="ExtendedPhysicsSimulationNewton/Controller Input/lugv_2_wheel_front_right_obj_joint - Target Omega"/>
+  <edge src="WheelVelocityToOmega_lugv/Output/Output 1" dest="ExtendedPhysicsSimulationNewton/Controller Input/lugv_2_wheel_rear_right_obj_joint - Target Omega"/>
+  <edge src="FrameGrabber/Sensor Output/Image" dest="StViPr/Sensor Input/Image"/>
+  <edge src="ExtendedPhysicsSimulationNewton/Sensor Output/lugv_1_chassi_obj_forklift - Pose" dest="StereoProcessing/Input/Si Ugv Chassi Pose"/>
+</FinstructableGroup>

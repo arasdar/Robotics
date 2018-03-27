@@ -1,0 +1,10 @@
+<targets>
+
+	<finroclibrary name="sensorProcessing_libstereo_gpu" libs = "cuda">
+	    <sources>
+	    	tDeviceWrapper.hpp
+	    	compute_impl_cuda.cu
+ 	    </sources>
+	  </finroclibrary>
+	  
+</targets>

@@ -1,0 +1,28 @@
+
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+
+//laptop agrosy 8
+
+./stereo_webcam_capture ~/stereo_images/2013-04-16-heuteeeeeeeeeee/webcam/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16-heuteeeeeeeeeee/webcam/calib-1-good/extrinsics.yml
+
+
+./stereo_webcam_capture ~/stereo_images/2013-04-16-heuteeeeeeeeeee/webcam/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16-heuteeeeeeeeeee/webcam/calib-1-good/extrinsics.yml                                                                                           
+./stereo_capture ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml
+
+./stereo_capture ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml
+
+./stereo_capture ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml
+./stereo_capture ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml
+./stereo_capture ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml 
+
+
+
+

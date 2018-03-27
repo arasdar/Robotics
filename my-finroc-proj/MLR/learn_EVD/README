@@ -1,0 +1,15 @@
+OpenCV
+cv::SVD
+cv::eigen
+
+Eigenlib
+eigen::SVD (JacobianSVD)
+
+GSL(GNU Scientific Library)
+eigen symmetric and non-symmetric
+
+GNU Octave/MATLAB(MathWorks)
+eigen and SVD
+
+NIST & MathWorks(MATLAB/GNU Octave) - ported to cpp by Philip Wagner (bytefish.de)
+EVD // source code available

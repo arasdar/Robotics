@@ -1,0 +1,51 @@
+<targets>
+	<finroclibrary name = "daniel_segmentation_texture" libs = "pcl vtk">
+		<sources>
+
+			tStereoProcessing.cpp
+			tStereoProc_callbacks.cpp
+
+			tStereoProc_stereo_cropping.cpp
+			tStereoProc_stereo_rectify.cpp
+			tStereoProc_stereo_reconst.cpp
+			
+			tStereoProc_processCloud_normals.cpp
+			tStereoProc_processImage_texture.cpp
+			tStereoProc_processCloud_segm.cpp
+
+			tStereoProc_run.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_visualize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+
+		</sources>
+	</finroclibrary>
+	
+	
+	<finroclibrary name = "daniel_otb2pcl" 
+	libs = "
+	pcl
+	eigen
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			texture/tTextureExtractor.cpp
+		</sources>
+	</finroclibrary>
+	
+	
+	<finrocprogram name = "daniel_stereoTravExp_segmentation_texture" libs = "boost_filesystem pcl">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>

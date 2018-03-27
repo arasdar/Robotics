@@ -1,0 +1,9 @@
+/home/aras/database/facerec/att/dataset/s37/5.pgm;36
+/home/aras/database/facerec/att/dataset/s11/7.pgm;10
+/home/aras/database/facerec/att/dataset/s13/2.pgm;12
+/home/aras/database/facerec/att/dataset/s17/6.pgm;16
+/home/aras/database/facerec/att/dataset/s32/6.pgm;31
+/home/aras/database/facerec/att/dataset/s10/9.pgm;9
+/home/aras/database/facerec/att/dataset/s27/9.pgm;26
+/home/aras/database/facerec/att/dataset/s5/3.pgm;4
+/home/aras/database/facerec/att/dataset/s27/3.pgm;26

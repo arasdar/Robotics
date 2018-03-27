@@ -1,0 +1,15 @@
+<targets>
+	<finroclibrary name="sensorProcessing_stereoColor_offline" libs="opencv_all pcl vtk">
+		<sources>
+			gSensorProcessing.cpp
+			mStereoTestColorOffline.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name="icarus_sensorProcessing_stereoColor_offline">
+		<sources>
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>

@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+otb_include: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb
+otb_include_common: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/Common
+otb_include_util: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/Utilities/ITK -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/Utilities/otbconfigfile
+otb_include_io: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/IO
+otb_include_utilAdap: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/UtilitiesAdapters/OssimAdapters -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/UtilitiesAdapters/CurlAdapters -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/UtilitiesAdapters/ITKPendingPatches
+otb_include_basicFilters: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/BasicFilters
+otb_include_featureExtraction: -I/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/include/otb/FeatureExtraction
+otb_lib: -L/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/lib/otb -litksys-4.5 -lITKCommon-4.5 -litkdouble-conversion-4.5 -lOTBIO  -lOTBCommon -lOTBFeatureExtraction -lOpenThreads -lotbkml -lotbtinyXML -lOTBCurlAdapters -lOTBOGRAdapters -litksys-4.5 -litkvnl_algo-4.5 -litkvnl-4.5 -lITKCommon-4.5 -lotbopenjpeg -lOTBOssimAdapters -lotbmuparser -litkv3p_netlib-4.5 -litkv3p_lsqr-4.5 -litkdouble-conversion-4.5 -lotbconfigfile -lotbossim -lotbossimplugins
+otb_lib_2: -L/home/aras/mine/daniel/libs_daniel/OTB-4.0.0/export/lib/otb -lITKStatistics-4.5 -litkNetlibSlatec-4.5 -lITKWatersheds-4.5
+
+
+
+	//should be added to ~/.bashrc
+	// to run the executable in export
+	export LD_LIBRARY_PATH='/home/aras//mine/daniel/libs_daniel/OTB-4.0.0/export/lib/otb' 

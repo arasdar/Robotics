@@ -1,0 +1,175 @@
+mlr_main_wrapper database/face_recognition/att
+
+all_image_data_in_directory.size(): 400
+startttttttttttttttttttttttttttttt============================================================================================= 
+I_img_vec: 
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [400 x 10304]
+rows: 10304  height, Y, i
+cols: 400  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 400
+isContinuous: 1
+total: 4121600
+endddddddddddddddddddddddd============================================================================================= 
+Please enter if you want to LEARN the folder (yes) or recognize it (no): 
+yes
+Your choice was: yes -----------------------> please REPEAT your answer
+yes
+Learning...............................................................................
+startttttttttttttttttttttttttttttt============================================================================================= 
+mean: 
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [1 x 10304]
+rows: 10304  height, Y, i
+cols: 1  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 1
+isContinuous: 1
+total: 10304
+endddddddddddddddddddddddd============================================================================================= 
+startttttttttttttttttttttttttttttt============================================================================================= 
+S: 
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [400 x 1]
+rows: 1  height, Y, i
+cols: 400  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 400
+isContinuous: 1
+total: 400
+endddddddddddddddddddddddd============================================================================================= 
+startttttttttttttttttttttttttttttt============================================================================================= 
+V: 
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [400 x 10304]
+rows: 10304  height, Y, i
+cols: 400  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 400
+isContinuous: 1
+total: 4121600
+endddddddddddddddddddddddd============================================================================================= 
+startttttttttttttttttttttttttttttt============================================================================================= 
+U: 
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [0 x 0]
+rows: 0  height, Y, i
+cols: 0  width, X, j
+type: 0
+depth: 0
+channels; 1
+elemSize: 0
+step1: 0
+isContinuous: 0
+total: 0
+endddddddddddddddddddddddd============================================================================================= 
+Singular values DOUBLE precision(CV_64FC1)# 1 = 2114.643534672048645006725564599037170410156250000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 2 = 1819.940429793389284895965829491615295410156250000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 3 = 1220.374560486527343527995981276035308837890625000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 4 = 1140.598316961204318431555293500423431396484375000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 5 = 1011.449280125207906166906468570232391357421875000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 6 = 893.695303410313954373123124241828918457031250000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 7 = 740.140693364183903213415760546922683715820312500000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 8 = 734.824195953977323370054364204406738281250000000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 9 = 683.475096932946030392486136406660079956054687500000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 10 = 625.306413317753595038084313273429870605468750000000000000000000
+Singular values DOUBLE precision(CV_64FC1)# 11 = 590.977540385749648521596100181341171264648437500000000000000000
+final retainedVariance or the final number of kept principle components for re-computing the PCA & perform recognition ...........................
+retainedVariance = double(i+1) / double(eigenvectors.cols): 0.0275
+maxComponents = i+1: 11
+maximum number of eigenvalues: 400
+ re-computing the PCA .......................................................................
+startttttttttttttttttttttttttttttt============================================================================================= 
+S
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [11 x 1]
+rows: 1  height, Y, i
+cols: 11  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 400
+isContinuous: 1
+total: 11
+endddddddddddddddddddddddd============================================================================================= 
+startttttttttttttttttttttttttttttt============================================================================================= 
+U
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [0 x 0]
+rows: 0  height, Y, i
+cols: 0  width, X, j
+type: 0
+depth: 0
+channels; 1
+elemSize: 0
+step1: 0
+isContinuous: 0
+total: 0
+endddddddddddddddddddddddd============================================================================================= 
+startttttttttttttttttttttttttttttt============================================================================================= 
+V
+Mat::::::::::::::::::: 
+Mat size: (width, height) =  (cols, rows) =  (X, Y)=   (j, i) = (w, h) -------------> 
+Mat size: (width, height) || (cols, rows) || (X, Y) || (j, i) ------------> 
+size: [11 x 10304]
+rows: 10304  height, Y, i
+cols: 11  width, X, j
+type: 6
+depth: 6
+channels; 1
+elemSize: 8
+step1: 400
+isContinuous: 0
+total: 113344
+endddddddddddddddddddddddd============================================================================================= 
+dir_name: face_recognition/att//learned_PCA
+face_recognition/att//learned_PCA was already existing and now it is successfully and completely removed...............................
+face_recognition/att//learned_PCA is new directory and is now successfully created.........................
+face_recognition/att//learned_PCA/mean.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/SV_matrix_info.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_0.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_1.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_2.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_3.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_4.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_5.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_6.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_7.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_8.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_9.xml writtennnnnnnnnnnn
+face_recognition/att//learned_PCA/learned_PC_10.xml writtennnnnnnnnnnn
+learned PCA is written to: face_recognition/att//learned_PCA
+aras@pasithee:~/noadsm/database$ 
+aras@pasithee:~/noadsm/database$ 
+aras@pasithee:~/noadsm/database$ 
+aras@pasithee:~/noadsm/database$ 
+aras@pasithee:~/noadsm/database$ 
+aras@pasithee:~/noadsm/database$ 

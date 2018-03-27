@@ -1,0 +1,7 @@
+<targets>
+	<finroclibrary name = "openTraverse_alex" libs = "pcl eigen">
+		<sources>
+			tHRCSSegmentation.cpp
+		</sources>
+	</finroclibrary>
+</targets>

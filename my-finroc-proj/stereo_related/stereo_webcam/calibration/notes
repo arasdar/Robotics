@@ -1,0 +1,9 @@
+
+
+make.xml // global and local are different
+cmake //it is but not really????
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+

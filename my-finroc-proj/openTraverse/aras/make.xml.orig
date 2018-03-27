@@ -1,0 +1,16 @@
+<targets>
+
+	<finroclibrary name = "openTraverse_aras" libs = "pcl">
+		<sources>
+			tSSTA.cpp
+			tSSTA_processCloud_normals.cpp
+			tSSTA_processCloud_segm.cpp
+			tSSTA_processCloud_trav.cpp
+			tSSTA_processCloud_trav_segm2plane.cpp
+			tSSTA_processCloud_trav_slopeAnalysis.cpp
+			tSSTA_processCloud_trav_dominGroundPlane.cpp
+			tSSTA_processCloud_trav_stepAnalysis.cpp
+		</sources>
+	</finroclibrary>
+
+</targets>

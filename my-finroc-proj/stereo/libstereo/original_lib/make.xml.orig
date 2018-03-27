@@ -1,0 +1,28 @@
+<targets>
+
+	<finroclibrary name="sensorProcessing_libstereo" libs="pcl eigen vtk">
+	    <sources>
+			tStereoMatching.cpp
+			tGrayStereoMatching.cpp
+			tBlockBasedStereoMatching.cpp
+			tAdaptiveCostSOStereoMatching.cpp
+			tStereoVisionProcessing.cpp
+			tStereoVisionProcACSO.cpp
+			tStereoVisionProcBB.cpp
+	    </sources>
+	  </finroclibrary>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_libstereo_gray" libs="opencv_all vtk eigen openni boost_filesystem pcl">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>
+
+
+
+<!-- 
+
+
+-->

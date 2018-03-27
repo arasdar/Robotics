@@ -1,0 +1,56 @@
+
+
+<targets>
+
+	<finroclibrary name = "aras_pointCloudProcessing" libs = "pcl vtk">
+		<sources>
+			tStereoProcessing.cpp
+		
+			tStereoProc_callbacks.cpp
+			tStereoProc_run.cpp
+			tStereoProc_run_visualize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+			tStereoProc_run_initialize.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "aras_stereoTravExp_aras_pointCloudProcessing" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>
+
+
+
+<!-- 		
+
+			tStereoProc_processCloud_normals.cpp
+			
+			tStereoProc_processCloud_segm.cpp
+			
+			tStereoProc_processCloud_trav.cpp
+			tStereoProc_processCloud_trav_segm2plane.cpp
+			tStereoProc_processCloud_trav_slopeAnalysis.cpp
+			tStereoProc_processCloud_trav_dominGroundPlane.cpp
+			tStereoProc_processCloud_trav_stepAnalysis.cpp
+			
+			tStereoProc_run.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_visualize.cpp
+
+	<finrocprogram name="aras_icarus_sensorProcessing_pointCloudProcessing_test" libs="pcl_aras vtk_aras eigen openni opencv_all boost_filesystem">
+		<sources>
+			point_cloud_processing_test.cpp
+		</sources>
+	</finrocprogram>	
+
+	<finrocprogram name="aras_icarus_sensorProcessing_pointCloudProcessing" libs="pcl vtk eigen boost_filesystem">
+		<sources>
+			point_cloud_processing.cpp
+		</sources>
+	</finrocprogram>
+		
+-->

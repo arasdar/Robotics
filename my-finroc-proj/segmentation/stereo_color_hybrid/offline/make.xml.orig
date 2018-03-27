@@ -1,0 +1,53 @@
+<targets>
+
+	<finroclibrary name = "daniel_stereoColor_hybrid_offline" libs = "vtk">
+		<sources>
+			tStereoProcessing.cpp
+			tStereoProcessing_callbacks.cpp
+
+			tStereoProc_stereo_cropping.cpp
+			tStereoProc_stereo_reconst.cpp
+			tStereoProc_stereo_rectify.cpp
+
+			tStereoProc_processCloud_normals.cpp
+			tStereoProc_processCloud_invalid_points.cpp
+			tStereoProc_processCloud_segm.cpp
+			tStereoProc_processCloud_segm_appear.cpp
+			tStereoProc_processCloud_segm_slic.cpp
+			tStereoProc_processCloud_trav.cpp
+			tStereoProc_processCloud_trav_segm2plane.cpp
+			tStereoProc_processCloud_trav_segm2plane_appear.cpp
+			tStereoProc_processCloud_trav_slopeAnalysis.cpp
+			tStereoProc_processCloud_trav_slopeAnalysis_appear.cpp
+			tStereoProc_processCloud_trav_slope_and_step_mapping_discrete.cpp
+			tStereoProc_processCloud_trav_geom_fusion_and_mapping.cpp
+			tStereoProc_processCloud_trav_fusion_pessimistic.cpp
+			tStereoProc_processCloud_trav_dominGroundPlane.cpp
+			tStereoProc_processCloud_trav_stepAnalysis.cpp
+			tStereoProc_processCloud_trav_stepAnalysis_appear.cpp
+			
+			tStereoProc_utils.cpp
+			
+			tStereoProc_run.cpp
+			tStereoProc_run_initialize.cpp
+			tStereoProc_run_proceed_callbacks.cpp
+			tStereoProc_run_saveCloud.cpp
+			tStereoProc_run_visualize.cpp
+			
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name = "daniel_stereoTravExp_daniel_stereoColor_hybrid_offline" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+	
+		
+</targets>
+
+
+
+<!--		
+
+-->

@@ -1,0 +1,12 @@
+// sensor data fusion img, dist and loc data
+This will be the final experiment --> concatenate and fusing data
+PCA on img with high resolution and extracted, selected and transformation(or projection) --> reduced to important img dimension and feature afterwards
+fused with loc and dist data for more accuracy and EVD and PCA find PCs and same process for intelligent control
+--> fusion should bring us more accuracy in recognition
+
+// plenty of different BIG Dimensional sensor data in the simulated platform to test for feature extraction (analysis), selection (reduction) and transform (project)
+Add other sensors data such different high resolution images, laser scanners 2D and 3D to show the ability to handle big dimensionality and fusion
+
+// mlr learning --> feature selection -- selection criteria (number of S and value of S)
+the accumalative value of the selected eigenFeatures over the total values of all eigenFeatures
+(S1+.................Sk)/(S1+...............+Sn)

@@ -1,0 +1,14 @@
+<targets>
+	<library name="mlr_learn_LDA" libs="opencv_all">
+		<sources>
+			LinearDiscriminantAnalysis.cpp
+			LinearDiscriminantAnalysis.hpp
+		</sources>
+	</library>
+	
+	<program name = "mlr_learn_LDA_main_wrapper" libs="opencv_all">
+		<sources>
+			main_wrapper.cpp
+		</sources>
+	</program>
+</targets>

@@ -1,0 +1,36 @@
+<targets>  
+
+  <finroclibrary name="sensorProcessing_pointCloudProcessing" libs="pcl vtk">
+    <sources>
+        gSensorProcessing.cpp
+        mPointCloudProc.cpp
+    </sources>
+  </finroclibrary>
+
+  <finrocprogram name="icarus_sensorProcessing_pointCloudProcessing">
+  	<sources>
+  		pSensorProcessing.cpp
+  	</sources>
+  </finrocprogram>
+  
+</targets>
+
+
+
+<!--         
+
+  <finroclibrary name="sensorProcessing_pointCloudProcessing_finroc_test" libs="pcl_aras vtk_aras eigen">
+    <sources>
+        gSensorProcessing.cpp
+        mPointCloudProc.cpp
+    </sources>
+  </finroclibrary>
+  
+  <finrocprogram name="icarus_sensorProcessing_pointCloudProcessing_finroc">
+  	<sources>
+  		pSensorProcessing.cpp
+  	</sources>
+  </finrocprogram>
+  
+mPointCloudProc.cpp
+-->

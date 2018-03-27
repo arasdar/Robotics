@@ -1,0 +1,21 @@
+
+
+<targets>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_kinect_capture" libs="pcl vtk eigen openni boost_filesystem">
+		<sources>
+			kinect_capture.cpp
+		</sources>
+	</finrocprogram>
+	
+	
+</targets>
+
+
+<!--
+	<finrocprogram name="aras_icarus_sensorProcessing_kinect_capture" libs="pcl_aras vtk_aras eigen boost_filesystem openni">
+		<sources>
+			kinect_capture.cpp
+		</sources>
+	</finrocprogram>
+-->

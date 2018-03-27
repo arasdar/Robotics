@@ -1,0 +1,17 @@
+<targets>
+
+	<finroclibrary name = "openTraverse_mauro_test" libs = "pcl vtk eigen">
+		<sources>
+			UPD.cpp
+			UPD_giveRainbowColor.cpp
+			UPD_viewerOriginal.cpp
+			UPD_upd.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "aras_stereoTravExp_openTraverse_mauro_test" libs = "boost_filesystem">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+</targets>

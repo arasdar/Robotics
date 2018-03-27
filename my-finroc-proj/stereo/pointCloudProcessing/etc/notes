@@ -1,0 +1,56 @@
+
+
+
+aras@pasithee:~/stereo_images/stereo_45cm-baseline/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100$ aras_icarus_sensorProcessing_point_cloud_processing_test ~/stereo_images/stereo_45cm-baseline/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100/acso/frames_pcd_left_selected/
+aras_icarus_sensorProcessing_point_cloud_processing_test ~/stereo_images/stereo_45cm-baseline/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100/acso/frames_pcd_left_selected/
+aras_icarus_sensorProcessing_point_cloud_processing_test ~/stereo_images/stereo_45cm-baseline/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100/acso/frames_pcd_left_selected/
+aras_icarus_sensorProcessing_point_cloud_processing_test ~/stereo_images/stereo_45cm-baseline/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100/acso/frames_pcd_left_selected/
+
+
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline$ aras_icarus_sensorProcessing_kinect_offline_test ~/stereo_images/stereo_45cm-baseline/2013-07-29_myStereo-baseline-45cm_3rd_test-on-theodor-Marche/3/3_frames_pcd/
+aras_icarus_sensorProcessing_kinect_offline_test ~/stereo_images/stereo_45cm-baseline/2013-07-29_myStereo-baseline-45cm_3rd_test-on-theodor-Marche/3/3_frames_pcd/
+
+
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ ./kinect_offline ~/stereo_images/kinect_2013-03-20_xtion_frames-pcd/
+./kinect_offline ~/stereo_images/kinect_2013-03-20_xtion_frames-pcd/
+
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+
+
+//simvis3d
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ ./kinect_offline ~/stereo_images/simvis3d-camera/frames^C
+./kinect_offline ~/stereo_images/simvis3d-camera/frames^C
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ ./kinect_offline ~/stereo_images/simvis3d-camera/frames_old/
+./kinect_offline ~/stereo_images/simvis3d-camera/frames_old/
+
+
+//kinect
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ ./kinect_offline ~/stereo_images/kinect_2013-03-20_labor-with-stereo-camera/
+./kinect_offline ~/stereo_images/kinect_2013-03-20_labor-with-stereo-camera/
+
+//stereo
+aras@pasithee:~/finroc/sources/cpp/projects/icarus/sensorProcessing/kinect/offline/build$ ./kinect_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/frames/
+./kinect_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/frames/
+./kinect_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/frames/
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+
+
+//old
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+//laptop
+./kinect_offline ~/stereo_images/camera_2013-03-20/frames_pcd_rough/
+./kinect_offline ~/stereo_images/camera_2013-03-20/frames_pcd/
+
+//laptop old
+./kinect_offline ~/stereo_aras/stereo_images_main/camera_2013-03-20/frames_pcd/                    
+

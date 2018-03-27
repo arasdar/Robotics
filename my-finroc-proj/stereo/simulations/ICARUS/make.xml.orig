@@ -1,0 +1,30 @@
+<targets>
+
+	<finroclibrary name="simulation_no_physics">
+		<sources>
+			gIcarusSimulation.cpp
+			mCalculateDistanceSensorLines.cpp
+			mProcessDistanceData.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name="stereoTravExp_simulation_no_physics">
+		<sources>
+			pIcarusSimulation.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>
+
+
+
+<!--
+libs="opencv_all eigen openni pcl_aras vtk_aras"
+
+  <finrocprogram name="icarusSimulation" libs="opencv_all pcl vtk">
+    <sources>  
+		*.cpp
+    </sources>
+  </finrocprogram>
+  
+-->

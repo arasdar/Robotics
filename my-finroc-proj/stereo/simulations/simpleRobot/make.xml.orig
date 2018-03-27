@@ -1,0 +1,29 @@
+<targets>
+
+  <finroclibrary name="simulation_simple_robot">
+    <sources>
+    	gSimulation.cpp
+    	mAddNoise.cpp
+    	mMainSimulation.cpp
+	</sources>
+  </finroclibrary> 
+
+
+  <finrocprogram name="stereoTravExp_simulation_simple_robot">
+    <sources>
+      pSimulation.cpp
+    </sources>
+  </finrocprogram>
+
+</targets>
+
+
+
+<!--
+  <finroclibrary name="simulation_simple_robot">
+    <sources exclude="pSimulation.cpp">
+      *.cpp
+    </sources>
+  </finroclibrary> 
+
+-->

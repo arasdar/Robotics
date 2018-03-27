@@ -1,0 +1,61 @@
+<targets>
+
+	<library name="mlr" libs="opencv_all boost_filesystem">
+		<sources>
+
+			<!-- Memory, Learning and Recognition -->
+			tMLR.h <!-- since there is no cpp or hpp file or impl file -->
+			
+			<!-- Pre-processing -->
+			preprocessing/normalize.cpp
+			preprocessing/vectorize.cpp
+
+			<!-- Memory stuff -->
+			memory/read_directory_recursively.cpp
+			memory/read_directory_recursively_images.cpp
+			memory/write_tPCA.cpp
+			memory/write_tPCA_name.cpp
+			memory/read_tPCA.cpp
+			memory/read_tPCA_name.cpp
+			memory/read_tPCA_dir.cpp
+			memory/load_filenames.cpp <!-- robot control -->
+			
+			<!-- Learn -->
+			learn/learn.cpp
+			learn/learn_2.cpp
+
+			<!-- Recognition -->
+			recognize/recognize.cpp
+			recognize/compare.cpp
+			
+			<!-- fusing all the sensor data after reducing their dimensionality to PCs -->
+			fusion/fuse_data.cpp
+			fusion/read_data.cpp
+			fusion/read_data_all.cpp
+			fusion/compute_mean.cpp
+			fusion/write_mean.cpp
+			fusion/read_mean.cpp
+			fusion/recognize_test.cpp
+			fusion/recognize_test_2.cpp
+			fusion/compare.cpp
+			
+			
+			<!-- utilities for Debugging purposes -->
+			utils/LOG_PRINT.cpp
+			utils/display_PCs.cpp
+
+		</sources>
+	</library>
+	
+	<program name="mlr_main_wrapper">
+		<sources>
+			fusion/main_wrapper.cpp
+		</sources>
+	</program>
+
+</targets>
+
+<!-- 
+	opencv_aras: -I/home/aras/noadsm/libs/opencv/opencv-3.1.0/export/include/opencv-3.1.0/ 
+	-L/home/aras/noadsm/libs/opencv/opencv-3.1.0/export/lib -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs
+-->

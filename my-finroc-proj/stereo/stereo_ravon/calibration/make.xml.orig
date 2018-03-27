@@ -1,0 +1,9 @@
+<targets>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoRAON_calibration_chessboard" libs="opencv_all">
+		<sources>
+			stereo_chessboard.cpp		
+		</sources>
+	</finrocprogram>
+	
+</targets>

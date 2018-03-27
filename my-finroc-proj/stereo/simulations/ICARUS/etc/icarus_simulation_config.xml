@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<value name="max. velocity">0.8</value>
+<value name="max. acceleration">1.0</value>
+<value name="max. deceleration">1.2</value>
+<value name="max. encoder ticks">65535</value>
+<value name="wheel distance (m)">0.46</value>
+<!--value name="wheel_distance">0.46</value>
+<value name="wheel_radius">0.15</value-->
+<value name="encoder ticks per radian">7500.0</value>
+<value name="encoder ticks per meter">50000</value>
+<node name="SimVis3D Simulation">
+  <value name="scene description">$FINROC_HOME/sources/cpp/projects/stereo_traversability_experiments/simulation/models/icarus_simulation.descr</value>
+  <value name="use optimization">yes</value>
+  <value name="use coordinate system">no</value>
+</node>
+<node name="SimVis3D Visualization">
+  <value name="scene description">$FINROC_HOME/sources/cpp/projects/stereo_traversability_experiments/simulation/models/icarus_visualization.descr</value>
+  <value name="use optimization">yes</value>
+</node>
+<node name="sensors">
+  <node name="scanners">
+    <node name="Rear Scanner (COIN)">
+      <value name="type">LMS200</value>
+      <value name="device_file">/dev/ttyS0</value>
+      <node name="output">
+        <value name="format">eDF_POLAR_2D_DOUBLE</value>
+        <value name="unit">M</value>
+      </node>
+      <value name="pose">(-0.1, -1.4 , 0.56 , 0°, 0°, 180°)</value>
+      <node name="configuration">
+        <value name="use_start_angle">0</value>
+      </node> 
+      <node name="simulation">
+        <value name="device_file">rear_scanner</value>
+        <value name="scene_name">SimVis3D Simulation</value>
+        <value name="add_gaussian_noise">1</value>
+        <value name="gauss_sigma">24</value>
+        <value name="precision(mm)">1</value>
+        <value name="scan_time_delta(ms)">20</value>
+        <value name="scans_per_second">20</value>
+      </node>
+    </node>
+    <node name="Front Scanner (COIN)">
+      <value name="type">LMS200</value>
+      <value name="device_file">/dev/ttyS0</value>
+      <node name="output">
+        <value name="format">eDF_POLAR_2D_DOUBLE</value>
+        <value name="unit">M</value>
+      </node>
+      <value name="pose">(3.2, -1.2 , 0.56 , 0°, 0°, 0°)</value>
+      <node name="configuration">
+        <value name="use_start_angle">0</value>
+      </node> 
+      <node name="simulation">
+        <value name="device_file">front_scanner</value>
+        <value name="scene_name">SimVis3D Simulation</value>
+        <value name="add_gaussian_noise">1</value>
+        <value name="gauss_sigma">24</value>
+        <value name="precision(mm)">1</value>
+        <value name="scan_time_delta(ms)">20</value>
+        <value name="scans_per_second">20</value>
+      </node>
+    </node>
+    <node name="Actuated Front Scanner (COIN)">
+      <value name="type">S3xx</value>
+      <value name="device_file">/dev/ttyS1</value>
+      <node name="output">
+        <value name="format">eDF_POLAR_2D_DOUBLE</value>
+        <value name="unit">M</value>
+      </node>
+      <value name="pose">(3.4, -1.2 , -0.02, 90°, 0°, 0°)</value>
+      <node name="configuration">
+        <value name="use_start_angle">0</value>
+      </node>
+      <node name="simulation">
+        <value name="device_file">actuated_scanner</value>
+        <value name="scene_name">SimVis3D Simulation</value>
+        <value name="add_gaussian_noise">1</value>
+        <value name="gauss_sigma">24</value>
+        <value name="precision(mm)">1</value>
+        <value name="scan_time_delta(ms)">20</value>
+        <value name="scans_per_second">20</value>
+      </node>
+      <value name="actuation_type">Pitch</value>
+      <value name="pose_association_mode">On Pc</value>
+    </node>
+  </node>
+	<node name="ir_sensor_0">
+      <value name="pose">(3.2, -1.110, 0.18, 0°, 0°, 0°)</value>
+    </node>
+    <node name="ir_sensor_1">
+      <value name="pose">(3.2, -1.290, 0.18, 0°, 0°, -0°)</value>
+    </node>
+</node>
+<value name="robot_pose_fifo_size">5</value>
+<node name="LaserTilterControl">
+  <value name="velocity">90</value>
+  <value name="max_angle">45</value>
+  <value name="min_angle">-45</value>
+</node>
+
+<!-- ########################### SDR mapping ##############################-->
+<node name="Display Settings">
+  <node name="Grid">
+    <value name="Enable">false</value>
+    <node name="Color">
+      <value name="R">80</value>
+      <value name="G">80</value>
+      <value name="B">80</value>
+      <value name="A">255</value>
+    </node>
+  </node>
+  <node name="Makro Grid">
+    <value name="Enable">true</value>
+    <value name="Tile Size">10</value>
+    <node name="Color">
+      <value name="R">0</value>
+      <value name="G">0</value>
+      <value name="B">0</value>
+      <value name="A">255</value>
+    </node>
+  </node>
+  <node name="First">
+    <value name="Enable">true</value>
+    <value name="Scale">0.7</value>
+    <value name="Fill">true</value>
+    <node name="Color">
+      <value name="R">255</value>
+      <value name="G">0</value>
+      <value name="B">0</value>
+      <value name="A">20</value>
+    </node>
+    <node name="Offset">
+      <value name="X">0</value>
+      <value name="Y">0</value>
+    </node>
+  </node>
+  <node name="Second">
+    <value name="Enable">true</value>
+    <value name="Scale">0.5</value>
+    <value name="Fill">true</value>
+    <node name="Color">
+      <value name="R">0</value>
+      <value name="G">255</value>
+      <value name="B">0</value>
+      <value name="A">255</value>
+    </node>
+    <node name="Offset">
+      <value name="X">0</value>
+      <value name="Y">0</value>
+    </node>
+  </node>
+</node>
+
+
+</root>

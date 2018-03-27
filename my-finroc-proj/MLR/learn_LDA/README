@@ -1,0 +1,3 @@
+This EVD (EigenValueDecompostion) is personally implemented and it is somehow explained and mentioned in the main wrapper and other files as well.
+The important thing about this implementation is that the results are reported to be the same as the results from MATLAB and OCTAVE/GNU implementations.
+The reference of the implementation is MathWorks and NIST which are very reliable and responsible references.

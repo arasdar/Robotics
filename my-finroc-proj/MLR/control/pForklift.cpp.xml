@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Finstructable>
+  <edge src="RobotInterface/Sensor Output/Camera Image" dest="Recognition/Input/Camera Image"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance Front" dest="Recognition/Input/IR Distance Front"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance L" dest="Recognition/Input/IR Distance L"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance LL" dest="Recognition/Input/IR Distance LL"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance LLL" dest="Recognition/Input/IR Distance LLL"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance R" dest="Recognition/Input/IR Distance R"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance RR" dest="Recognition/Input/IR Distance RR"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance RRR" dest="Recognition/Input/IR Distance RRR"/>
+  <edge src="RobotInterface/Sensor Output/IR Distance Rear" dest="Recognition/Input/IR Distance Rear"/>
+  <edge src="RobotInterface/Pose to X/Output/Output 0" dest="Recognition/Input/Pose X"/>
+  <edge src="RobotInterface/Pose to Y/Output/Output 0" dest="Recognition/Input/Pose Y"/>
+  <edge src="RobotInterface/Pose to Yaw/Output/Output 0" dest="Recognition/Input/Pose Yaw"/>
+  <edge src="Recognition/Output/Desired Velocity" dest="RobotInterface/Controller Input/Velocity"/>
+  <edge src="Recognition/Output/Desired Angular Velocity" dest="RobotInterface/Controller Input/Angular Velocity"/>
+  <edge src="Recognition/Output/Desired Fork Position" dest="RobotInterface/Controller Input/Fork Position"/>
+</Finstructable>

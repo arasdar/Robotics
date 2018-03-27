@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE targets PUBLIC "-//RRLIB//DTD make 14.05" "http://finroc.org/xml/14.05/make.dtd">
+<targets>
+
+	<library name = "write" libs = "opencv_all boost_filesystem">
+		<sources>
+			mWrite.cpp
+			write_xml.cpp
+		</sources>	
+	</library>
+	
+	<program name = "forklift_write_player">
+		<sources>
+			pPlayer.cpp
+		</sources>
+	</program>
+
+</targets>
+
+
+	
+<!--  to comment out stuff in xml file!!	-->

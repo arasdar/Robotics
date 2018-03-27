@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FinstructableGroup>
+  <edge src="Odometry/Sensor Output/Pose" dest="StViPr/Sensor Input/Robot Pose"/>
+  <edge src="FrameGrabber/Sensor Output/Image" dest="StViPr/Sensor Input/Image"/>
+  <edge src="StViPr/Sensor Output/Map Grid Stereo" dest="grid map for stereo temporary/Input/Map"/>
+  <edge src="StViPr/Sensor Output/Map Grid Stereo Env" dest="grid map for stereo environment/Input/Map"/>
+  <edge src="StViPr/Sensor Output/Sectormap Flp" dest="sector map front left polar/Input/Map"/>
+  <edge src="StViPr/Sensor Output/Sectormap Frp" dest="sector map front right polar/Input/Map"/>
+  <edge src="StViPr/Sensor Output/Sectormap Fc" dest="sector map fronnt cartesian/Input/Map"/>
+  <edge src="StViPr/Sensor Output/Sectormap Fcl" dest="sector map front cartesian left/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Map Polar Front Scanner" dest="sector map front scanner/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Map Polar Rear Scanner" dest="sector map rear scanner/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Gridmap Planar Scanner" dest="grid map for planar scanner temporary/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Gridmap Planar Scanner Env" dest="grid map for planar scanner environment/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Gridmap Actuated Scanner" dest="grid map for actuated scanner temporary/Input/Map"/>
+  <edge src="ProcessedSensorDataToMapping/Sensor Output/Gridmap Actuated Scanner Env" dest="grid map for actuated scanner environment/Input/Map"/>
+  <edge src="grid map for planar scanner environment/Output/Canvas" dest="ProcessedSensorDataToMapping/Sensor Input/Canvas Planar Scanner Env"/>
+  <edge src="grid map for actuated scanner environment/Output/Canvas" dest="ProcessedSensorDataToMapping/Sensor Input/Canvas Actuated Env"/>
+  <edge src="grid map for stereo temporary/Output/Canvas" dest="StViPr/Sensor Input/Canvas Map Temp Stereo"/>
+  <edge src="grid map for stereo environment/Output/Canvas" dest="StViPr/Sensor Input/Canvas Map Env Stereo"/>
+  <edge src="Rear Scanner Data in WCS/Sensor Output/Distance Data" dest="StViPr/Sensor Input/Distance Data Rear Scanner"/>
+  <edge src="Rear Scanner Data in WCS/Sensor Output/Distance Data" dest="ProcessedSensorDataToMapping/Sensor Input/Distance Data Rear Scanner"/>
+  <edge src="Front Scanner Data in WCS/Sensor Output/Distance Data" dest="StViPr/Sensor Input/Distance Data Front Scanner"/>
+  <edge src="Front Scanner Data in WCS/Sensor Output/Distance Data" dest="ProcessedSensorDataToMapping/Sensor Input/Distance Data Front Scanner"/>
+  <edge src="LaserTilterSimulator/Sensor Output/Angle" dest="ProcessedSensorDataToMapping/Sensor Input/Angle Actuated"/>
+  <edge src="Actuated Scanner Data in WCS/Sensor Output/Distance Data" dest="ProcessedSensorDataToMapping/Sensor Input/Distance Data Actuated Scanner"/>
+</FinstructableGroup>

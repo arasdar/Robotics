@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <node name="simulation">
+    <value name="physics_time_step">0.01</value>
+    <value name="physics_sub_steps">1</value>
+    <value name="pause_simulation">true</value>
+    <value name="pvd_ip">131.246.160.105</value>
+    <value name="pvd_port">5425</value>
+    <value name="pvd_timeout">1000</value>
+    <value name="pvd_visualize_joint_data">true</value>
+    <value name="connect_pvd">false</value>
+    <value name="gravity">(0.0,0.0,-9.81)</value>
+  </node>
+  <node name="control">
+      
+       <node name="joystick">
+            <value name="max speed gear 1">0.25</value>
+            <value name="max speed gear 2">0.6</value>
+            <value name="max speed gear 3">1</value>
+            <value name="angle gain vector">(0.005,0.005,0.005,0.01,0.005,0.005)</value>
+            <value name="pose gain vector">(0.002,0.005,0.002,0.01,0.005,0.005)</value>
+            <!-- F710 Wireless Gamepad --> 
+            <value name="joystick device name">F710 Wireless Gamepad</value>
+            <value name="joystick device file lugv">/dev/input/by-id/usb-Logitech_Wireless_Gamepad_F710_E4B49609-event-joystick</value>
+            <value name="joystick device file sugv">/dev/input/by-id/usb-Logitech_Wireless_Gamepad_F710_408295B8-event-joystick</value>
+            <value name="axis dead range">10000</value>
+            <value name="axis offset">0</value>
+            <value name="axis normalization factor">32768</value>
+            
+            <!-- Cordless Rumblepad 2
+            <value name="joystick device name">Logitech Rumblepad</value>
+            <value name="joystick device file">/dev/input/by-id/usb-Logitech_Logitech_Cordless_RumblePad_2-event-joystick</value>
+            <value name="axis dead range">12</value>
+            <value name="axis offset">-127.5</value>
+            <value name="axis normalization factor">128</value>
+            -->
+        </node>
+    
+    <node name="LUGV manipulator">
+        <value name="DH Parameters LUGV Simulation">(0,1.402,2.094,0.2,0,0,0.1)</value>     <!-- a1,a2,a3,a4,d1,d3,d5-->>  
+    </node>    
+  
+  </node>
+</root>

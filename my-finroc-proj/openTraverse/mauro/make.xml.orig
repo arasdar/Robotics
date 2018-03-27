@@ -1,0 +1,7 @@
+<targets>
+	<finroclibrary name = "openTraverse_mauro" libs = "pcl eigen">
+		<sources>
+			tUPD.cpp
+		</sources>
+	</finroclibrary>
+</targets>

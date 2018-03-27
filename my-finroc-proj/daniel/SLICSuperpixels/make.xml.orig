@@ -1,0 +1,15 @@
+<targets>
+
+	<finroclibrary name = "daniel_SLICSuperpixels">
+		<sources>
+			SLIC.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "daniel_SLICSuperpixels_test" libs = "opencv_all">
+		<sources>
+			testSLIC.cpp
+		</sources>
+	</finrocprogram>
+		
+</targets>

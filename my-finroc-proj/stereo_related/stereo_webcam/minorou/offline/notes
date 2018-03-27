@@ -1,0 +1,26 @@
+
+
+
+./stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+
+///////////buro
+./stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+./stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+./stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+./stereo_offline ~/stereo_images/camera_2013-03-20/left/left_all/ ~/stereo_images/camera_2013-03-20/right/right_all/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+
+//buro---->old
+./stereo_offline ~/stereo_aras/stereo_images/camera_2013-03-20/left/ ~/stereo_aras/stereo_images/camera_2013-03-20/right/ ~/stereo_aras/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_aras/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+
+/////laptop
+./stereo_offline ~/stereo_aras/stereo_images_main/camera_2013-03-20/left_rough/ ~/stereo_aras/stereo_images_main/camera_2013-03-20/right_rough/ ~/stereo_aras/stereo_images_main/camera_2013-03-20/calib/intrinsics.yml ~/stereo_aras/stereo_images_main/camera_2013-03-20/calib/extrinsics.yml 
+
+
+./stereo_offline ~/stereo_aras/stereo_images_main/camera_2013-03-20/left/ ~/stereo_aras/stereo_images_main/camera_2013-03-20/right/ ~/stereo_aras/stereo_images_main/camera_2013-03-20/calib/intrinsics.yml ~/stereo_aras/stereo_images_main/camera_2013-03-20/calib/extrinsics.yml 
+

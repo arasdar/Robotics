@@ -1,0 +1,11 @@
+Folders in this repository indicate FOUR phases of my work in AGROSY:
+
+1- ICARUS (aras): My work in ICARUS related to stereo processing and traversability estimation. This is all stored in aras folder.
+
+2- PhD topic after ICARUS (openTraverse): stereo-based traversability estimation topic as the first PhD topic. Some of the state-of-the-art implemented methods including my proposal as well.
+Started only focusing on my PhD topic period. (openTraverse folder and abit in aras folder)
+
+3- Master student Daniel Poh (daniel): My master student work related to color-based analysis stereo image features. This folder (daniel) is used for testing the texture-based segmentation by Daniel Poh.
+
+4- Final PhD topic(mlr and MLR): OFFLINE and finroc-independent codes for Learning, Recognition and Memorizing data (MLR). Final PhD topic related to Learning-based (MLR) Intelligent Robot Control.
+Also, Online and finroc-related MLR.Final PhD topic related to Learning-based (MLR) Intelligent Robot Control 

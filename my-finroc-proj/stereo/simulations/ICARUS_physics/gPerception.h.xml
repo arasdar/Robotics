@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Finstructable>
+  <edge src="mapping-stereo/Output/Gridmap" dest="gridmap/Input/Map"/>
+</Finstructable>

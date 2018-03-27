@@ -1,0 +1,15 @@
+<targets>
+	<finroclibrary name="sensorProcessing_stereoSUGV_calibration" libs="opencv_all flycap">
+		<sources>
+			tStereoProcessing.cpp
+			tStereoProc_chessboardDetection.cpp
+			tStereoProc_convertImageToOpenCV.cpp
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoSUGV_calibration_chessboard">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>	
+</targets>

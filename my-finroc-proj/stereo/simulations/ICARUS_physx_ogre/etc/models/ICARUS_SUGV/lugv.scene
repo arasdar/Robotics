@@ -1,0 +1,88 @@
+<scene upAxis="z" unitsPerMeter="1" unitType="meters" formatVersion="1.0" minOgreVersion="1.8" author="EasyOgreExporter">
+    <environment>
+        <colourAmbient r="0" g="0" b="0" />
+        <colourBackground r="0" g="0" b="0" />
+    </environment>
+    <nodes>
+        <node name="Chassis" id="0" isTarget="false">
+            <position x="0" y="0" z="0" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Chassis" id="1" meshFile="Chassis.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Arm1" id="2" isTarget="false">
+            <position x="-0.674172" y="0.000147535" z="0.9" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Arm1" id="3" meshFile="Arm1.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Arm0" id="4" isTarget="false">
+            <position x="-0.000171855" y="0.000147595" z="0.837" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Arm0" id="5" meshFile="Arm0.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Arm2" id="6" isTarget="false">
+            <position x="-0.740172" y="0.00014753" z="1.163" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Arm2" id="7" meshFile="Arm2.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Arm3" id="8" isTarget="false">
+            <position x="0.615828" y="0.000147648" z="1.39" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Arm3" id="9" meshFile="Arm3.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Arm4" id="10" isTarget="false">
+            <position x="0.628828" y="0.00014765" z="1.51" />
+            <rotation qx="-0" qy="-0" qz="1.50996e-007" qw="-1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="Arm4" id="11" meshFile="Arm4.mesh" castShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="steel-gray" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="ArmJoint0" id="12" isTarget="false">
+            <position x="0" y="0" z="0.685" />
+            <rotation qx="-0" qy="-0" qz="-0" qw="-1" />
+            <scale x="1" y="1" z="1" />
+        </node>
+        <node name="ArmJoint1" id="13" isTarget="false">
+            <position x="0" y="0" z="0.873" />
+            <rotation qx="-0" qy="-0" qz="-0" qw="-1" />
+            <scale x="1" y="1" z="1" />
+        </node>
+        <node name="ArmJoint2" id="14" isTarget="false">
+            <position x="-1.397" y="0" z="1" />
+            <rotation qx="-0" qy="-0" qz="-0" qw="-1" />
+            <scale x="1" y="1" z="1" />
+        </node>
+        <node name="ArmJoint3" id="15" isTarget="false">
+            <position x="0.697" y="-1.13515e-007" z="1.207" />
+            <rotation qx="-5.33851e-008" qy="-0.707107" qz="-0.707107" qw="-5.33851e-008" />
+            <scale x="1" y="1" z="1" />
+        </node>
+    </nodes>
+</scene>

@@ -1,0 +1,7 @@
+<targets>
+	<finrocprogram name="aras_icarus_sensorProcessing_stereoSUGV_capture_openmp_test" libs="flycap openmp">
+		<sources>
+			test.cpp
+		</sources>
+	</finrocprogram>
+</targets>

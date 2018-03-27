@@ -1,0 +1,18 @@
+<targets>
+	<finroclibrary name = "openTraverse_igor" libs = "opencv_all eigen pcl">
+		<sources>
+			utils.cpp
+			worker.cpp
+			traversability_analyzer.cpp
+			grid3d.cpp
+			grid2d.cpp
+		</sources>
+	</finroclibrary>
+	
+	<finrocprogram name = "aras_stereoTravExp_openTraverse_igor" libs = "boost_system">
+		<sources>
+			tests/test_build_map.cpp
+		</sources>
+	</finrocprogram>
+
+</targets>

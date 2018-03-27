@@ -1,0 +1,18 @@
+<targets>
+	
+
+	<finroclibrary name = "aras_libstereo_test_gpu_part" libs = "cuda opencv_all cudart">
+		<sources>
+			gpu_part_proc.cu
+			gpu_part.cpp
+			gpu_part_kernel_func.cu
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name = "aras_stereoTravExp_aras_libstereo_test_gpu_part">
+		<sources>
+					test_gpu_part.cpp
+		</sources>
+	</finrocprogram>
+	
+</targets>

@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+
+project(MINORU_STEREO_PCL)
+
+FIND_PACKAGE(OpenCV 2.4.9 REQUIRED )
+find_package(PCL 1.7 REQUIRED)
+
+include_directories(${PCL_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS} ${OpenCV_LIB_DIR})
+add_definitions(${PCL_DEFINITIONS})
+
+add_executable(minoru_stereo_PCL main.cpp)
+target_link_libraries(minoru_stereo_PCL ${OpenCV_LIBS} ${PCL_LIBRARIES} /home/aras/Desktop/libv4l2cam/libv4l2cam/libcam.a)
+
+
+#this is not usedddddd!!!!!!!!!!!!!!!!

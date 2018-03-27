@@ -1,0 +1,30 @@
+<targets>
+
+		<finroclibrary name="sensorProcessing_kinect_capture" libs="pcl vtk">
+		<sources>
+			gSensorProcessing.cpp
+			mKinectCapture.cpp
+		</sources>
+	</finroclibrary>
+
+	<finrocprogram name="icarus_sensorProcessing_kinect_capture">
+		<sources>
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+		
+</targets>
+
+
+<!--
+
+	<finrocprogram name="icarus_sensorProcessing_kinect_capture_finroc" libs="pcl vtk">
+		<sources>
+			gSensorProcessing.cpp
+			mKinectCapture.cpp
+			pSensorProcessing.cpp
+		</sources>
+	</finrocprogram>
+
+
+-->

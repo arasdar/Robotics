@@ -1,0 +1,20 @@
+<targets>
+	<finroclibrary name = "daniel_otb2pcl" 
+	libs = "
+	pcl
+	eigen
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			tTextureExtractor.cpp
+		</sources>
+	</finroclibrary>
+</targets>

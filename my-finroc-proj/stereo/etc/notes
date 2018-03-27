@@ -1,0 +1,95 @@
+
+
+  	libs="opencv_all eigen openni pcl vtk">
+
+
+
+//build
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+//build old
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+//problem with opencv_aras & opencv_all ?????????
+
+//cmake - build dir
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7 -D OpenCV_DIR=/home/aras/opencv/opencv_main/export/share/OpenCV-2.4.9/ ./
+//cmake - source dir
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7 -D OpenCV_DIR=/home/aras/opencv/opencv_main/export/share/OpenCV-2.4.9/ ../
+
+
+//editing bash
+vim /home/aras/.bashrc 
+-----
+# aras added set the path for home made libs
+# export LD_LIBRARY_PATH="/home/aras/pcl/pcl_trunk/export/lib:/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10:/home/aras/opencv/opencv_main/export/lib"
+export LD_LIBRARY_PATH="/home/aras/finroc/export/i686_linux_debug/lib:/usr/lib/gluegen:/usr/lib/jogl:/home/aras/pcl/pcl_trunk/export/lib:/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10:/home/aras/opencv/opencv_main/export/lib"
+----------
+# aras added 2012/08/04
+cd ~/finroc
+source scripts/setenv -p icarus
+cd -
+//check with export
+
+
+// creating build directory
+build dir for each folder
+
+
+
+--//webcam_offline
+aras_icarus_sensorProcessing_webcam_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/left/ ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/right/ ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/calib-1-good/extrinsics.yml                                 
+
+aras_icarus_sensorProcessing_webcam_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/left/ ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/right/ ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/calib-1-good/extrinsics.yml 
+
+aras_icarus_sensorProcessing_webcam_offlibe ~/stereo_images/webcam_2013-04-11_buro-sample/left/ ~/stereo_images/webcam_2013-04-11_buro-sample/right/ ~/stereo_images/webcam_2013-04-11_buro-sample/calib/intrinsics.yml ~/stereo_images/webcam_2013-04-11_buro-sample/calib/extrinsics.yml
+
+
+--//kinect_offline
+aras_icarus_sensorProcessing_kinect_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/webcam/2nd-main-mit-karsten/frames/
+aras_icarus_sensorProcessing_kinect_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/frames/
+aras_icarus_sensorProcessing_kinect_offline ~/stereo_images/camera_2013-03-20/frames_pcd_rough/
+aras_icarus_sensorProcessing_kinect_offline ~/stereo_images/camera_2013-03-20/frames_pcd_rough/
+
+--//stereo_offline-new --> ravon
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-04-22_myStereo-ravon_mit-thomas/left/ ~/stereo_images/2013-04-22_myStereo-ravon_mit-thomas/right/ ~/stereo_images/2013-04-22_myStereo-ravon_mit-thomas/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-22_myStereo-ravon_mit-thomas/calib-1-good/extrinsics.yml 
+
+aras_icarus_sensorProcessing_stereo_offline_test ~/stereo_images/2013-04-18_myStereo-ravon/left/ ~/stereo_images/2013-04-18_myStereo-ravon/right/ ~/stereo_images/2013-04-18_myStereo-ravon/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-18_myStereo-ravon/calib-1-good/extrinsics.yml
+aras_icarus_sensorProcessing_stereo_offline_test ~/stereo_images/2013-04-18_myStereo-ravon/left/ ~/stereo_images/2013-04-18_myStereo-ravon/right/ ~/stereo_images/2013-04-18_myStereo-ravon/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-18_myStereo-ravon/calib-1-good/extrinsics.yml
+
+--//stereo_offline
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/left/ ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/right/ ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/calib-1-good/extrinsics.yml                                      
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/left/ ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/right/ ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/calib-1-good/intrinsics.yml ~/stereo_images/2013-04-16_labor-webcam-stereo/stereo/2nd/calib-1-good/extrinsics.yml 
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-02-26_first-time/left/left_rough/ ~/stereo_images/camera_2013-02-26_first-time/right/right_rough/ ~/stereo_images/camera_2013-02-26_first-time/calib/intrinsics.yml ~/stereo_images/camera_2013-02-26_first-time/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-02-26_first-time/left/left_rough/ ~/stereo_images/camera_2013-02-26_first-time/right/right_rough/ ~/stereo_images/camera_2013-02-26_first-time/calib/intrinsics.yml ~/stereo_images/camera_2013-02-26_first-time/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/camera_2013-03-20/left/left_rough/ ~/stereo_images/camera_2013-03-20/right/right_rough/ ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml 
+
+// projects/thor
+ExcavatorSimulation -c etc/excavator.xml
+finstruct
+fingui etc/excavator.fingui 

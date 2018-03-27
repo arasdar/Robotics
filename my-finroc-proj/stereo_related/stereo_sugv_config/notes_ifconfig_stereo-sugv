@@ -1,0 +1,77 @@
+
+
+
+
+// when eth card is inserted in my pc = right blue in pc -> left camera ETH0  = 0.1 ~ 0.2
+					left white in pc -> right camera ETH1 = 1.1 ~ 1.2
+
+
+left camera:
+	persistent IP 		192.168.0.2
+	persistent netmask: 	255.255.255.0
+	persistent gateway: 	192.168.0.0
+
+right camera:
+	persistent IP 		192.168.1.2
+	persistent netmask 	255.255.255.0
+	persistent gateway 	192.168.1.0
+
+
+
+
+////////////////this is SUGV pc
+icarus@icarus-sugv:~$ ifconfig 
+br0       Link encap:Ethernet  HWaddr 00:03:2d:23:a3:11  
+          inet addr:10.160.33.1  Bcast:10.160.33.255  Mask:255.255.255.0
+          inet6 addr: fe80::c87d:8ff:fe95:64ae/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:25379 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:24943 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1346373 (1.3 MB)  TX bytes:70494534 (70.4 MB)
+
+eth0      Link encap:Ethernet  HWaddr 00:03:2d:23:a3:10  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:20 Memory:f7d00000-f7d20000 
+
+eth1      Link encap:Ethernet  HWaddr 00:03:2d:23:a3:11  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:18 Memory:f7a00000-f7a20000 
+
+eth2      Link encap:Ethernet  HWaddr 00:b0:9d:cd:73:a2  
+          inet addr:192.168.0.1  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::2b0:9dff:fecd:73a2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:3813935 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:615 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:5393070400 (5.3 GB)  TX bytes:46956 (46.9 KB)
+          Interrupt:16 Memory:f7900000-f7920000 
+
+eth3      Link encap:Ethernet  HWaddr 00:b0:9d:ce:27:08  
+          inet addr:192.168.1.1  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::2b0:9dff:fece:2708/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:3807585 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:614 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:5384102558 (5.3 GB)  TX bytes:46892 (46.8 KB)
+          Interrupt:17 Memory:f7800000-f7820000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:10 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:360 (360.0 B)  TX bytes:360 (360.0 B)
+

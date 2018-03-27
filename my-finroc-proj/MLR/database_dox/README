@@ -1,0 +1,6 @@
+This directory is the main database directory and contain datasets from different applications.
+
+The data is saved based on the application name here in this data base, e.g. facerec means face recognition related datasets or 
+robot_control is the data related to robot control.
+
+Please keep using the database based on this order.

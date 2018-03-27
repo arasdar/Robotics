@@ -1,0 +1,192 @@
+<targets>
+	<!--
+	<finroclibrary name = "daniel_libsegm" libs="pcl">
+		<sources>
+			segmentation_test/tGroundPlaneComparatorForTexture.h
+			segmentation_test/tOrganizedConnectedComponentSegmentationForTesting.h
+		</sources>
+	</finroclibrary>
+	-->
+
+		
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_otb2pcl" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	pcl
+	eigen
+	boost_filesystem
+	">
+		<sources>
+			test_otb2pcl.cpp
+		</sources>
+	</finrocprogram>
+	
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_pcl_segmentation" 
+	libs = "
+	pcl
+	eigen
+	boost_filesystem
+	">
+		<sources>
+			test_pcl_segmentation.cpp
+		</sources>
+	</finrocprogram>
+
+
+	
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_sfs" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_sfs.cpp
+		</sources>
+	</finrocprogram>
+	
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_watershed" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_watershed.cpp
+		</sources>
+	</finrocprogram>
+
+	<!--
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_haralick" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_haralick.cpp
+		</sources>
+	</finrocprogram>
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_advanced_texture" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_advanced_texture.cpp
+		</sources>
+	</finrocprogram>
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_runlength_statistics" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_runlength_statistics.cpp
+		</sources>
+	</finrocprogram>
+	
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_pantex" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_pantex.cpp
+		</sources>
+	</finrocprogram>
+	
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_iterator" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_iterator.cpp
+		</sources>
+	</finrocprogram>
+	<finrocprogram name = "daniel_stereo_traversability_experiments_daniel_otb_tests_feature_extraction_plus_iterator" 
+	libs = "
+	otb_include
+	otb_include_basicFilters 
+	otb_include_common 
+	otb_include_util
+	otb_include_io
+	otb_include_utilAdap
+	otb_include_featureExtraction
+	otb_lib
+	otb_lib_2
+	">
+		<sources>
+			test_fuse_feature_extraction_and_iterator.cpp
+		</sources>
+	</finrocprogram> 
+	 -->
+	
+</targets>
+
+
+
+
+<!--
+	otb_lib
+	otb_include 
+	otb_include_common 
+	otb_include_util_itk
+	otb_include_io
+	otb_include_utilAdap
+-->
