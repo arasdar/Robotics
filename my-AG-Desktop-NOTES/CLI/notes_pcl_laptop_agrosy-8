@@ -1,0 +1,7 @@
+
+
+
+git clone https://github.com/PointCloudLibrary/pcl pcl_git
+
+git clone https://github.com/OctoMap/octomap.git octomap_git
+

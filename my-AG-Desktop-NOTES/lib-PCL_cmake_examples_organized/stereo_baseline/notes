@@ -1,0 +1,10 @@
+
+
+
+aras@pasithee:~/stereo_aras/stereo_baseline$ ./stereo_baseline_aras ../stereo_images_opencv-chessboard/left_pcd/ ../stereo_images_opencv-chessboard/right_pcd/
+
+
+
+aras@pasithee:~/stereo_aras/stereo_baseline$ ./stereo_baseline_aras ../stereo_images_opencv-chessboard/left_pcd/ ../stereo_images_opencv-chessboard/right_pcd/
+
+

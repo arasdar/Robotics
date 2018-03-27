@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(test_opencv)
+find_package(OpenCV REQUIRED)
+
+#include_directories(${OPENCV_INCLUDE_DIRS})
+link_directories(${OpenCV_LIB_DIR})
+#add_definitions(${OPENCV_DEFINITIONS})
+
+add_executable (test starter_video.cpp)
+target_link_libraries (test ${OpenCV_LIBS})
+
+
+
+#/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-22/share/OpenCV
+#/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-22_test/share/OpenCV-2.4.9
+#/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-22_test/share/OpenCV-2.4.9
+#/home/aras/libs_aras/pcl/pcl_trunk_svn-up/export/2012-12-13/share/pcl-1.7

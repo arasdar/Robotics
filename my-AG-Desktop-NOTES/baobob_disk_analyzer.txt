@@ -1,0 +1,9 @@
+AGROSY - admin - Disk usage in home directories & home dir organizing, reordering and cleanup
+
+papers(sota), diss (concept) and finroc(impl-proof) -- 
+Dropbox - backedup?? -- adding a backup to external harddisks 
+Desktop, WINDOWS, Eclipse(Workspace)
+putting stuff into "noadsm" folders,  backup-space,  - clean up and back up !!!!!
+but about our disk space on the server in general.
+Valuable tools to find disk-waste are e.g. "baobab", "gdmap" 
+or "ncdu" (if you prefer a non-graphical tool).

@@ -1,0 +1,37 @@
+# official ubuntu repositories
+deb	http://ftp.uni-kl.de/ubuntu quantal main universe restricted multiverse
+deb-src	http://ftp.uni-kl.de/ubuntu quantal main universe restricted multiverse
+deb	http://ftp.uni-kl.de/ubuntu quantal-updates main universe restricted multiverse
+deb-src	http://ftp.uni-kl.de/ubuntu quantal-updates main universe restricted multiverse
+deb	http://ftp.uni-kl.de/ubuntu quantal-security main universe restricted multiverse
+deb-src	http://ftp.uni-kl.de/ubuntu quantal-security main universe restricted multiverse
+
+# partner repository for e.g. skype
+deb	http://archive.canonical.com/ubuntu quantal partner
+
+# rrlab repositories
+deb	http://agrosy.informatik.uni-kl.de/ubuntu quantal main robuntu internal
+deb-src	http://agrosy.informatik.uni-kl.de/ubuntu quantal main robuntu internal
+
+# virtualbox
+deb	http://download.virtualbox.org/virtualbox/debian quantal contrib
+
+# dropbox
+deb	http://linux.dropbox.com/ubuntu precise main
+
+
+
+# cuda 4.0
+#deb	http://ppa.launchpad.net/aaron-haviland/cuda-4.0/ubuntu natty main
+#deb-src	http://ppa.launchpad.net/aaron-haviland/cuda-4.0/ubuntu natty main
+
+# dbxml
+deb	http://ppa.launchpad.net/danieldk/dact/ubuntu quantal main
+deb-src	http://ppa.launchpad.net/danieldk/dact/ubuntu quantal main
+
+# pointcloud library
+deb	http://ppa.launchpad.net/v-launchpad-jochen-sprickerhof-de/pcl/ubuntu quantal main
+deb-src	http://ppa.launchpad.net/v-launchpad-jochen-sprickerhof-de/pcl/ubuntu quantal main
+
+# ros
+#deb	http://packages.ros.org/ros/ubuntu precise main

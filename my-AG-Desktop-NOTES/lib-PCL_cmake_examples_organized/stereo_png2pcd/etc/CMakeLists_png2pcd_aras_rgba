@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project(stereo_png2pcd)
+
+find_package(PCL 1.7 REQUIRED)
+
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+
+add_executable( png2pcd_aras png2pcd_aras_rgba.cpp )
+target_link_libraries( png2pcd_aras ${PCL_LIBRARIES} )
+
+#/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-22/share/OpenCV
+#/home/aras/libs_aras/opencv/opencv_trunk_git-pull/export/2013-01-22_test/share/OpenCV-2.4.9

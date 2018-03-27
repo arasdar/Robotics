@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+
+project( stereo_match )
+find_package( OpenCV REQUIRED )
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+link_directories(${OpenCV_LIBRARY_DIRS})
+add_definitions(${OpenCV_DEFINITIONS})
+
+add_executable( stereo_match stereo_match.cpp )
+target_link_libraries( stereo_match ${OpenCV_LIBS} )
+
+
+
+#Specify the version being used aswell as the language
+cmake_minimum_required(VERSION 2.6 C)
+#Name your project here
+project(fibonacci)
+
+#Sends the -std=c99 flag to the gcc compiler
+add_definitions(-std=c99)
+#This tells CMake to fib.c and name it fibonacci
+add_executable(fibonacci fib.c)
+
+
+#ADD_CUSTOM_COMMAND(TARGET ${PROJECT_NAME} POST_BUILD COMMAND cp ${PROJECT_NAME} ${PROJECT_NAME}.o )
+ADD_CUSTOM_COMMAND(TARGET stereo_match_aras POST_BUILD COMMAND cp stereo_match_aras stereo_match_aras.o )
+
+#set(OpenCV_SHARED OFF)
+#set(OpenCV_USE_MANGLED_PATHS FALSE)
+

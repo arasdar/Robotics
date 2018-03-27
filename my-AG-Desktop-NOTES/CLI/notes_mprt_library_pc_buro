@@ -1,0 +1,70 @@
+
+
+
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/  -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.5/export/share/OpenCV-2.4.5/ -D MRPT_DIR=/home/aras/mrpt/mrpt_git/export/share/mrpt/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_git/export/ ../
+
+libwxgtk2.8-dev
+
+
+aras@pasithee:~/mrpt$ git clone https://github.com/jlblancoc/mrpt.git mrpt_git                                                                                                                                                   git clone https://github.com/jlblancoc/mrpt.git mrpt_git  
+
+/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/
+/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ 
+
+aras@pasithee:~/mrpt/mrpt_trunk/build$ sudo apt-get install libwxgtk2.8-dev 
+
+
+
+//aras@pasithee:~/mrpt/mrpt_trunk$ cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D MRPT_DIR=/home/aras/mrpt/mrpt_trunk/export/share/mrpt/  ../
+./rawlog-pointcloud-viewer ~/mrpt/icarus_dataset-haris-pmd/mylogPMDCam_1309967073.202019.rawlog 
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D MRPT_DIR=/home/aras/mrpt/mrpt_trunk/export/share/mrpt/  ../
+
+
+
+//mrpt_trunk
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export_test/ ../
+
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt_trunk/export/ ../
+
+//mrpt-1.0.1
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.1/export/ ../
+aras@pasithee:~/mrpt/mrpt-1.0.1/build$ cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.1/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.1/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.1/export/ ../
+
+
+//mrpt-1.0.0
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.0/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.0/export/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.0/export/ ../
+
+
+aras@pasithee:~/mrpt/mrpt-1.0.0/build$ cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/mrpt/mrpt-1.0.0/export/ ../
+
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ ../
+
+
+===================================
+
+//checked again wxWidget
+sudo apt-get install libwxgtk2.8-dev 
+aras@pasithee:~/mrpt/mrpt-1.0.1/build$ sudo apt-get install libwxgtk2.8-dev 
+
+
+
+
+
+svn checkout http://mrpt.googlecode.com/svn/trunk/ mrpt_trunk

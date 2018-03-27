@@ -1,0 +1,9 @@
+
+
+<targets>
+	<finrocprogram name="aras_stereo_stereoCamera" libs="opencv_all opencv_core boost_system pcl_aras pcl_aras_2 vtk_aras vtk_aras_2">
+		<sources>
+			test_stereoCamera_saveImages.cpp
+		</sources> 
+	</finrocprogram> 
+</targets>

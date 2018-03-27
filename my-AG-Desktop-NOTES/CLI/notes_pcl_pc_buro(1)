@@ -1,0 +1,17 @@
+
+
+
+cmake -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/pcl/pcl_git/export/ ../
+
+
+
+
+
+aras@bau48-inf-ag-berns-ipv4-0069:~/pcl/pcl_git/build_test_2$ cmake -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export_test/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/pcl/pcl_git/export_test_2/ ../
+cmake -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export_test/lib/vtk-5.10/ -D CMAKE_BUILD_TYPE=release -D CMAKE_INSTALL_PREFIX=/home/aras/pcl/pcl_git/export_test_2/ ../
+
+
+
+svn co https://svn.pointclouds.org/data  //all data
+
+svn co https://svn.pointclouds.org/pcl/trunk

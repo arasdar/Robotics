@@ -1,0 +1,198 @@
+
+
+
+
+aras@localhost:~/pcl_git/build_test$ cmake -D CMAKE_INSTALL_PREFIX=/home/aras/pcl_git/export_test/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ ../
+aras@localhost:~/pcl_git/build_test$ cmake -D CMAKE_INSTALL_PREFIX=/home/aras/pcl_git/export_test/ -D VTK_DIR=/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10/ ../
+
+
+
+
+aras@localhost:~/admin_protocols_trunk$ svn co https://agrosy.cs.uni-kl.de/svn/document_2012_icarus-project-phase/trunk icarus_documents_trunk
+aras@localhost:~/admin_protocols_trunk$ svn co https://saturn.cs.uni-kl.de/svn/admin_protocols/trunk admin_protocols_trunk
+ras@localhost:~/finroc$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc
+aras@localhost:~/finroc$ hg clone https://agrosy.cs.uni-kl.de/hg/make_builder
+aras@bau48-inf-ag-berns-ipv4-0082:~$ git clone https://github.com/PointCloudLibrary/pcl pcl_git
+
+
+aras@localhost:~$ hg clone https://bitbucket.org/eigen/eigen eigen_hg
+hg clone https://bitbucket.org/eigen/eigen eigen_hg
+
+
+
+aras@localhost:~$ git clone https://github.com/mariusmuja/flann flann_git
+git clone https://github.com/mariusmuja/flann flann_git
+
+
+
+
+aras@localhost:~/boost_trunk$ svn co http://svn.boost.org/svn/boost/trunk boost_trunk
+svn co http://svn.boost.org/svn/boost/trunk boost_trunk
+
+
+
+
+
+//mrppt
+cmake -D PCL_DIR=/home/aras/pcl/pcl_git/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+
+
+//tobias
+aras@localhost:~/mca2_ravon$ makeSafeMakefile 2>&1 | grep core^C
+makeSafeMakefile 2>&1 | grep core^C
+
+
+
+
+rosi-groh@gmx.de
+
+
+aras@localhost:~/finroc.org/sources/cpp$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc_libraries_simvis3d libraries/simvis3d
+aras@localhost:~/finroc.org/sources/cpp$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc_libraries_simvis3d libraries/simvis3d
+hg clone https://agrosy.cs.uni-kl.de/hg/finroc_libraries_simvis3d libraries/simvis3d
+
+
+
+//new user or password in general
+anonymous
+arasdar@yahoo.com
+
+aras@localhost:~$ ssh -X aras@kale.cs.uni-kl.de
+
+
+
+tar -xvf opencv-2.4.5.tar.gz 
+
+
+
+
+//pcl //git
+git clone https://github.com/OctoMap/octomap.git octomap_git
+git clone https://github.com/PointCloudLibrary/pcl pcl_git
+
+
+
+//login
+aras@remoteaccess-wlc-inf-ag-berns-ipv4-0014:/mnt$ ssh -X aras@kale.cs.uni-kl.de
+
+
+
+//mca2
+svn upgrade //1st
+mca_update --username aras  //nd
+
+
+
+//mmariage
+http://peeepl.com/gate/index.html?people_id=39538661&to=http%253A%252F%252Fwww.rgj.com%252Farticle%252F20110916%252FNEWS09%252F109160398%252FMarriage-License-0908
+http://www.rgj.com/article/20110916/NEWS09/109160398/Marriage-License-0908
+
+
+//cmake mrpt
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D BUILD_EXAMPLES=on ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv_git/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv_git/export_test -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv_git/export_test/ ../
+
+
+//tobias
+unzip
+sphinx
+tide ???
+///
+mein /etc/apt/sources.list - done
+how to get connected using ssh - aras@kale.
+asking tobias - my updates in the laptop //finroc //sphinx  - done
+
+
+//tocheck
+pcl-opencv-2.4.4-vtk-5.10
+
+// paper with haris and geert
+//paper with epfl - ch partner - human detection
+
+
+// haris - buying stereo camera
+meeting with vislab ---> spinof from university
+buying stereo camera
+
+//rma using finroc or ros -- module integration
+which one is better?
+when should we talk about modules?
+
+// lugv - icarus stereo cameras
+LUGV- front and back??  pan tilt? left-right-middle?? at side too? on the arm too???
+- different tools at the left of sugv box
+- sugv box at the middle - let s try it.
+- laser 2d at back
+- laser 3d at front
+- stereo camera - where, static?? also used for arm
+- tof camera -  is there budget for that?
+-Answer: only problems are location of tof and stereo-camera with respect to sugv box 
+
+// sugv
+sugv- does it come with sensors?   - stereo camera?? tof?? single camera?? laser scanner 2d or 3d??
+sugv- lack of space?? martin- what do we have and we can have???
+answer: 2 openni deivces one back and forward
+
+// kinect vs xtion
+pro:
+-better pcd - cleaner and denser
+-less power
+-smaller - less space
+con:
+-lower range - small range
+
+
+// tof - pmd - on theodor - with octo chopper - 8 rotator
+fotonic
+- real-time - fast
+- less resolution
+- dealing with illumination problem of environment
+
+//laser 2d and 3d - sick
+- lass resolution
+- good in dealing with illumination - no matter night or morning
+
+// stereo camera
+- hight resolution
+- illumination and brightness - not working in night or bad lighting
+
+
+//wireless network
+cisco
+MECA1234
+proxy.intra.rma.ac.be   //port : 3128
+PROXY.INTRA.RMA.AC.BE
+
+
+./cpp-example-stereo_match ~/stereo_images/camera_2013-02-26_first-time/left/left00.png ~/stereo_images/camera_2013-02-26_first-time/right/right00.png -i ~/stereo_images/camera_2013-02-26_first-time/calib/intrinsics.yml -e ~/stereo_images/camera_2013-02-26_first-time/calib/extrinsics.yml 
+
+
+
+//opencv
+./cpp-example-stereo_match ~/stereo_images/camera_2013-03-20/left/left_rough/left30.png ~/stereo_images/camera_2013-03-20/right/right_rough/right30.png -i ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml -e ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml 
+
+aras@localhost:~/opencv/opencv_main/build_test/bin$ ./cpp-example-stereo_match ~/stereo_images/camera_2013-03-20/left/left_rough/left30.png ~/stereo_images/camera_2013-03-20/right/right_rough/right30.png -i ~/stereo_images/camera_2013-03-20/calib/intrinsics.yml -e ~/stereo_images/camera_2013-03-20/calib/extrinsics.yml 
+
+
+//softwares to check
+pidgin
+skype
+thunderbird
+kde-browser
+
+
+//libs to check and update
+opencv
+pcl
+
+// urlaub budapest hugry
+guest2expo
+
+
+
+

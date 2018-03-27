@@ -1,0 +1,9 @@
+
+
+<targets>
+	<finrocprogram name="aras_stereo_imagelist_creator" libs="opencv_all opencv_core">
+		<sources>
+			test_imagelist_creator.cpp
+		</sources> 
+	</finrocprogram> 
+</targets>

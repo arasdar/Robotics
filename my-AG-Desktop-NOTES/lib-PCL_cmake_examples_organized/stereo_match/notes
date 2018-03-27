@@ -1,0 +1,76 @@
+
+
+
+
+
+ ./stereo_match_aras ../stereo_images_opencv-chessboard/left ../stereo_images_opencv-chessboard/right ../stereo_images_opencv-chessboard/disparity disparity_sgbm ../stereo_images_opencv-chessboard/left_rect left_sgbm ../stereo_images_opencv-chessboard/right_rect right_sgbm --algorithm=sgbm -i ../stereo_images_opencv-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_opencv-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+
+
+
+---------------------------------stereo_images_camera
+
+////////// saving rectified images 
+./stereo_match_aras ../stereo_images_camera-aras-chessboard/left/ ../stereo_images_camera-aras-chessboard/right/ ../stereo_images_camera-aras-chessboard/disparity/ disparity_hh ../stereo_images_camera-aras-chessboard/left_rect/ left ../stereo_images_camera-aras-chessboard/right_rect/ right --algorithm=hh -i ../stereo_images_camera-aras-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_camera-aras-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+
+////////////// hh
+./stereo_match_aras ../stereo_images_camera-aras-chessboard/left/ ../stereo_images_camera-aras-chessboard/right/ ../stereo_images_camera-aras-chessboard/disparity/ disparity_hh ../stereo_images_camera-aras-chessboard/left_rect_test/ left_hh ../stereo_images_camera-aras-chessboard/right_rect_test/ right_hh --algorithm=hh -i ../stereo_images_camera-aras-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_camera-aras-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+
+//////////////var
+
+./stereo_match_aras ../stereo_images_camera-aras-chessboard/left/ ../stereo_images_camera-aras-chessboard/right/ ../stereo_images_camera-aras-chessboard/disparity/ disparity_var ../stereo_images_camera-aras-chessboard/left_rect_test/ left_var ../stereo_images_camera-aras-chessboard/right_rect_test/ right_var --algorithm=var -i ../stereo_images_camera-aras-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_camera-aras-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+
+
+
+
+//////////sgbm
+
+./stereo_match_aras ../stereo_images_camera-aras-chessboard/left/ ../stereo_images_camera-aras-chessboard/right/ ../stereo_images_camera-aras-chessboard/disparity/ disparity_sgbm ../stereo_images_camera-aras-chessboard/left_rect_test/ left_sgbm ../stereo_images_camera-aras-chessboard/right_rect_test/ right_sgbm --algorithm=sgbm -i ../stereo_images_camera-aras-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_camera-aras-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+////////algorithm =  bm
+
+./stereo_match_aras ../stereo_images_camera-aras-chessboard/left/ ../stereo_images_camera-aras-chessboard/right/ ../stereo_images_camera-aras-chessboard/disparity/ disparity_bm ../stereo_images_camera-aras-chessboard/left_rect_test/ left_bm ../stereo_images_camera-aras-chessboard/right_rect_test/ right_bm --algorithm=bm -i ../stereo_images_camera-aras-chessboard/stereo_calib_data/intrinsics.yml -e ../stereo_images_camera-aras-chessboard/stereo_calib_data/extrinsics.yml -o yes
+
+
+-------------------------------------------
+
+ ./stereo_match_aras ../stereo_camera_aras-chessboard/left ../stereo_camera_aras-chessboard/right ../stereo_camera_aras-chessboard/left_rect_test/ aras_left_test --algorithm=sgbm -i ../stereo_camera_aras-chessboard/stereo_calib/intrinsics.yml -e ../stereo_camera_aras-chessboard/stereo_calib/extrinsics.yml -o disparity_image
+
+
+
+
+ ./stereo_match_aras ../stereo_camera_aras-chessboard/left ../stereo_camera_aras-chessboard/right --algorithm=sgbm -i ../stereo_camera_aras-chessboard/stereo_calib/intrinsics.yml -e ../stereo_camera_aras-chessboard/stereo_calib/extrinsics.yml 
+
+
+
+
+
+
+ ./stereo_match_aras ../stereo_camera_aras-chessboard/left/left01.png ../stereo_camera_aras-chessboard/right/right01.png --algorithm=sgbm -i ../stereo_camera_aras-chessboard/stereo_calib/intrinsics.yml -e ../stereo_camera_aras-chessboard/stereo_calib/extrinsics.yml 
+
+
+--------------------------------------------------------------------
+
+ ./stereo_match_aras images_opencv_stereo-chessboard/left01.png images_opencv_stereo-chessboard/right01.png --algorithm=sgbm -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o images_opencv_stereo-chessboard/disparity_image-sgbm.png -p images_opencv_stereo-chessboard/point_cloud_data-sgbm
+
+
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=hh -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-hh.png -p point_cloud_data-hh
+
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=var -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-var.png -p point_cloud_data-var.pcd
+
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=bm -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-bm.png -p point_cloud_data-bm.pcd
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=sgbm -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-sgbm.png -p point_cloud_data-sgbm.pcd
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=hh -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-hh.png -p point_cloud_data-hh.pcd
+
+./stereo_match_aras images_aras_stereoCamera/left01.png images_aras_stereoCamera/right01.png --algorithm=hh -i images_aras_stereoCamera/intrinsics.yml -e images_aras_stereoCamera/extrinsics.yml -o disparity_image-hh.png -p point_cloud_data-hh
+
+
+

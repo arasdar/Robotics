@@ -1,0 +1,39 @@
+
+
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv-2.4.7/export -D BUILD_EXAMPLES=ON ../
+
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv_git/export -D BUILD_EXAMPLES=ON ..
+
+
+//qt multithreaded-cuda
+aras@pasithee:~/Desktop$ svn checkout http://qt-opencv-multithreaded.googlecode.com/svn/trunk/ qt-opencv-multithreaded_trunk
+
+
+
+
+//cmake examples
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON ../
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D USE_IPP=ON -D IPP_PATH="C:\Program Files\Intel\IPP\6.1.031\ia32\bin" C:\OpenCV2.4    //windows
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_PYTHON_SUPPORT=ON -D BUILD_EXAMPLES=ON ..
+cmake -D CMAKE_INSTALL_PREFIX=/home/your_login/opt/opencv_intall -D BUILD_PYTHON_SUPPORT=ON -D BUILD_EXAMPLES=ON ..
+
+
+
+
+aras@pasithee:~/opencv$ git clone https://github.com/BloodAxe/OpenCV-Features-Comparison.git
+aras@pasithee:~/opencv$ git clone https://github.com//BloodAxe/OpenCV-Tutorial.git // not working!!!!!!!!!
+aras@pasithee:~/opencv$ git clone https://github.com/BloodAxe/OpenCV-iOS-build-script.com // not working!!!!
+aras@pasithee:~/opencv$ git clone https://github.com/BloodAxe/opencv-ios-template-project.git
+
+
+https://github.com/BloodAxe/Camera-intrinsics-database.git
+
+
+
+aras@pasithee:~/opencv$ git clone git://code.opencv.org/opencv_extra.git
+aras@pasithee:~/opencv$ git clone git://code.opencv.org/opencv_attic.git
+aras@pasithee:~/opencv$ git clone https://github.com/MasteringOpenCV/code.git
+git clone git://code.opencv.org/opencv.git
+git clone git://github.com/itseez/opencv.git //not working!!!!!!!!!!

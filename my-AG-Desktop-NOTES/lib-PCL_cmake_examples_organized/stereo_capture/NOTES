@@ -1,0 +1,8 @@
+
+
+./stereo_capture ../stereo_images_opencv-chessboard/left ../stereo_images_opencv-chessboard/right ../stereo_images_camera-aras-baseline10cm/stereo_calib_data_w9-h6/intrinsics.yml ../stereo_images_camera-aras-baseline10cm/stereo_calib_data_w9-h6/extrinsics.yml 
+
+
+
+./stereo_capture ../stereo_images_opencv-chessboard/left ../stereo_images_opencv-chessboard/right ../stereo_images_opencv-chessboard/stereo_calib_data/intrinsics.yml ../stereo_images_opencv-chessboard/stereo_calib_data/extrinsics.yml 
+

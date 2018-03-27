@@ -1,0 +1,8 @@
+[ui]
+username = Aras Dargazany <dargazany@cs.uni-kl.de>
+
+[auth]
+agrosy_informatik_uni-kl_de.prefix = https://agrosy.informatik.uni-kl.de/hg
+agrosy_informatik_uni-kl_de.username = aras
+agrosy_informatik_uni-kl_de.password = Buttface1!
+

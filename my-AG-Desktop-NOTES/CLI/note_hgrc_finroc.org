@@ -1,0 +1,15 @@
+
+
+
+[ui]
+username = Your Name <arasdar@yahoo.com>
+merge = kdiff3
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+kdiff3.premerge = true
+
+[auth]
+finroc_org.prefix = https://finroc.org/hg
+finroc_org.username = anonymous
+finroc_org.password = arasdar@yahoo.com

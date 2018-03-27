@@ -1,0 +1,5 @@
+quota
+startkde
+exit-quit
+rm -rf .kde  //hidden folder  //removing config files
+

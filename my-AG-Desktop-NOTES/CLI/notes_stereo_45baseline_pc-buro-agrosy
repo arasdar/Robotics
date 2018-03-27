@@ -1,0 +1,17 @@
+
+
+
+aras@pasithee:~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon$ aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/left/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/right/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/intrinsics.yml ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/extrinsics.yml
+
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/left/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/right/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/intrinsics.yml ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/extrinsics.yml 
+
+aras_icarus_sensorProcessing_stereo_offline ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/left/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/right/ ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/intrinsics.yml ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/calib-8-ok/extrinsics.yml 
+
+
+aras_icarus_sensorProcessing_stereo_calib_capture-chessboard
+aras_icarus_sensorProcessing_stereo_calib_offline
+
+
+aras_icarus_sensorProcessing_stereo_capture calib-8-ok/intrinsics.yml calib-8-ok/extrinsics.yml                                                                 
+

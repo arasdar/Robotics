@@ -1,0 +1,56 @@
+
+
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_camera-aras-baseline10cm/left_rect ../stereo_images_camera-aras-baseline10cm/left_rect_pcd/ left_pcd
+
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_camera-aras-baseline10cm/right_rect ../stereo_images_camera-aras-baseline10cm/right_rect_pcd/ right_pcd
+
+
+
+
+ras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_opencv-chessboard/left_rect ../stereo_images_opencv-chessboard/left_rect_pcd/ left_rect_pcd
+
+
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_opencv-chessboard/right_rect ../stereo_images_opencv-chessboard/right_rect_pcd/ right_rect_pcd
+
+
+-------------------------------------
+
+
+ras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_opencv-chessboard/left/ ../stereo_images_opencv-chessboard/left_pcd/ left_pcd
+
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_opencv-chessboard/right ../stereo_images_opencv-chessboard/right_pcd/ right_pcd
+
+
+-----------------------------------
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_camera-aras-chessboard/left_rect/ ../stereo_images_camera-aras-chessboard/left_rect_pcd/ left_pcd
+
+
+aras@pasithee:~/stereo_aras/stereo_png2pcd$ ./png2pcd_aras ../stereo_images_camera-aras-chessboard/right_rect/ ../stereo_images_camera-aras-chessboard/right_rect_pcd/ right_pcd
+
+
+////////////////////
+
+./png2pcd_aras ../stereo_camera_aras-chessboard/left_rect/ ../stereo_camera_aras-chessboard/left_rect_pcd left_rect_pcd
+
+
+----------------------------------------------
+
+aras@pasithee:~/stereo_aras/stereo_match/stereo_png2pcd$ ./png2pcd_aras ../images_opencv_stereo-chessboard/left01.png ../images_opencv_stereo-chessboard/left01.pcd ../images_opencv_stereo-chessboard/point_cloud_data-sgbm_savePCDFileASCII.pcd ../images_opencv_stereo-chessboard/point_cloud_data-sgbm_savePCDFileASCII_rgba.pcd 
+
+
+
+
+./png2pcd_aras ../images_aras_stereoCamera/disparity_image-hh.png ../images_aras_stereoCamera/disparity_image-hh.pcd ../images_aras_stereoCamera/point_cloud_data-hh_savePCDFileASCII.pcd ../images_aras_stereoCamera/point_cloud_data-hh_savePCDFileASCII_rgba.pcd
+
+
+./png2pcd_aras ../disparity_image-hh.png ../disparity_image-hh.pcd -mode FORCE_COLOR                                                                                    
+
+
+./png2pcd_aras ../disparity_image-hh.png ../disparity_image-hh.pcd
+
+

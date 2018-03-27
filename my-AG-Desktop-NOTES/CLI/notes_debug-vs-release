@@ -1,0 +1,69 @@
+
+
+
+
+aras@pasithee:~/finroc$ export/linux_x86_64_release/bin/aras_icarus_sensorProcessing_stereoSUGV_capture
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5618s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5381s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5304s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5338s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5330s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5346s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5328s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5322s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5361s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5278s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5284s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5277s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5250s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5260s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5407s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 1.5381s
+
+
+
+
+
+make[1]: Leaving directory `/home/aras/finroc'
+aras@pasithee:~/finroc$ export/linux_x86_64_debug/bin/aras_icarus_sensorProcessing_stereoSUGV_capture
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 7.9846s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1323s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.0741s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1734s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1807s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1795s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1519s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1190s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1256s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1483s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.0926s
+OpenMP version using 1 threads
+OpenMP implementation   : Time: 8.1100s
+

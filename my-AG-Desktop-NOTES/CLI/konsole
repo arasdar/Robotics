@@ -1,0 +1,1045 @@
+ recognition/include/pcl/recognition/linemod/line_rgbd.h                                       |    2 +-
+ registration/CMakeLists.txt                                                                   |    3 +
+ registration/include/pcl/registration/correspondence_rejection_sample_consensus.h             |   22 +
+ registration/include/pcl/registration/impl/correspondence_rejection_sample_consensus.hpp      |    7 +
+ registration/include/pcl/registration/impl/sample_consensus_prerejective.hpp                  |   53 ++-
+ registration/include/pcl/registration/impl/transformation_estimation_dq.hpp                   |  206 +++++++++
+ registration/include/pcl/registration/impl/transformation_estimation_dual_quaternion.hpp      |  207 +++++++++
+ registration/include/pcl/registration/sample_consensus_prerejective.h                         |    6 +-
+ registration/include/pcl/registration/transformation_estimation_dq.h                          |  142 +++++++
+ registration/include/pcl/registration/transformation_estimation_dual_quaternion.h             |  142 +++++++
+ registration/src/transformation_estimation_dq.cpp                                             |   39 ++
+ registration/src/transformation_estimation_dual_quaternion.cpp                                |   39 ++
+ segmentation/include/pcl/segmentation/impl/supervoxel_clustering.hpp                          |  178 +++++---
+ segmentation/include/pcl/segmentation/supervoxel_clustering.h                                 |   23 +-
+ simulation/tools/simulation_io.hpp                                                            |    2 +-
+ surface/CMakeLists.txt                                                                        |    2 +-
+ surface/include/pcl/surface/3rdparty/opennurbs/opennurbs_archive.h                            |    2 +-
+ surface/include/pcl/surface/impl/organized_fast_mesh.hpp                                      |   94 ++---
+ surface/include/pcl/surface/impl/poisson.hpp                                                  |    2 +-
+ surface/include/pcl/surface/organized_fast_mesh.h                                             |   40 +-
+ test/CMakeLists.txt                                                                           |    4 +
+ test/registration/test_registration.cpp                                                       |    2 +-
+ test/registration/test_registration_api.cpp                                                   |   44 ++
+ visualization/include/pcl/visualization/boost.h                                               |    3 +
+ visualization/include/pcl/visualization/pcl_plotter.h                                         |    3 +-
+ visualization/include/pcl/visualization/pcl_visualizer.h                                      |    4 +-
+ 75 files changed, 3930 insertions(+), 385 deletions(-)
+ create mode 100644 CHANGES.md
+ create mode 100644 README.md
+ create mode 100644 cmake/Modules/FindPXCAPI.cmake
+ create mode 100644 cmake/pcl_find_qt5.cmake
+ create mode 100644 cmake/pkgconfig-headeronly.cmake.in
+ create mode 100644 io/include/pcl/io/pxc_grabber.h
+ create mode 100644 io/src/pxc_grabber.cpp
+ create mode 100644 registration/include/pcl/registration/impl/transformation_estimation_dq.hpp
+ create mode 100644 registration/include/pcl/registration/impl/transformation_estimation_dual_quaternion.hpp
+ create mode 100644 registration/include/pcl/registration/transformation_estimation_dq.h
+ create mode 100644 registration/include/pcl/registration/transformation_estimation_dual_quaternion.h
+ create mode 100644 registration/src/transformation_estimation_dq.cpp
+ create mode 100644 registration/src/transformation_estimation_dual_quaternion.cpp
+aras@localhost:~/pcl/pcl_git$ cd build/
+aras@localhost:~/pcl/pcl_git/build$ make -j 2
+-- Using CPU native flags for SSE optimization:  -march=native
+-- -- GCC > 4.3 found, enabling -Wabi
+-- Found OpenMP
+-- Boost version: 1.49.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+-- Eigen found (include: /usr/include/eigen3)
+-- FLANN found (include: /usr/include, lib: optimized;/usr/lib/libflann_cpp.so;debug;/usr/lib/libflann_cpp.so)
+-- OpenNI found (include: /usr/include/openni, lib: /usr/lib/libOpenNI.so)
+-- Could NOT find FZAPI (missing:  FZAPI_LIBS FZAPI_INCLUDE_DIR) 
+Searching PXCAPI includes: 
+PXCAPI_INCLUDE_DIR: 
+PXCAPI_LIBS: 
+-- Could NOT find PXCAPI (missing:  PXCAPI_LIBS PXCAPI_INCLUDE_DIRS PXCAPI_LIB_DIRS) 
+-- QHULL found (include: /usr/include/qhull, lib: optimized;/usr/lib/libqhull.so;debug;/usr/lib/libqhull.so)
+-- Found CUDA Toolkit v4.2
+-- CUDA NVCC target flags: -gencode;arch=compute_20,code=sm_20;-gencode;arch=compute_20,code=sm_21;-gencode;arch=compute_30,code=sm_30
+-- VTK found (include: /home/aras/vtk/VTK5.10.1/export/include/vtk-5.10;/home/aras/vtk/VTK5.10.1/export/include/vtk-5.10, lib: /home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10;/home/aras/vtk/VTK5.10.1/export/lib/vtk-5.10)
+-- PCAP NOT found
+^X^X^X^X^Cmake: *** [cmake_check_build_system] Interrupt
+
+aras@localhost:~/pcl/pcl_git/build$ ^C
+aras@localhost:~/pcl/pcl_git/build$ ^C
+aras@localhost:~/pcl/pcl_git/build$ ^C
+aras@localhost:~/pcl/pcl_git/build$ ^C
+aras@localhost:~/pcl/pcl_git/build$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings    notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                      notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora-svn  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                     pcl                           stereo_images  vtk
+aras@localhost:~$ dc ^C
+aras@localhost:~$ ^C
+aras@localhost:~$ cd pcl/
+aras@localhost:~/pcl$ ls
+data  notes_pcl_laptop_agrosy-8  octomap_git  pcl_git  pcl-pcl-1.7.0  pcl_trunk
+aras@localhost:~/pcl$ cd pcl
+pcl_git/       pcl-pcl-1.7.0/ pcl_trunk/     
+aras@localhost:~/pcl$ cd pcl_trunk/
+aras@localhost:~/pcl/pcl_trunk$ svn up
+Updating '.':
+At revision 8781.
+aras@localhost:~/pcl/pcl_trunk$ cd ../
+aras@localhost:~/pcl$ mv pcl_trunk/ pcl_trunk_old
+aras@localhost:~/pcl$ ls
+data  notes_pcl_laptop_agrosy-8  octomap_git  pcl_git  pcl-pcl-1.7.0  pcl_trunk_old
+aras@localhost:~/pcl$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings    notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                      notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora-svn  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                     pcl                           stereo_images  vtk
+aras@localhost:~$ cd mrpt
+aras@localhost:~/mrpt$ ls
+mrpt-1.0.0  mrpt_trunk  notes_mrpt_laptop-agrosy-8
+aras@localhost:~/mrpt$ cd mrpt
+bash: cd: mrpt: No such file or directory
+aras@localhost:~/mrpt$ cd mrpt_trunk/
+aras@localhost:~/mrpt/mrpt_trunk$ svn up
+Updating '.':
+U    version_prefix.txt
+U    packaging/debian/changelog
+U    AUTHORS
+U    scripts/prepare_ubuntu_pkgs_for_ppa.sh
+U    libs/obs/include/mrpt/slam/CObservation.h
+U    libs/obs/include/mrpt/slam/CObservation3DRangeScan.h
+U    libs/obs/include/mrpt/slam/CObservationGPS.h
+U    libs/obs/include/mrpt/slam/CMetricMap.h
+U    libs/obs/src/CObservationGPS.cpp
+U    libs/obs/src/CMetricMap.cpp
+U    libs/opengl/include/mrpt/opengl/CBox.h
+U    libs/opengl/include/mrpt/opengl/COctoMapVoxels.h
+A    libs/opengl/include/mrpt/opengl/CLight.h
+U    libs/opengl/include/mrpt/opengl/COpenGLViewport.h
+U    libs/opengl/include/mrpt/opengl/stock_objects.h
+U    libs/opengl/include/mrpt/opengl/CMesh.h
+U    libs/opengl/src/CMesh.cpp
+U    libs/opengl/src/CAxis.cpp
+U    libs/opengl/src/CFrustum.cpp
+U    libs/opengl/src/C3DSScene.cpp
+U    libs/opengl/src/CPointCloudColoured.cpp
+U    libs/opengl/src/gl_utils.cpp
+U    libs/opengl/src/CGeneralizedCylinder.cpp
+U    libs/opengl/src/CText.cpp
+U    libs/opengl/src/CEllipsoid.cpp
+U    libs/opengl/src/CBox.cpp
+U    libs/opengl/src/CGeneralizedEllipsoidTemplate.cpp
+U    libs/opengl/src/CSimpleLine.cpp
+U    libs/opengl/src/COctoMapVoxels.cpp
+A    libs/opengl/src/CLight.cpp
+U    libs/opengl/src/CCylinder.cpp
+U    libs/opengl/src/CSetOfLines.cpp
+U    libs/opengl/src/CPointCloud.cpp
+U    libs/opengl/src/CPolyhedron.cpp
+U    libs/opengl/src/COpenGLViewport.cpp
+U    libs/opengl/src/CGridPlaneXY.cpp
+U    libs/opengl/src/CSphere.cpp
+U    libs/opengl/src/CGridPlaneXZ.cpp
+U    libs/opengl/src/CSetOfTriangles.cpp
+U    libs/opengl/src/CArrow.cpp
+U    libs/opengl/src/StockObjects.cpp
+U    libs/srba/include/mrpt/srba/srba_types.h
+U    libs/slam/include/mrpt/slam/CMultiMetricMap.h
+U    libs/slam/include/mrpt/slam/CICP.h
+U    libs/slam/src/maps/CMultiMetricMap.cpp
+U    libs/slam/src/slam/observations_overlap.cpp
+U    libs/slam/src/slam/CICP.cpp
+U    libs/slam/src/slam/CGridMapAligner.cpp
+U    libs/pbmap/include/mrpt/pbmap/Subgraph.h
+U    libs/pbmap/include/mrpt/pbmap/Plane.h
+U    libs/pbmap/include/mrpt/pbmap/PbMap.h
+U    libs/pbmap/include/mrpt/pbmap/ConsistencyTest.h
+U    libs/pbmap/include/mrpt/pbmap/SemanticClustering.h
+U    libs/pbmap/src/Plane.cpp
+U    libs/pbmap/src/PbMapMaker.cpp
+U    libs/pbmap/src/PbMap.cpp
+U    libs/pbmap/src/SubgraphMatcher.cpp
+U    libs/pbmap/src/ConsistencyTest.cpp
+U    libs/pbmap/src/PlaneInferredInfo.cpp
+U    libs/pbmap/src/PbMapLocaliser.cpp
+U    libs/maps/include/mrpt/maps.h
+A    libs/maps/include/mrpt/otherlibs
+A    libs/maps/include/mrpt/otherlibs/octomap
+A    libs/maps/include/mrpt/otherlibs/octomap/MapCollection.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeDataNode.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/OccupancyOcTreeBase.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/MapNode.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/math
+A    libs/maps/include/mrpt/otherlibs/octomap/math/Utils.h
+A    libs/maps/include/mrpt/otherlibs/octomap/math/Pose6D.h
+A    libs/maps/include/mrpt/otherlibs/octomap/math/Vector3.h
+A    libs/maps/include/mrpt/otherlibs/octomap/math/Quaternion.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeLUTdefs.h
+A    libs/maps/include/mrpt/otherlibs/octomap/octomap_timing.h
+A    libs/maps/include/mrpt/otherlibs/octomap/AbstractOccupancyOcTree.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeIterator.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseImpl.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/ColorOcTree.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTree.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeDataNode.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OccupancyOcTreeBase.h
+A    libs/maps/include/mrpt/otherlibs/octomap/octomap_utils.h
+A    libs/maps/include/mrpt/otherlibs/octomap/octomap_deprecated.h
+A    libs/maps/include/mrpt/otherlibs/octomap/MapNode.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseSE.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/octomap_types.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeNode.h
+A    libs/maps/include/mrpt/otherlibs/octomap/CountingOcTree.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeKey.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseImpl.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeStamped.h
+A    libs/maps/include/mrpt/otherlibs/octomap/octomap.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseSE.h
+A    libs/maps/include/mrpt/otherlibs/octomap/AbstractOcTree.h
+A    libs/maps/include/mrpt/otherlibs/octomap/ScanGraph.h
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeLUT.h
+A    libs/maps/include/mrpt/otherlibs/octomap/MapCollection.hxx
+A    libs/maps/include/mrpt/otherlibs/octomap/OcTreeBase.h
+A    libs/maps/include/mrpt/otherlibs/octomap/Pointcloud.h
+U    libs/maps/include/mrpt/slam/CGasConcentrationGridMap2D.h
+A    libs/maps/include/mrpt/slam/COctoMapBase.h
+A    libs/maps/include/mrpt/slam/CColouredOctoMap.h
+U    libs/maps/include/mrpt/slam/CHeightGridMap2D.h
+U    libs/maps/include/mrpt/slam/COctoMap.h
+U    libs/maps/include/mrpt/slam/CReflectivityGridMap2D.h
+U    libs/maps/include/mrpt/slam/CWirelessPowerGridMap2D.h
+U    libs/maps/include/mrpt/slam/CPointsMap.h
+A    libs/maps/include/mrpt/slam/COctoMapBase_impl.h
+U    libs/maps/include/mrpt/slam/COccupancyGridMap2D.h
+U    libs/maps/include/mrpt/slam/CRandomFieldGridMap2D.h
+U    libs/maps/include/mrpt/slam/CBeaconMap.h
+D    libs/maps/src/maps/COctoMap_render.cpp
+U    libs/maps/src/maps/CGasConcentrationGridMap2D.cpp
+A    libs/maps/src/maps/CColouredOctoMap.cpp
+U    libs/maps/src/maps/COctoMap_unittest.cpp
+U    libs/maps/src/maps/COctoMap.cpp
+U    libs/maps/src/maps/CHeightGridMap2D.cpp
+U    libs/maps/src/maps/CReflectivityGridMap2D.cpp
+U    libs/maps/src/maps/CPointsMap.cpp
+U    libs/maps/src/maps/CRandomFieldGridMap2D.cpp
+U    libs/maps/src/maps/CBeaconMap.cpp
+U    libs/maps/src/maps/COccupancyGridMap2D_common.cpp
+U    libs/maps/src/registerAllClasses.cpp
+U    libs/maps/CMakeLists.txt
+U    libs/vision/include/mrpt/slam/CLandmarksMap.h
+U    libs/vision/src/maps/CLandmarksMap.cpp
+U    libs/reactivenav/include/mrpt/reactivenav/CReactiveNavigationSystem.h
+U    libs/reactivenav/include/mrpt/reactivenav/motion_planning_utils.h
+U    libs/reactivenav/include/mrpt/reactivenav/CParameterizedTrajectoryGenerator.h
+U    libs/reactivenav/include/mrpt/reactivenav/CAbstractReactiveNavigationSystem.h
+A    libs/reactivenav/include/mrpt/reactivenav/CReactiveNavigationSystem3D.h
+U    libs/reactivenav/include/mrpt/reactivenav.h
+U    libs/reactivenav/src/motion_planning_utils.cpp
+U    libs/reactivenav/src/CHolonomicND.cpp
+U    libs/reactivenav/src/CParameterizedTrajectoryGenerator.cpp
+U    libs/reactivenav/src/CAbstractReactiveNavigationSystem.cpp
+A    libs/reactivenav/src/CReactiveNavigationSystem3D.cpp
+U    libs/reactivenav/src/CReactiveNavigationSystem.cpp
+U    libs/reactivenav/src/CHolonomicVFF.cpp
+U    libs/base/include/mrpt/math/geometry.h
+U    libs/base/include/mrpt/poses/CPose3DRotVec.h
+U    libs/base/include/mrpt/poses/CPose3D.h
+U    libs/base/include/mrpt/otherlibs/nanoflann/nanoflann.hpp
+U    libs/base/include/mrpt/utils/CRobotSimulator.h
+U    libs/base/include/mrpt/utils/CImage.h
+U    libs/base/src/utils/CImage.cpp
+U    libs/base/src/poses/CPose3D.cpp
+U    libs/base/src/poses/CPose3DRotVec_unittest.cpp
+U    libs/base/src/poses/CPose3DRotVec.cpp
+U    libs/base/src/math/lightweight_geom_data.cpp
+A    libs/base/src/math/geometry_unittest.cpp
+U    libs/graphslam/include/mrpt/graphslam/levmarq_impl.h
+D    otherlibs/octomap/include/octomap
+A    otherlibs/octomap/include/README.txt
+U    otherlibs/octomap/src/OcTreeStamped.cpp
+U    otherlibs/octomap/src/Pointcloud.cpp
+U    otherlibs/octomap/src/ColorOcTree.cpp
+U    otherlibs/octomap/src/OcTree.cpp
+U    otherlibs/octomap/src/AbstractOcTree.cpp
+U    otherlibs/octomap/src/OcTreeLUT.cpp
+U    otherlibs/octomap/src/ScanGraph.cpp
+U    otherlibs/octomap/src/OcTreeNode.cpp
+U    otherlibs/octomap/src/CountingOcTree.cpp
+U    otherlibs/octomap/src/math/Pose6D.cpp
+U    otherlibs/octomap/src/math/Quaternion.cpp
+U    otherlibs/octomap/src/math/Vector3.cpp
+U    otherlibs/octomap/src/AbstractOccupancyOcTree.cpp
+ U   share/mrpt/datasets/srba-demos/run_demo_tutorials_monoSLAM.sh
+A    apps/ReactiveNav3D-Demo
+A    apps/ReactiveNav3D-Demo/map2_1.xpm
+A    apps/ReactiveNav3D-Demo/map2_2.xpm
+A    apps/ReactiveNav3D-Demo/map2_3.xpm
+A    apps/ReactiveNav3D-Demo/ReactiveNav3D_demo_main.cpp
+A    apps/ReactiveNav3D-Demo/ReactiveNav3D_demo.h
+A    apps/ReactiveNav3D-Demo/CMakeLists.txt
+U    apps/ReactiveNavigationDemo/ReactiveNavigationDemoMain.cpp
+U    apps/mrpt-performance/perf-gridmaps.cpp
+U    apps/mrpt-performance/perf-pointmaps.cpp
+U    apps/srba-slam/srba-slam_main.cpp
+U    apps/rawlog-tools/CRawlogProcessor.h
+A    apps/rawlog-tools/rawlog-edit_2d-scans.cpp
+A    apps/rawlog-tools/rawlog-edit_remap_timestamps.cpp
+U    apps/rawlog-tools/rawlog-edit_cuts.cpp
+U    apps/rawlog-tools/rawlog-edit_list-images.cpp
+U    apps/rawlog-tools/rawlog-edit_main.cpp
+U    apps/rawlog-tools/rawlog-edit_gps.cpp
+A    apps/rawlog-tools/rawlog-edit_imu.cpp
+U    apps/rawlog-tools/rawlog-edit_rename_externals.cpp
+U    apps/rawlog-tools/CMakeLists.txt
+A    apps/rawlog-tools/rawlog-edit_list-timestamps.cpp
+U    apps/kinect-3d-view/kinect-3d-view_main.cpp
+U    apps/3DSceneViewer/_DSceneViewerApp.cpp
+U    apps/hmtMapViewer/hmtMapViewerApp.cpp
+U    apps/RawLogViewer/xRawLogViewerApp.cpp
+U    apps/RawLogViewer/main_gps_ops.cpp
+U    samples/octomap_simple/test.cpp
+U    samples/opengl_objects_demo/test.cpp
+U    samples/pbmap_visualizer/test.cpp
+U    samples/gmrf_map_demo/test.cpp
+A    doc/design_of_images/preview_stock_objects_RobotRhodon.png
+A    doc/parse-dataset-example
+A    doc/parse-dataset-example/main.cpp
+A    doc/parse-dataset-example/CMakeLists.txt
+U    doc/html/changelog.html
+ U   doc/man-pages/pod/robotic-arm-kinematics.pod
+A    doc/man-pages/pod/ReactiveNav3D-Demo.pod
+ U   doc/man-pages/pod/holonomic-navigator-demo.pod
+U    doc/man-pages/pod/rawlog-edit.pod
+ U   doc/man-pages/pod/srba-slam.pod
+U    doc/man-pages/CMakeLists.txt
+U    doc/doxygen-pages/lib_mrpt_opengl.h
+U    doc/doxygen-pages/changeLog_doc.h
+U    cmakemodules/script_suitesparse.cmake
+U    cmakemodules/script_show_final_summary.cmake
+U    parse-files/config.h.in
+Updated to revision 3450.
+aras@localhost:~/mrpt/mrpt_trunk$ ls
+apps     build_test      cmake_uninstall.cmake.in  DATASETS.txt  export_test           lib_mrpt             NEWS.html  parse-files    README.txt   scripts  tests
+AUTHORS  CMakeLists.txt  config_file_examples.txt  doc           INSTALL_COMPILE.html  libs                 otherlibs  README         samples      share    version_prefix_README.txt
+build    cmakemodules    COPYING                   export        kinect-win32-driver   MRPTConfig.cmake.in  packaging  README.Debian  samples-ros  swig     version_prefix.txt
+aras@localhost:~/mrpt/mrpt_trunk$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings    notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                      notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora-svn  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                     pcl                           stereo_images  vtk
+aras@localhost:~$ cd mrpt_frmwrk_openmora-svn/
+aras@localhost:~/mrpt_frmwrk_openmora-svn$ ls
+AUTHORS  CMakeLists.txt  COPYING  doc  Doxyfile  missions  modules  moos  Mooxyfile  README.html  scripts
+aras@localhost:~/mrpt_frmwrk_openmora-svn$ svn up
+Updating '.':
+U    modules/NavigatorReactivePTG3D/CReacNavPTGApp3D.cpp
+U    modules/DataAcquisition/Driver.h
+U    modules/DataAcquisition/CMakeLists.txt
+U    modules/MobileRobot_Giraff/CGiraffMotorsCom.h
+U    modules/Executor/TExecutor.cpp
+U    modules/Executor/CMakeLists.txt
+A    modules/Arm
+A    modules/Arm/CCalibration.h
+A    modules/Arm/CKinova.h
+A    modules/Arm/CArm.cpp
+A    modules/Arm/main.cpp
+A    modules/Arm/CArm.h
+A    modules/Arm/CCalibration.cpp
+A    modules/Arm/CKinova.cpp
+A    modules/Arm/CMakeLists.txt
+U    modules/Enose_Simul/GasMapModelBase.h
+U    modules/RobotGUI2010/RobotGUI2009_guidesignApp.cpp
+U    modules/RobotGUI2010/RobotGUI2009_guidesignMain.cpp
+U    modules/RobotGUI2010/StateChartsEdit/PaintBoardElement.h
+U    modules/RobotGUI2010/process_new_vars.cpp
+U    modules/RGBDSensorToReactive/CRGBD_App.h
+U    modules/Planner/HPWA.cpp
+U    modules/VirtualCam_Desktop/Filters.cpp
+U    modules/LookAtPoint/CLookAtPoint.cpp
+U    modules/Online_Maps/COnlineMapsApp.h
+U    modules/3rdparty/wxthings/src/LCDWindow.cpp
+U    modules/TextInterpreter/TextInterpreter.cpp
+U    modules/TextInterpreter/TextInterpreter.h
+U    modules/SkypeComm_WindowsAPI/SkypeComm_winapi.cpp
+U    modules/VoiceVerbio/VoiceManager.hpp
+U    modules/VoiceVerbio/CVoiceApp.hpp
+Updated to revision 350.
+aras@localhost:~/mrpt_frmwrk_openmora-svn$ cd mo
+modules/ moos/    
+aras@localhost:~/mrpt_frmwrk_openmora-svn$ cd moos
+aras@localhost:~/mrpt_frmwrk_openmora-svn/moos$ ls
+CMakeLists.txt  moos-patchs  moos-src  MOOS_version.txt  update_moos_and_patch.sh
+aras@localhost:~/mrpt_frmwrk_openmora-svn/moos$ cd ../
+aras@localhost:~/mrpt_frmwrk_openmora-svn$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings    notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                      notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora-svn  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                     pcl                           stereo_images  vtk
+aras@localhost:~$ mv mrpt_frmwrk_openmora-svn/ mrpt_frmwrk_openmora_trunk
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings      notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                        notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora_trunk  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                       pcl                           stereo_images  vtk
+aras@localhost:~$ cd opencv/
+aras@localhost:~/opencv$ ls
+notes_opencv_laptop_agrosy-8  opencv-1.0.0.tar.gz   OpenCV-2.1.0.tar.bz2  OpenCV-2.3.0.tar.bz2  opencv-2.4.4  opencv-2.4.5.tar.gz  opencv_books-aras  opencv_git   test_opencv
+opencv-1.0.0                  OpenCV-2.0.0.tar.bz2  OpenCV-2.2.0.tar.bz2  OpenCV-2.4.1.tar.bz2  opencv-2.4.5  opencv_attic         opencv_extra       pattern.png
+aras@localhost:~/opencv$ cd opencv_git/
+aras@localhost:~/opencv/opencv_git$ ls
+3rdparty  apps  build  build_test  cmake  CMakeLists.txt  data  doc  export  export_test  include  index.rst  modules  platforms  README  samples
+aras@localhost:~/opencv/opencv_git$ git pull 
+fatal: read error: Connection reset by peer
+aras@localhost:~/opencv/opencv_git$ git re
+rebase         reflog         relink         remote         repack         replace        request-pull   reset          revert         
+aras@localhost:~/opencv/opencv_git$ git reset 
+aras@localhost:~/opencv/opencv_git$ git pull 
+fatal: read error: Connection reset by peer
+aras@localhost:~/opencv/opencv_git$ git
+git                 git-receive-pack    git-shell           git-upload-archive  git-upload-pack     
+aras@localhost:~/opencv/opencv_git$ git 
+add                 branch              commit              fetch               help                mv                  relink              rm                  submodule 
+am                  bundle              config              filter-branch       imap-send           name-rev            remote              shortlog            tag 
+annotate            checkout            credential-cache    format-patch        init                notes               repack              show                whatchanged 
+apply               cherry              credential-store    fsck                instaweb            pull                replace             show-branch         
+archive             cherry-pick         describe            gc                  log                 push                request-pull        stage               
+bisect              clean               diff                get-tar-commit-id   merge               rebase              reset               stash               
+blame               clone               difftool            grep                mergetool           reflog              revert              status              
+aras@localhost:~/opencv/opencv_git$ git status 
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       build/
+#       build_test/
+#       export/
+#       export_test/
+#       samples/CMakeFiles/
+#       samples/cpp/CMakeFiles/
+nothing added to commit but untracked files present (use "git add" to track)
+aras@localhost:~/opencv/opencv_git$ git add 
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+aras@localhost:~/opencv/opencv_git$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings      notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                        notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora_trunk  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                       pcl                           stereo_images  vtk
+aras@localhost:~$ mv opencv/opencv_git/ opencv/opencv_git_error
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings      notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                        notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora_trunk  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                       pcl                           stereo_images  vtk
+aras@localhost:~$ cd libv4l2cam_trunk/
+aras@localhost:~/libv4l2cam_trunk$ svn up
+Updating '.':
+At revision 162.
+aras@localhost:~/libv4l2cam_trunk$ cd
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             libv4l2cam_trunk    mnt_public_proceedings      notes_finroc_laptop_agrosy-8  Pictures       Templates
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects       mrpt                        notes_laptop_agrosy8          Public         test_making-libXX.so-libXX.a
+Desktop                Dropbox    icarus             mca2_projects_test  mrpt_frmwrk_openmora_trunk  opencv                        stereo_aras    Videos
+diss_aras_trunk        eclipse    libs_aras-tocheck  mca2_ravon          Music                       pcl                           stereo_images  vtk
+aras@localhost:~$ mv libv4l2cam_trunk/ libs_aras-tocheck/
+aras@localhost:~$ ls
+1-tocheck              Documents  finroc             mca2_projects           mrpt                          notes_laptop_agrosy8  Public         test_making-libXX.so-libXX.a
+admin_protocols_trunk  Downloads  finroc.org         mca2_projects_test      mrpt_frmwrk_openmora_trunk    opencv                stereo_aras    Videos
+Desktop                Dropbox    icarus             mca2_ravon              Music                         pcl                   stereo_images  vtk
+diss_aras_trunk        eclipse    libs_aras-tocheck  mnt_public_proceedings  notes_finroc_laptop_agrosy-8  Pictures              Templates
+aras@localhost:~$ cd libs_aras-tocheck/
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen  lib_openslam  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd lib_carmen/
+aras@localhost:~/libs_aras-tocheck/lib_carmen$ svn up
+Updating '.':
+svn: E175011: Repository moved permanently to 'https://svn.code.sf.net/p/carmen/code/!svn/vcc/default'; please relocate
+aras@localhost:~/libs_aras-tocheck/lib_carmen$ cd ../
+aras@localhost:~/libs_aras-tocheck$ mv lib_carmen/ lib
+lib_carmen/       lib_openslam/     lib_ravl/         libsvm-3.16/      libv4l2cam_trunk/ lib_vlfeat/       lib_wxWidgets/    
+aras@localhost:~/libs_aras-tocheck$ mv lib_carmen/ lib_carmen_trunk_error_relocate
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen_trunk_error_relocate  lib_openslam  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd lib_openslam/
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ ls
+openratslam_2013  people2d  rgbdslam  robotvision  ro-slam  slam6d_nuechter_octree
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ svn up
+Skipped '.'
+Summary of conflicts:
+  Skipped paths: 1
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ ls
+openratslam_2013  people2d  rgbdslam  robotvision  ro-slam  slam6d_nuechter_octree
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd openratslam_2013/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/openratslam_2013$ ls
+externaltrunk  info  readme.txt
+aras@localhost:~/libs_aras-tocheck/lib_openslam/openratslam_2013$ svn up
+Updating '.':
+
+Fetching external item into 'externaltrunk':
+External at revision 38.
+
+At revision 3.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/openratslam_2013$ cd ../
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv openratslam_2013/ openratslam_2013_trunk
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ ls
+openratslam_2013_trunk  people2d  rgbdslam  robotvision  ro-slam  slam6d_nuechter_octree
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd people2d/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/people2d$ svn up
+Updating '.':
+At revision 2.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/people2d$ cd ../
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd rgbdslam/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/rgbdslam$ svn up
+Updating '.':
+U    info/info.xml
+Updated to revision 16.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/rgbdslam$ cd ../
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv r
+rgbdslam/    robotvision/ ro-slam/     
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv rgbdslam/ rgbdslam_trunk
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd ro
+robotvision/ ro-slam/     
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd robotvision/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/robotvision$ svn up
+Updating '.':
+At revision 16.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/robotvision$ cd ../ro
+robotvision/ ro-slam/     
+aras@localhost:~/libs_aras-tocheck/lib_openslam/robotvision$ cd ../ro-slam/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/ro-slam$ svn up
+Updating '.':
+
+Fetching external item into 'externaltrunk':
+U    externaltrunk/version_prefix.txt
+U    externaltrunk/packaging/debian/control
+U    externaltrunk/packaging/debian/changelog
+U    externaltrunk/packaging/debian/rules
+U    externaltrunk/AUTHORS
+D    externaltrunk/scripts/configure
+U    externaltrunk/scripts/prepare_ubuntu_pkgs_for_ppa.sh
+U    externaltrunk/scripts/prepare_debian.sh
+U    externaltrunk/libs/obs/include/mrpt/slam/CObservation.h
+U    externaltrunk/libs/obs/include/mrpt/slam/CObservation3DRangeScan.h
+U    externaltrunk/libs/obs/include/mrpt/slam/CObservationGPS.h
+U    externaltrunk/libs/obs/include/mrpt/slam/CMetricMap.h
+U    externaltrunk/libs/obs/src/CSerializable_unittest.cpp
+U    externaltrunk/libs/obs/src/CObservationGPS.cpp
+U    externaltrunk/libs/obs/src/CMetricMap.cpp
+U    externaltrunk/libs/opengl/include/mrpt/opengl/CBox.h
+U    externaltrunk/libs/opengl/include/mrpt/opengl/COctoMapVoxels.h
+A    externaltrunk/libs/opengl/include/mrpt/opengl/CLight.h
+U    externaltrunk/libs/opengl/include/mrpt/opengl/COpenGLViewport.h
+U    externaltrunk/libs/opengl/include/mrpt/opengl/stock_objects.h
+U    externaltrunk/libs/opengl/include/mrpt/opengl/CMesh.h
+U    externaltrunk/libs/opengl/src/CMesh.cpp
+U    externaltrunk/libs/opengl/src/CAxis.cpp
+U    externaltrunk/libs/opengl/src/CFrustum.cpp
+U    externaltrunk/libs/opengl/src/C3DSScene.cpp
+U    externaltrunk/libs/opengl/src/CPointCloudColoured.cpp
+U    externaltrunk/libs/opengl/src/gl_utils.cpp
+U    externaltrunk/libs/opengl/src/CGeneralizedCylinder.cpp
+U    externaltrunk/libs/opengl/src/CText.cpp
+U    externaltrunk/libs/opengl/src/CEllipsoid.cpp
+U    externaltrunk/libs/opengl/src/CBox.cpp
+U    externaltrunk/libs/opengl/src/CGeneralizedEllipsoidTemplate.cpp
+U    externaltrunk/libs/opengl/src/CSimpleLine.cpp
+U    externaltrunk/libs/opengl/src/COctoMapVoxels.cpp
+A    externaltrunk/libs/opengl/src/CLight.cpp
+U    externaltrunk/libs/opengl/src/CCylinder.cpp
+U    externaltrunk/libs/opengl/src/CSetOfLines.cpp
+U    externaltrunk/libs/opengl/src/CPointCloud.cpp
+U    externaltrunk/libs/opengl/src/CPolyhedron.cpp
+U    externaltrunk/libs/opengl/src/COpenGLViewport.cpp
+U    externaltrunk/libs/opengl/src/CGridPlaneXY.cpp
+U    externaltrunk/libs/opengl/src/CSphere.cpp
+U    externaltrunk/libs/opengl/src/CGridPlaneXZ.cpp
+U    externaltrunk/libs/opengl/src/CSetOfTriangles.cpp
+U    externaltrunk/libs/opengl/src/CArrow.cpp
+U    externaltrunk/libs/opengl/src/StockObjects.cpp
+U    externaltrunk/libs/srba/include/mrpt/srba/srba_types.h
+U    externaltrunk/libs/kinematics/include/mrpt/kinematics/CKinematicChain.h
+U    externaltrunk/libs/kinematics/src/CKinematicChain.cpp
+U    externaltrunk/libs/slam/include/mrpt/slam/CMultiMetricMap.h
+U    externaltrunk/libs/slam/include/mrpt/slam/CICP.h
+U    externaltrunk/libs/slam/src/maps/CMultiMetricMap.cpp
+U    externaltrunk/libs/slam/src/slam/observations_overlap.cpp
+U    externaltrunk/libs/slam/src/slam/CICP.cpp
+U    externaltrunk/libs/slam/src/slam/CGridMapAligner.cpp
+U    externaltrunk/libs/pbmap/include/mrpt/pbmap/Subgraph.h
+U    externaltrunk/libs/pbmap/include/mrpt/pbmap/Plane.h
+U    externaltrunk/libs/pbmap/include/mrpt/pbmap/PbMap.h
+U    externaltrunk/libs/pbmap/include/mrpt/pbmap/ConsistencyTest.h
+U    externaltrunk/libs/pbmap/include/mrpt/pbmap/SemanticClustering.h
+U    externaltrunk/libs/pbmap/src/Plane.cpp
+U    externaltrunk/libs/pbmap/src/PbMapMaker.cpp
+U    externaltrunk/libs/pbmap/src/PbMap.cpp
+U    externaltrunk/libs/pbmap/src/SubgraphMatcher.cpp
+U    externaltrunk/libs/pbmap/src/ConsistencyTest.cpp
+U    externaltrunk/libs/pbmap/src/PlaneInferredInfo.cpp
+U    externaltrunk/libs/pbmap/src/PbMapLocaliser.cpp
+U    externaltrunk/libs/maps/include/mrpt/maps.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/MapCollection.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeDataNode.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OccupancyOcTreeBase.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/MapNode.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/math
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/math/Utils.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/math/Pose6D.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/math/Vector3.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/math/Quaternion.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeLUTdefs.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/octomap_timing.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/AbstractOccupancyOcTree.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeIterator.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseImpl.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/ColorOcTree.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTree.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeDataNode.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OccupancyOcTreeBase.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/octomap_utils.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/octomap_deprecated.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/MapNode.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseSE.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/octomap_types.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeNode.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/CountingOcTree.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeKey.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseImpl.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeStamped.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/octomap.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeBaseSE.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/AbstractOcTree.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/ScanGraph.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeLUT.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/MapCollection.hxx
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/OcTreeBase.h
+A    externaltrunk/libs/maps/include/mrpt/otherlibs/octomap/Pointcloud.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CGasConcentrationGridMap2D.h
+A    externaltrunk/libs/maps/include/mrpt/slam/COctoMapBase.h
+A    externaltrunk/libs/maps/include/mrpt/slam/CColouredOctoMap.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CHeightGridMap2D.h
+U    externaltrunk/libs/maps/include/mrpt/slam/COctoMap.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CReflectivityGridMap2D.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CWirelessPowerGridMap2D.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CPointsMap.h
+A    externaltrunk/libs/maps/include/mrpt/slam/COctoMapBase_impl.h
+U    externaltrunk/libs/maps/include/mrpt/slam/COccupancyGridMap2D.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CRandomFieldGridMap2D.h
+U    externaltrunk/libs/maps/include/mrpt/slam/CBeaconMap.h
+D    externaltrunk/libs/maps/src/maps/COctoMap_render.cpp
+U    externaltrunk/libs/maps/src/maps/CGasConcentrationGridMap2D.cpp
+A    externaltrunk/libs/maps/src/maps/CColouredOctoMap.cpp
+U    externaltrunk/libs/maps/src/maps/COctoMap_unittest.cpp
+U    externaltrunk/libs/maps/src/maps/COctoMap.cpp
+U    externaltrunk/libs/maps/src/maps/CHeightGridMap2D.cpp
+U    externaltrunk/libs/maps/src/maps/CReflectivityGridMap2D.cpp
+U    externaltrunk/libs/maps/src/maps/CWirelessPowerGridMap2D.cpp
+U    externaltrunk/libs/maps/src/maps/CPointsMap.cpp
+U    externaltrunk/libs/maps/src/maps/CRandomFieldGridMap2D.cpp
+U    externaltrunk/libs/maps/src/maps/CBeaconMap.cpp
+U    externaltrunk/libs/maps/src/maps/COccupancyGridMap2D_common.cpp
+U    externaltrunk/libs/maps/src/registerAllClasses.cpp
+U    externaltrunk/libs/maps/CMakeLists.txt
+U    externaltrunk/libs/vision/include/mrpt/vision/types.h
+U    externaltrunk/libs/vision/include/mrpt/vision/CVideoFileWriter.h
+U    externaltrunk/libs/vision/include/mrpt/slam/CLandmarksMap.h
+U    externaltrunk/libs/vision/src/CFeature.cpp
+U    externaltrunk/libs/vision/src/maps/CLandmarksMap.cpp
+U    externaltrunk/libs/vision/src/CFeatureExtraction_harris_KLT.cpp
+U    externaltrunk/libs/vision/src/tracking_KL.cpp
+U    externaltrunk/libs/reactivenav/include/mrpt/reactivenav/CReactiveNavigationSystem.h
+U    externaltrunk/libs/reactivenav/include/mrpt/reactivenav/motion_planning_utils.h
+U    externaltrunk/libs/reactivenav/include/mrpt/reactivenav/CParameterizedTrajectoryGenerator.h
+U    externaltrunk/libs/reactivenav/include/mrpt/reactivenav/CAbstractReactiveNavigationSystem.h
+A    externaltrunk/libs/reactivenav/include/mrpt/reactivenav/CReactiveNavigationSystem3D.h
+U    externaltrunk/libs/reactivenav/include/mrpt/reactivenav.h
+U    externaltrunk/libs/reactivenav/src/motion_planning_utils.cpp
+U    externaltrunk/libs/reactivenav/src/CHolonomicND.cpp
+U    externaltrunk/libs/reactivenav/src/CParameterizedTrajectoryGenerator.cpp
+U    externaltrunk/libs/reactivenav/src/CAbstractReactiveNavigationSystem.cpp
+A    externaltrunk/libs/reactivenav/src/CReactiveNavigationSystem3D.cpp
+U    externaltrunk/libs/reactivenav/src/CReactiveNavigationSystem.cpp
+U    externaltrunk/libs/reactivenav/src/CHolonomicVFF.cpp
+U    externaltrunk/libs/base/include/mrpt/math/utils.h
+U    externaltrunk/libs/base/include/mrpt/math/CMatrix.h
+U    externaltrunk/libs/base/include/mrpt/math/CMatrixD.h
+U    externaltrunk/libs/base/include/mrpt/math/geometry.h
+U    externaltrunk/libs/base/include/mrpt/poses/CPose3DRotVec.h
+U    externaltrunk/libs/base/include/mrpt/poses/CPose3D.h
+U    externaltrunk/libs/base/include/mrpt/otherlibs/nanoflann/nanoflann.hpp
+U    externaltrunk/libs/base/include/mrpt/utils/CRobotSimulator.h
+U    externaltrunk/libs/base/include/mrpt/utils/CImage.h
+U    externaltrunk/libs/base/include/mrpt/utils/CObject.h
+U    externaltrunk/libs/base/include/mrpt/utils/CSerializable.h
+U    externaltrunk/libs/base/include/mrpt/bayes/CParticleFilterCapable.h
+U    externaltrunk/libs/base/src/utils/CTimeLogger.cpp
+U    externaltrunk/libs/base/src/utils/internal_class_registry.cpp
+U    externaltrunk/libs/base/src/utils/CImage.cpp
+U    externaltrunk/libs/base/src/bayes/CParticleFilterCapable.cpp
+U    externaltrunk/libs/base/src/poses/CPose3D.cpp
+U    externaltrunk/libs/base/src/poses/CPose3DRotVec_unittest.cpp
+U    externaltrunk/libs/base/src/poses/CPose3DRotVec.cpp
+U    externaltrunk/libs/base/src/math/lightweight_geom_data.cpp
+A    externaltrunk/libs/base/src/math/geometry_unittest.cpp
+U    externaltrunk/libs/base/src/registerAllClasses.cpp
+U    externaltrunk/libs/hwdrivers/include/mrpt/hwdrivers/CInterfaceNI845x.h
+U    externaltrunk/libs/hwdrivers/src/CFFMPEG_InputStream.cpp
+U    externaltrunk/libs/hwdrivers/src/CInterfaceNI845x.cpp
+U    externaltrunk/libs/graphslam/include/mrpt/graphslam/levmarq_impl.h
+D    externaltrunk/otherlibs/octomap/include/octomap
+A    externaltrunk/otherlibs/octomap/include/README.txt
+U    externaltrunk/otherlibs/octomap/src/OcTreeStamped.cpp
+U    externaltrunk/otherlibs/octomap/src/Pointcloud.cpp
+U    externaltrunk/otherlibs/octomap/src/ColorOcTree.cpp
+U    externaltrunk/otherlibs/octomap/src/OcTree.cpp
+U    externaltrunk/otherlibs/octomap/src/AbstractOcTree.cpp
+U    externaltrunk/otherlibs/octomap/src/OcTreeLUT.cpp
+U    externaltrunk/otherlibs/octomap/src/ScanGraph.cpp
+U    externaltrunk/otherlibs/octomap/src/OcTreeNode.cpp
+U    externaltrunk/otherlibs/octomap/src/CountingOcTree.cpp
+U    externaltrunk/otherlibs/octomap/src/math/Pose6D.cpp
+U    externaltrunk/otherlibs/octomap/src/math/Quaternion.cpp
+U    externaltrunk/otherlibs/octomap/src/math/Vector3.cpp
+U    externaltrunk/otherlibs/octomap/src/AbstractOccupancyOcTree.cpp
+D    externaltrunk/otherlibs/eigen3/Eigen/src/Sparse
+U    externaltrunk/otherlibs/eigen3/Eigen/src/LU/FullPivLU.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Cholesky/LDLT.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/PermutationMatrix.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/StableNorm.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/DenseStorage.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/PlainObjectBase.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/Functors.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/Transpose.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/CwiseUnaryView.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/util/Macros.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Core/util/Memory.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/Geometry/Quaternion.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h
+U    externaltrunk/otherlibs/eigen3/Eigen/src/SparseCore/SparseVector.h
+U    externaltrunk/otherlibs/eigen3/Eigen/Core
+U    externaltrunk/share/mrpt/datasets/kinematic-models/IRB6400C_Barrientos.kinbin
+ U   externaltrunk/share/mrpt/datasets/srba-demos/run_demo_tutorials_monoSLAM.sh
+A    externaltrunk/apps/ReactiveNav3D-Demo
+A    externaltrunk/apps/ReactiveNav3D-Demo/map2_1.xpm
+A    externaltrunk/apps/ReactiveNav3D-Demo/map2_2.xpm
+A    externaltrunk/apps/ReactiveNav3D-Demo/map2_3.xpm
+A    externaltrunk/apps/ReactiveNav3D-Demo/ReactiveNav3D_demo_main.cpp
+A    externaltrunk/apps/ReactiveNav3D-Demo/ReactiveNav3D_demo.h
+A    externaltrunk/apps/ReactiveNav3D-Demo/CMakeLists.txt
+U    externaltrunk/apps/ReactiveNavigationDemo/ReactiveNavigationDemoMain.cpp
+U    externaltrunk/apps/rawlog-grabber/rawloggrabber_main.cpp
+U    externaltrunk/apps/mrpt-performance/perf-gridmaps.cpp
+U    externaltrunk/apps/mrpt-performance/perf-pointmaps.cpp
+U    externaltrunk/apps/srba-slam/srba-slam_main.cpp
+U    externaltrunk/apps/rawlog-tools/CRawlogProcessor.h
+A    externaltrunk/apps/rawlog-tools/rawlog-edit_2d-scans.cpp
+A    externaltrunk/apps/rawlog-tools/rawlog-edit_remap_timestamps.cpp
+U    externaltrunk/apps/rawlog-tools/rawlog-edit_cuts.cpp
+U    externaltrunk/apps/rawlog-tools/rawlog-edit_list-images.cpp
+U    externaltrunk/apps/rawlog-tools/rawlog-edit_main.cpp
+U    externaltrunk/apps/rawlog-tools/rawlog-edit_gps.cpp
+A    externaltrunk/apps/rawlog-tools/rawlog-edit_imu.cpp
+U    externaltrunk/apps/rawlog-tools/rawlog-edit_rename_externals.cpp
+U    externaltrunk/apps/rawlog-tools/CMakeLists.txt
+A    externaltrunk/apps/rawlog-tools/rawlog-edit_list-timestamps.cpp
+U    externaltrunk/apps/kinect-3d-view/kinect-3d-view_main.cpp
+U    externaltrunk/apps/robotic-arm-kinematics/robotic_arm_kinematicsMain.cpp
+U    externaltrunk/apps/robotic-arm-kinematics/robotic_arm_kinematicsMain.h
+U    externaltrunk/apps/robotic-arm-kinematics/wxsmith/robotic_arm_kinematicsframe.wxs
+U    externaltrunk/apps/3DSceneViewer/_DSceneViewerApp.cpp
+U    externaltrunk/apps/3DSceneViewer/_DSceneViewerMain.cpp
+U    externaltrunk/apps/hmtMapViewer/hmtMapViewerApp.cpp
+U    externaltrunk/apps/RawLogViewer/xRawLogViewerApp.cpp
+U    externaltrunk/apps/RawLogViewer/xRawLogViewerMain.cpp
+U    externaltrunk/apps/RawLogViewer/main_gps_ops.cpp
+U    externaltrunk/samples/octomap_simple/test.cpp
+U    externaltrunk/samples/ni845x_basic_io/test.cpp
+U    externaltrunk/samples/opengl_objects_demo/test.cpp
+U    externaltrunk/samples/pbmap_visualizer/test.cpp
+A    externaltrunk/samples/gmrf_map_demo
+A    externaltrunk/samples/gmrf_map_demo/test.cpp
+A    externaltrunk/samples/gmrf_map_demo/CMakeLists.txt
+A    externaltrunk/doc/design_of_images/preview_stock_objects_RobotRhodon.png
+U    externaltrunk/doc/design_of_images/graph_mrpt_libs.svg
+U    externaltrunk/doc/design_of_images/graph_mrpt_libs.png
+U    externaltrunk/doc/design_of_images/graph_mrpt_libs.map
+U    externaltrunk/doc/design_of_images/graph_mrpt_libs.dot
+A    externaltrunk/doc/srba-guide/imgs/Nr.pdf
+A    externaltrunk/doc/srba-guide/imgs/spanning-tree-motivation1.pdf
+A    externaltrunk/doc/srba-guide/imgs/spanning-tree-tables.pdf
+U    externaltrunk/doc/srba-guide/srba-guide.tex
+A    externaltrunk/doc/parse-dataset-example
+A    externaltrunk/doc/parse-dataset-example/main.cpp
+A    externaltrunk/doc/parse-dataset-example/CMakeLists.txt
+U    externaltrunk/doc/doxygen_project.txt.in
+D    externaltrunk/doc/papers/Elements of Geometric Computer Vision.mht
+U    externaltrunk/doc/html/tabs.css
+U    externaltrunk/doc/html/doxygen.css
+U    externaltrunk/doc/html/changelog.html
+ U   externaltrunk/doc/man-pages/pod/robotic-arm-kinematics.pod
+A    externaltrunk/doc/man-pages/pod/ReactiveNav3D-Demo.pod
+ U   externaltrunk/doc/man-pages/pod/holonomic-navigator-demo.pod
+U    externaltrunk/doc/man-pages/pod/rawlog-edit.pod
+ U   externaltrunk/doc/man-pages/pod/srba-slam.pod
+U    externaltrunk/doc/man-pages/CMakeLists.txt
+U    externaltrunk/doc/doxygen-pages/lib_mrpt_opengl.h
+U    externaltrunk/doc/doxygen-pages/changeLog_doc.h
+U    externaltrunk/cmakemodules/script_libdc1394.cmake
+U    externaltrunk/cmakemodules/script_ffmpeg.cmake
+U    externaltrunk/cmakemodules/DefineExamples.cmake
+U    externaltrunk/cmakemodules/script_suitesparse.cmake
+U    externaltrunk/cmakemodules/script_eigen.cmake
+U    externaltrunk/cmakemodules/script_show_final_summary.cmake
+U    externaltrunk/parse-files/config.h.in
+Updated external to revision 3450.
+
+At revision 3.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/ro-slam$ svn log
+------------------------------------------------------------------------
+r3 | stachnis | 2013-02-21 16:53:09 +0100 (Thu, 21 Feb 2013) | 1 line
+
+RM
+------------------------------------------------------------------------
+r2 | stachnis | 2013-02-21 16:50:54 +0100 (Thu, 21 Feb 2013) | 1 line
+
+external trunk
+------------------------------------------------------------------------
+r1 | stachnis | 2013-02-21 16:45:55 +0100 (Thu, 21 Feb 2013) | 1 line
+
+info added
+------------------------------------------------------------------------
+aras@localhost:~/libs_aras-tocheck/lib_openslam/ro-slam$ cd ../
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv ro
+robotvision/ ro-slam/     
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv ro-slam/ ro-slam_trunk
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ ls
+openratslam_2013_trunk  people2d  rgbdslam_trunk  robotvision  ro-slam_trunk  slam6d_nuechter_octree
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd slam6d_nuechter_octree/
+aras@localhost:~/libs_aras-tocheck/lib_openslam/slam6d_nuechter_octree$ svn up
+Updating '.':
+Redirecting to URL 'https://svn.code.sf.net/p/slam6d/code/trunk':
+
+Fetching external item into 'trunk-external':
+Redirecting to URL 'https://svn.code.sf.net/p/slam6d/code/trunk':
+U    trunk-external/include/show/scancolormanager.h
+U    trunk-external/include/show/colordisplay.h
+U    trunk-external/include/show/display.h
+U    trunk-external/include/shapes/shape.h
+U    trunk-external/include/shapes/ransac_Boctree.h
+U    trunk-external/include/slam6d/io_types.h
+U    trunk-external/include/slam6d/kd.h
+A    trunk-external/include/slam6d/normals.h
+U    trunk-external/include/slam6d/globals.icc
+U    trunk-external/include/slam6d/kdTreeImpl.h
+U    trunk-external/include/slam6d/kdparams.h
+U    trunk-external/include/slam6d/icp6D.h
+U    trunk-external/include/slam6d/fbr/fbr_global.h
+U    trunk-external/include/slam6d/fbr/registration.h
+U    trunk-external/include/slam6d/fbr/scan_cv.h
+U    trunk-external/include/slam6d/fbr/panorama.h
+A    trunk-external/include/slam6d/fbr/feature_drawer.h
+D    trunk-external/include/normals/normals.h
+A    trunk-external/include/normals/normals_panorama.h
+A    trunk-external/include/scanio/scan_io_xyz_rrgb.h
+A    trunk-external/include/scanio/scan_io_uos_rrgb.h
+A    trunk-external/include/scanio/scan_io_xyz_rgb.h
+U    trunk-external/src/model/scene.cc
+U    trunk-external/src/show/show_gl.cc
+U    trunk-external/src/show/display.cc
+U    trunk-external/src/show/compacttree.cc
+U    trunk-external/src/show/vertexarray.cc
+U    trunk-external/src/show/scancolormanager.cc
+U    trunk-external/src/show/show_animate.cc
+U    trunk-external/src/show/show.cc
+U    trunk-external/src/show/show_common.cc
+U    trunk-external/src/show/CMakeLists.txt
+U    trunk-external/src/shapes/accumulator.cc
+U    trunk-external/src/shapes/CMakeLists.txt
+U    trunk-external/src/slam6d/io_types.cc
+U    trunk-external/src/slam6d/elch6Dquat.cc
+U    trunk-external/src/slam6d/graphSlam6D.cc
+A    trunk-external/src/slam6d/normals.cc
+U    trunk-external/src/slam6d/ghelix6DQ2.cc
+U    trunk-external/src/slam6d/riegl2frames.cc
+U    trunk-external/src/slam6d/lum6Dquat.cc
+U    trunk-external/src/slam6d/scan.cc
+A    trunk-external/src/slam6d/framesdiff2frames.cc
+U    trunk-external/src/slam6d/CMakeLists.txt
+U    trunk-external/src/slam6d/gapx6D.cc
+U    trunk-external/src/slam6d/point_type.cc
+U    trunk-external/src/slam6d/kd.cc
+U    trunk-external/src/slam6d/elch6DunitQuat.cc
+U    trunk-external/src/slam6d/elch6Deuler.cc
+U    trunk-external/src/slam6d/toGlobal.cc
+U    trunk-external/src/slam6d/icp6D.cc
+U    trunk-external/src/slam6d/elch6D.cc
+U    trunk-external/src/slam6d/scan_red.cc
+U    trunk-external/src/slam6d/lum6Deuler.cc
+U    trunk-external/src/slam6d/fbr/scan_cv.cc
+A    trunk-external/src/slam6d/fbr/panorama_creator.cc
+U    trunk-external/src/slam6d/fbr/panorama.cc
+A    trunk-external/src/slam6d/fbr/feature_drawer.cc
+A    trunk-external/src/slam6d/fbr/panorama_matcher.cc
+U    trunk-external/src/slam6d/fbr/feature_based_registration.cc
+U    trunk-external/src/slam6d/fbr/CMakeLists.txt
+U    trunk-external/src/slam6d/fbr/fbr_global.cc
+U    trunk-external/src/slam6d/fbr/registration.cc
+U    trunk-external/src/slam6d/basicScan.cc
+A    trunk-external/src/collision
+A    trunk-external/src/collision/collision_sphere.cc
+A    trunk-external/src/collision/CMakeLists.txt
+D    trunk-external/src/normals/normals.cc
+U    trunk-external/src/normals/calc_normals.cc
+U    trunk-external/src/normals/CMakeLists.txt
+A    trunk-external/src/normals/normals_panorama.cc
+U    trunk-external/src/scanserver/CMakeLists.txt
+A    trunk-external/src/scanio/scan_io_xyz_rrgb.cc
+A    trunk-external/src/scanio/scan_io_uos_rrgb.cc
+A    trunk-external/src/scanio/scan_io_xyz_rgb.cc
+U    trunk-external/src/scanio/CMakeLists.txt
+U    trunk-external/src/segmentation/fhsegmentation.cc
+A    trunk-external/.gitignore
+U    trunk-external/3rdparty/lastools/laslib/src/lasindex.cpp
+U    trunk-external/3rdparty/lastools/laslib/src/lasinterval.cpp
+U    trunk-external/3rdparty/cvblob/CMakeLists.txt
+U    trunk-external/3rdparty/cvblob/cvblob.h
+U    trunk-external/3rdparty/CMakeLists.txt
+U    trunk-external/CMakeLists.txt
+Updated external to revision 847.
+
+At revision 3.
+aras@localhost:~/libs_aras-tocheck/lib_openslam/slam6d_nuechter_octree$ cd ../
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ mv slam6d_nuechter_octree/ slam6d_nuechter_octree_trunk
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ ls
+openratslam_2013_trunk  people2d  rgbdslam_trunk  robotvision  ro-slam_trunk  slam6d_nuechter_octree_trunk
+aras@localhost:~/libs_aras-tocheck/lib_openslam$ cd ../
+aras@localhost:~/libs_aras-tocheck$ mv lib_openslam/ ../
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen_trunk_error_relocate  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd lib_ravl/
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ ls
+build         Config.Project     config.sub  COPYING.LESSER   ExtPkgSupp.3511  INSTALL.ADVANCED  Makefile        README  Targets.Project
+config.guess  Config.Project.in  configure   defs.mk          include          install-sh        QMake           share   transient
+config.log    config.status      COPYING     ExtPkgSupp.2967  INSTALL          lib               RAVL-1.1.2.tgz  src
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ svn up
+Skipped '.'
+Summary of conflicts:
+  Skipped paths: 1
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ git pull 
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ hg st
+abort: no repository found in '/home/aras/libs_aras-tocheck/lib_ravl' (.hg not found)!
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ ggit stat^C
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ git status 
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ svn st
+svn: warning: W155007: '/home/aras/libs_aras-tocheck/lib_ravl' is not a working copy
+aras@localhost:~/libs_aras-tocheck/lib_ravl$ cd ../
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen_trunk_error_relocate  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd libsvm-3.16/
+aras@localhost:~/libs_aras-tocheck/libsvm-3.16$ svn st
+svn: warning: W155007: '/home/aras/libs_aras-tocheck/libsvm-3.16' is not a working copy
+aras@localhost:~/libs_aras-tocheck/libsvm-3.16$ git status 
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+aras@localhost:~/libs_aras-tocheck/libsvm-3.16$ cd ../
+aras@localhost:~/libs_aras-tocheck$ ks
+bash: ks: command not found
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen_trunk_error_relocate  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd lib_wxWidgets/
+aras@localhost:~/libs_aras-tocheck/lib_wxWidgets$ ls
+wxWidgets-2.8.12.zip  wxWidgets-2.9.4.tar.bz2
+aras@localhost:~/libs_aras-tocheck/lib_wxWidgets$ cd ../
+aras@localhost:~/libs_aras-tocheck$ ls
+lib_carmen_trunk_error_relocate  lib_ravl  libsvm-3.16  libv4l2cam_trunk  lib_vlfeat  lib_wxWidgets
+aras@localhost:~/libs_aras-tocheck$ cd lib_carmen_trunk_error_relocate/
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn up
+Updating '.':
+svn: E175011: Repository moved permanently to 'https://svn.code.sf.net/p/carmen/code/!svn/vcc/default'; please relocate
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn relocate https://svn.code.sf.net/p/carmen/code/!svn/vcc/default
+bash: !svn/vcc/default: event not found
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ls^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn patch 
+svn: E205001: Try 'svn help' for more info
+svn: E205001: Not enough arguments provided
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn
+svn                              svndumpfilter                    svn-multi                        svnrdump                         svnsync
+svnadmin                         svnlook                          svn-populate-node-origins-index  svn-rep-sharing-stats            svnversion
+svnauthz-validate                svnmucc                          svnraisetreeconflict             svnserve                         
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn 
+add         changelist  cleanup     cp          -h          info        ls          move        pedit       propdel     propset     rename      rm          update      
+annotate    checkout    co          delete      help        list        merge       mv          pget        propedit    pset        resolve     status      upgrade     
+blame       ci          commit      diff        --help      lock        mergeinfo   patch       plist       propget     relocate    resolved    switch      --version   
+cat         cl          copy        export      import      log         mkdir       pdel        praise      proplist    remove      revert      unlock      
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info 
+Path: .
+Working Copy Root Path: /home/aras/libs_aras-tocheck/lib_carmen_trunk_error_relocate
+URL: https://carmen.svn.sourceforge.net/svnroot/carmen
+Repository Root: https://carmen.svn.sourceforge.net/svnroot/carmen
+Repository UUID: 666a4abd-9b63-40ca-8405-2416541b937c
+Revision: 3128
+Node Kind: directory
+Schedule: normal
+Last Changed Author: kai_wurm
+Last Changed Rev: 3128
+Last Changed Date: 2011-08-10 11:43:03 +0200 (Wed, 10 Aug 2011)
+
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ks^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn relocate https://carmen.svn.sourceforge.net/svnroot/carmen https://svn.code.sf.net/p/carmen/code/!svn/vcc/default
+bash: !svn/vcc/default: event not found
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info | grep url
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info | grep URL
+URL: https://carmen.svn.sourceforge.net/svnroot/carmen
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 
+(exe:11656): Gdk-WARNING **: XID collision, trouble ahead
+
+(exe:11656): Gdk-WARNING **: XID collision, trouble ahead
+
+(exe:11656): Gdk-WARNING **: XID collision, trouble ahead
+
+(exe:11656): Gdk-WARNING **: XID collision, trouble ahead
+
+(exe:11656): Gdk-WARNING **: XID collision, trouble ahead
+
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn switch --relocate https://carmen.svn.sourceforge.net/svnroot/carmen https://svn.code.sf.net/p/carmen/code/!svn/vcc/default
+bash: !svn/vcc/default: event not found
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info | grep url^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ vn switch --relocate https://carmen.svn.sourceforge.net/svnroot/carmen https://svn.code.sf.net/p/carmen/code/!svn/vcc/default
+bash: !svn/vcc/default: event not found
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn info | grep URL^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ ^C
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn switch --relocate https://carmen.svn.sourceforge.net/svnroot/carmen https://svn.code.sf.net/p/carmen/code/!svn/vcc/default
+bash: !svn/vcc/default: event not found
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn switch --re
+--relocate  --revision  
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn switch --relocate https://carmen.svn.sourceforge.net/svnroot/carmen https://svn.code.sf.net/p/carmen/code/
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ svn up
+Updating '.':
+At revision 3128.
+aras@localhost:~/libs_aras-tocheck/lib_carmen_trunk_error_relocate$ 

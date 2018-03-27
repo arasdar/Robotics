@@ -1,0 +1,65 @@
+htop
+----------------------------------
+ FINROC Settings
+----------------------------------
+ Home:          /home/aras/Documents/finroc
+ Project:       <unknown>
+ Project Home:  <unknown>
+ Language:      <unknown>
+ Target:        i686_linux_debug
+----------------------------------
+/home/aras
+aras@pasithee:~$ htop
+aras@pasithee:~$ su -
+Password: 
+FYI: This shell will automatically log out after 10 minutes idle time!
+ATTENTION: Changes to this system will only last until the next reboot!
+pasithee:~# cfdisk /dev/sda
+
+pasithee:~# cfdisk /dev/sda
+sda   sda1  sda2  sda5  sda6  sda7  
+pasithee:~# cfdisk /dev/sda
+
+pasithee:~# fdisk -l /dev/sda
+
+Disk /dev/sda: 41.2 GB, 41174138880 bytes
+255 heads, 63 sectors/track, 5005 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x000796e7
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1        2292    18408822+  83  Linux
+/dev/sda2            2293        5006    21797889    5  Extended
+/dev/sda5            4746        5006     2093056   82  Linux swap / Solaris
+/dev/sda6            2293        4485    17609728   83  Linux
+/dev/sda7            4485        4746     2093056   82  Linux swap / Solaris
+
+Partition table entries are not in disk order
+pasithee:~# /usr/sbin/auto
+autodetect_and_activate_swap     automount
+autodetect_and_mount_local_hdds  
+pasithee:~# /usr/sbin/autodetect_and_activate_swap 
+pasithee:~# htop
+pasithee:~# swapon /dev/sda5 
+swapon: /dev/sda5: read swap header failed: Invalid argument
+pasithee:~# mkswap /dev/sda5 
+Setting up swapspace version 1, size = 2093052 KiB
+no label, UUID=d955a9c7-b4df-436e-a779-8aef7aa74761
+pasithee:~# swapon /dev/sda5 
+pasithee:~# swapon /dev/sda7 
+swapon: /dev/sda7: read swap header failed: Invalid argument
+pasithee:~# mkswap /dev/sda7
+Setting up swapspace version 1, size = 2093052 KiB
+no label, UUID=51e06524-1155-437e-8ece-025e4c43b2a0
+pasithee:~# /usr/sbin/autodetect_and_activate_swap 
+swapon: /dev/sda5: swapon failed: Device or resource busy
+pasithee:~# htop
+pasithee:~# logout
+aras@pasithee:~$ htop
+aras@pasithee:~$ su -
+Password: 
+su: Authentication failure
+aras@pasithee:~$ 
+

@@ -1,0 +1,3 @@
+aras_stereo_imagelist_creator imagelist.xml ../../database_stereoImages/ravon/path_detection/second_run/*.BMP
+
+aras_stereo_imagelist_creator imagelist.xml ../../database_stereoImages/ravon/path_detection/second_run/*.png

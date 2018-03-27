@@ -1,0 +1,31 @@
+
+
+
+
+
+iaras@pasithee:~/pcl/pcl_git/export/bin$ ./pcl_plane_projection ~/stereo_images/simvis3d-camera/frames_old/frames_pcd_0.pcd output.pcd A B C D
+
+
+
+
+aras@pasithee:~/pcl/pcl_git/export/bin$ ./pcl_octree_viewer ~/stereo_images/simvis3d-camera/frames_old/frames_pcd_0.pcd 0.001
+
+
+aras@pasithee:~/pcl/pcl_git/export/bin$ ./pcl_voxel_grid ~/stereo_images/simvis3d-camera/frames_old/frames_pcd_0.pcd output.pcd
+
+
+
+ras@pasithee:~/pcl/pcl_git/export/bin$ ./pcl_organized_pcd_to_png ~/stereo_images/simvis3d-camera/frames/frames_pcd_0.pcd frames_pcd_0.png
+
+
+
+./pcl_octree_viewer ~/stereo_images/2013-05-27_myStereo-baseline-45cm_3rd_mit-ravon/frames/frames_pcd_10.pcd 0.1
+
+./pcl_octree_viewer ~/stereo_images/simvis3d-camera/frames/frames_pcd_0.pcd 0.001
+
+
+
+a,z voxel grid
+d cube
+x scroll or change view
+x,s filled or empty cubes

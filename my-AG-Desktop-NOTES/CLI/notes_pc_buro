@@ -1,0 +1,253 @@
+
+
+
+
+aras@pasithee:/mnt/public/Videos/AG-ROSY/00-best-of
+mnt/public/Videos/AG-ROSY/00-best-of
+
+
+
+https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus
+https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus
+https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus
+
+
+
+/mnt/public_work/Testdaten/ICARUS/2013-10-25_myStereo-baseline-45cm_cart_outside_forest/seq100/
+
+
+
+makeSafe -j 8 CFLAGS=-FOPENMP
+
+
+//test data
+aras@pasithee:/mnt/public_work/Testdaten/ICARUS$ 
+/mnt/public_work/Testdaten/ICARUS$ 
+
+
+
+//release mode finroc and debug mode
+source scripts/setenv -p icarus  //debug mode
+. scripts/setenv -m release //release mode
+
+
+
+//photos
+aras@pasithee:/mnt/public/Bilder/Veranstaltungen/20130709_10Jahres_Grillfeier
+aras@pasithee:/mnt/public/Bilder/Veranstaltungen/20130709_10Jahres_Grillfeier
+/mnt/public/Bilder/Veranstaltungen/20130709_10Jahres_Grillfeier/Bilder_von_D
+aniel/
+/mnt/public/Bilder/Veranstaltungen/20130709_10Jahres_Grillfeier/Bilder_von_D
+aniel/
+
+//icarus CAD file LUGV
+aras@pasithee:/mnt/public_work/Mechanik/ICARUS_29_04
+aras@pasithee:/mnt/public_work/Mechanik/ICARUS_29_04
+/mnt/public_work/Mechanik/ICARUS_29_04
+aras@pasithee:/mnt/public/Mechanik/Konstruktion/ICARUS
+aras@pasithee:/mnt/public/Mechanik/Konstruktion/ICARUS
+/mnt/public/Mechanik/Konstruktion/ICARUS
+
+
+aras@pasithee:/mnt/public/Poster/Vorlagen
+/mnt/public/Poster/Vorlagen
+
+
+
+/mnt/public/Bilder/Veranstaltungen/20130628_NIFTi/
+/mnt/public/Bilder/Veranstaltungen/20130628_NIFTi/
+
+
+//finroc.org update
+anonymous
+arasdar@yahoo.com
+
+
+//IMAGES OF wfar2013-dAGSTUHL
+aras@pasithee:/mnt/public/Bilder/Veranstaltungen/20130614_Dagstuhl_Workshop$ 
+aras@pasithee:/mnt/public/Bilder/Veranstaltungen/20130614_Dagstuhl_Workshop$ 
+/mnt/public/Bilder/Veranstaltungen/20130614_Dagstuhl_Workshop$ 
+
+
+
+
+aras@pasithee:~/finroc.org/sources/cpp/projects/icarus/physics$ find -name "g*.cpp" | xargs sed -i 's%include "plugins/scheduling/test/%include "plugins/scheduling/%' 2> /dev/null
+aras@pasithee:~/finroc.org/sources/cpp/projects/icarus/physics$ find -name "g*.cpp" | xargs sed -i 's%include "plugins/scheduling/test/%include "plugins/scheduling/%' 2> /dev/null
+find -name "g*.cpp" | xargs sed -i 's%include "plugins/scheduling/test/%include "plugins/scheduling/%' 2> /dev/null
+
+
+aras@pasithee:~/finroc.org/sources/cpp/projects$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus icarus                                                                                                          
+aras@pasithee:~/finroc.org/sources/cpp/projects$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus icarus                                                                                                          
+hg clone https://agrosy.cs.uni-kl.de/hg/finroc_projects_icarus icarus                                                                                                          
+
+
+
+
+aras@pasithee:~/finroc_2_unstable/sources/cpp/libraries$ hg clone https://agrosy.cs.uni-kl.de/hg/finroc_libraries_canvas canvas
+hg clone https://agrosy.cs.uni-kl.de/hg/finroc_libraries_canvas canvas
+
+
+
+//tobias finroc_13.05
+aras@pasithee:~$ cp /mnt/public_work/finroc_adapt_to_13.05 Desktop/
+cp /mnt/public_work/finroc_adapt_to_13.05 Desktop/
+/mnt/public_work/finroc_adapt_to_13.05/mnt/public_work/finroc_adapt_to_13.05/mnt/public_work/finroc_adapt_to_13.05
+/mnt/public_work/finroc_adapt_to_13.05
+/mnt/public_work/finroc_adapt_to_13.05
+
+
+//presentation_template by patrick
+/mnt/public_staff/Praesentationen/_template/
+
+
+//tobias log files
+aras@pasithee:~$ less /var/log/fontconfig.log 
+
+
+//michael mapping
+aras@pasithee:/mnt/public_work/temp/fuer_aras
+aras@pasithee:~$ mv /mnt/public_work/temp/fuer_aras/mapping/ ~/finroc/sources/cpp/libraries/mapping_new^C                                                                                                                        
+
+
+export LD_LIBRARY_PATH=~/Downloads/opencv-2.4.5/release/lib:$LD_LIBRARY_PATH
+
+
+
+
+cmake -D MRPT_DIR=/home/aras/mrpt/mrpt-1.0.0/export/share/mrpt/ ../
+
+
+
+./pcl_octree_viewer ~/stereo_images/simvis3d-camera/frames/frames_pcd_0.pcd 0.001
+
+
+
+git clone https://github.com/GillesDebunne/libQGLViewer.git
+
+
+//finroc ==> libraries
+finroc -m test/TestOpenNIDevice.finroc -c etc/default_config.xml 
+finroc -m tests/test_project_2d/test_grid_map_2d.finroc -c  tests/test_project_2d/etc/test_grid_map_2d.xml 
+
+
+
+//simvis3d
+rrlib_simvis3d_test_vrml_viewer finroc/resources/simvis3d/robots/viona/iv/wheel_with_rim.iv                                                                                                                     
+
+//CAD files
+/mnt/public/Mechanik/Konstruktion/ICARUS/LUGV/Mar2013/100-09640-ICARUS_NEW
+aras@pasithee:/mnt/public_work/Mechanik/ICARUS
+
+//flyer
+/mnt/public/Poster/Flyer/RRLAB/13-05-15-Flyer/flyer_13_05_15.pdf
+
+//student offer template
+/mnt/public_staff/Lehre/Wissenschaftliche_Arbeiten/LaTeX-Aushang
+
+// student presentation
+/mnt/public/Prom-Dipl-Proj-Arbeiten/Kopietz-Kai-Ma-Inf-2013-Friction-and-Adhesion-Optimized-Multiple-Suction-Cup-Control
+
+//papers and conferences
+/mnt/public/Proceedings/2013_ICRA/
+
+//svn agrosy 
+svn co https://agrosy.cs.uni-kl.de/svn/template_slides/trunk template_slides_trunk
+svn co https://agrosy.cs.uni-kl.de/svn/template_latex/trunk template_latex_trunk
+svn co https://agrosy.cs.uni-kl.de/svn/slides_rrlab/trunk presentation_slides_rrlab_trunk
+svn co https://agrosy.cs.uni-kl.de/svn/project_john_deere_camera_evaluation/trunk project_jd_camera_evaluation_trunk 
+svn co https://agrosy.cs.uni-kl.de/svn/document_ravon_documentation/trunk document_ravon_documentation_trunk
+svn co https://agrosy.cs.uni-kl.de/svn/paper_2008_ki_terrain-traversability paper_2008_ki_terrain-traversability_trunk
+
+
+//libs --> eth
+Standalone libraries
+These are standalone libraries with minimal dependencies:
+https://github.com/ethz-asl/libnabo.git  //a fast k nearest neighbor for low-dimensional space
+https://github.com/ethz-asl/libpointmatcher.git  // a modular ICP library.
+
+
+//how to change usb drive name in linux  --> not needed now
+
+//reminding
+sudo shutdown ... 
+or
+su sutdown ...
+
+//sensorProcessing--->TODO's
+how to use capture for kinect and Xtion at the same time????
+stereo_webcam --> window names and showing the rectifid image with epipolar line
+
+
+//openni devices --> infra red --> structured light like ToF ???
+Xtion
+kinect
+
+//stereo
+mine-> grayscale
+tobias --> color --> calibration??  //how to use mca for that?????????????? -------> tobias
+bumblebee --> patrik??
+webcam --> color and smal
+
+//tobias
+framegrabber --> mca und finroc //mca funktioniert aber finroc noch nicht
+
+
+//tobias
+firefox crashes all the time!!!!  /done
+wxWidgent in system not in mine???
+
+
+//lib_mrpt --> mrpt_trunk
+sudo apt-get install libwxgtk2.8-dev
+sudo apt-get install libwxgtk2.8-dev 
+//1-0.0
+./RawLogViewer ~/icarus_dataset-haris-pmd/mylogPMDCam_1309965645.035166.rawlog 
+vim ~/.bashrc  --> /home/aras/lib_mrpt/mrpt-1.0.0/export/lib
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D BUILD_EXAMPLES=on ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D BUILD_EXAMPLES=on ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt-1.0.0/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+//trunk
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D BUILD_EXAMPLES=on ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ -D BUILD_EXAMPLES=on ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ ../
+cmake -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+sudo apt-get install libwxgtk2.8-dev
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/lib_mrpt/mrpt_trunk/export_test/ ../
+
+
+cmake -D CMAKE_INSTALL_PREFIX=/home/aras/opencv/opencv_git/export_test/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ ../
+cmake -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+cmake -D PCL_DIR=/home/aras/pcl/pcl_trunk/export/share/pcl-1.7/ -D OpenCV_DIR=/home/aras/opencv/opencv-2.4.4/export/share/OpenCV-2.4.4/ ../
+
+
+
+//opencv
+./stereo_match left01.jpg right01.jpg -i intrinsics.yml -e extrinsics.yml
+
+
+// supervisiing students
+student job offer template
+
+// opencv build_test
+git pull
+error
+
+//pcl
+apps module not working!!! //not working
+umpfack //svd libs for equation solving --fast solving???
+tide-dir //couldnt find such lib
+build_test
+
+//mrpt
+trunk version
+
+//print 
+jo dox for ktown

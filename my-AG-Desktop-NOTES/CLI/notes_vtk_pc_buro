@@ -1,0 +1,19 @@
+
+
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/vtk/VTK5.10.1/export/ ../
+
+
+aras@bau48-inf-ag-berns-ipv4-0069:~/vtk/VTK5.10.1/build_test$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/vtk/VTK5.10.1/build_test/ ../
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/vtk/VTK5.10.1/build_test/ ../
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/home/aras/vtk/VTK5.10.1/build_test_2 ../
+
+aras@pasithee:~/vtk$ git clone git://vtk.org/vtkCharts.git
+aras@pasithee:~/vtk$ git clone git://vtk.org/verdict.git
+aras@pasithee:~/vtk$ git clone git://vtk.org/VTK.git
+aras@pasithee:~/vtk$ git clone git://vtk.org/VTKData.git
+aras@pasithee:~/vtk$ git clone git://vtk.org/VTKLargeData.git
+
+
+git clone git://vtk.org/VES.git
