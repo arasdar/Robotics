@@ -13,6 +13,19 @@
     *
   </misc>
 
+  <misc relative_path="/home/arasdar/Downloads/libxml2-2.9.8/export" subdir="finroc">
+	*    
+  </misc>
+
+  <misc relative_path="/home/arasdar/Downloads/cppunit-1.14.0/export" subdir="finroc">
+	*    
+  </misc>
+
+  <misc relative_path="/home/arasdar/Downloads/boost_1_66_0/export" subdir="finroc">
+	*    
+  </misc>
+  
+<!--
   <misc relative_path="/usr/lib/arm-linux/lib" subdir="finroc/lib">
 	*    
   </misc>
@@ -20,6 +33,7 @@
   <misc relative_path="/home/arasdar/raspicam/export" subdir="finroc">
 	*    
   </misc>
+-->
   
   <target name="ubuntu-mate">
   

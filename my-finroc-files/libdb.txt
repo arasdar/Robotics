@@ -1,29 +1,157 @@
-xml2: -D _LIB_XML2_PRESENT_ -I/usr/lib/arm-linux/include/libxml2 -L/usr/lib/arm-linux/lib -lxml2
-
-cppunit: -L/usr/lib/arm-linux/lib -lcppunit
-
-boost_date_time: -L/usr/lib/arm-linux/lib -lboost_date_time
-boost_filesystem: -L/usr/lib/arm-linux/lib -lboost_filesystem -lboost_system
-boost_iostreams: -L/usr/lib/arm-linux/lib -lboost_iostreams
-boost_regex: -L/usr/lib/arm-linux/lib -lboost_regex
-boost_serialization: -L/usr/lib/arm-linux/lib -lboost_serialization
-boost_system: -L/usr/lib/arm-linux/lib -lboost_system
-boost_thread: -L/usr/lib/arm-linux/lib -lboost_thread
-
-pthread: -L/usr/arm-linux-gnueabihf/lib -lpthread
-
-crypt: -L/usr/lib/x86_64-linux-gnu -lcrypt
-ltdl: -L/usr/lib/x86_64-linux-gnu -lltdl -Wl,--export-dynamic
-opencl: -D _LIB_OPENCL_NVIDIA_PRESENT_ -I/usr/local/cuda/include -L/usr/lib/x86_64-linux-gnu -lOpenCL
-openmp: -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/x86_64-linux-gnu -lgomp -fopenmp -D _LIB_OPENMP_PRESENT_
-rt: -L/usr/lib/x86_64-linux-gnu -lrt
-dl: -L/usr/lib/x86_64-linux-gnu -ldl
-glut: -L/usr/lib/x86_64-linux-gnu -lglut -lGLU -lGL
-glew: -I/usr/local/cuda/samples/common/inc -L/usr/local/cuda/samples/common/lib/linux/x86_64 -L/usr/lib/x86_64-linux-gnu -lGLEW
-
-cuda: -I/usr/local/cuda/include -L/usr/local/cuda/lib64 -lcudart
-cudart: -I/usr/local/cuda/include
-cufft: -I/usr/local/cuda/include -L/usr/local/cuda/lib -L/opt/cuda/lib -l$(LIBNAME_CUFFT)
-
-java: -I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include -L/usr/lib/jvm/default-java/jre/lib/amd64 -ljava
-jni: -I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include
+3dv: N/A
+OSG: N/A
+amicom: N/A
+ann: N/A
+archive: N/A
+aria: N/A
+asn: N/A
+asound: N/A
+asr: N/A
+assimp: N/A
+ax10420: N/A
+bfl: N/A
+boost: 
+boost_date_time: -lboost_date_time
+boost_filesystem: -lboost_filesystem -lboost_system
+boost_graph: -lboost_graph
+boost_iostreams: -L/home/arasdar/Downloads/boost_1_66_0/export/lib -lboost_iostreams
+boost_regex: -lboost_regex
+boost_serialization: -lboost_serialization
+boost_system: -L/home/arasdar/Downloads/boost_1_66_0/export/lib -lboost_system
+boost_thread: -lboost_thread
+can_cc_systems: N/A
+can_peak: N/A
+canfestival: N/A
+cg: N/A
+cgal: N/A
+cppunit: -L/home/arasdar/Downloads/cppunit-1.14.0/export/lib -lcppunit
+crypt: -lcrypt
+cuda: N/A
+cudart: N/A
+cufft: N/A
+curl: N/A
+curses: N/A
+cutil: N/A
+db++: N/A
+dbxml: N/A
+dc1394: N/A
+dl: -ldl
+dscud: N/A
+easy_vad: N/A
+eigen: N/A
+esd: N/A
+espeak: N/A
+est: N/A
+ethercat: N/A
+festival: N/A
+ffmpeg: N/A
+fftw3: N/A
+flann: N/A
+flycap: N/A
+freenect2: N/A
+glew: N/A
+glui: N/A
+glut: N/A
+gpsd: N/A
+gsl: N/A
+hokuyo: N/A
+jack: N/A
+jaus: N/A
+java: -I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include/linux -L/usr/lib/jvm/default-java/jre/lib/amd64 -ljava
+jni: -I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include/linux
+jpeg: N/A
+libgmapping: N/A
+lo: N/A
+loqtts: N/A
+ltdl: -lltdl -Wl,--export-dynamic
+lti: N/A
+magick: N/A
+matio: N/A
+matlab: N/A
+mpfr: N/A
+mrpt: N/A
+mxpeg: N/A
+mysqlc++: N/A
+mysqlcppconn: N/A
+netpbm: N/A
+newmat: N/A
+newton: N/A
+nite: N/A
+nmea: N/A
+npp32: N/A
+nurbs: N/A
+obid: N/A
+ode: N/A
+ogre: N/A
+oiv: N/A
+ompl: N/A
+opc_ua: N/A
+opencl: N/A
+opencv_all: N/A
+opencv_core: N/A
+openmp: -L/usr/lib/gcc/x86_64-linux-gnu/5 -lgomp -fopenmp -D _LIB_OPENMP_PRESENT_
+openni: N/A
+openssl: N/A
+pal: N/A
+parapin: N/A
+pcap: N/A
+pcl: N/A
+pdcom: N/A
+phonon: N/A
+phononexperimental: N/A
+physx: N/A
+physx33: N/A
+plotter: N/A
+poco: N/A
+postgres: N/A
+prrt: N/A
+pthread: -lpthread
+pwc: N/A
+qt3support: N/A
+qt4: N/A
+qt4_no_debug: -D QT_NO_DEBUG_OUTPUT
+qt4_no_warning: -D QT_NO_WARNING_OUTPUT
+qt4core: N/A
+qt4gui: N/A
+qt4network: N/A
+qt4opengl: N/A
+qt4sql: N/A
+qt4uitools: N/A
+qt4webkit: N/A
+qt4xml: N/A
+quarter: N/A
+qwt: N/A
+readline: N/A
+ros: N/A
+ros-cpp_msgs: N/A
+ros-cpp_srvs: N/A
+ros-geometry-bullet: N/A
+ros-geometry-tf: N/A
+ros-geometry_msgs: N/A
+ros-nav_msgs: N/A
+ros-p2os_driver_msgs: N/A
+ros-sensor_msgs: N/A
+ros-std_msgs: N/A
+ros-tf: N/A
+ros-turtlesim: N/A
+rt: -lrt
+skyx: N/A
+sndfile: N/A
+solid: N/A
+sopas: N/A
+soqt: N/A
+speex: N/A
+tbb: N/A
+triclops: N/A
+usb: N/A
+usb-1.0: N/A
+uuid: N/A
+v4l1: N/A
+vrep: N/A
+vtk: N/A
+websockets: N/A
+wiring_pi: N/A
+x264: N/A
+xerces: N/A
+xml2: -D _LIB_XML2_PRESENT_ -I/home/arasdar/Downloads/libxml2-2.9.8/export/include/libxml2 -L/home/arasdar/Downloads/libxml2-2.9.8/export/lib -lxml2
+z: N/A
