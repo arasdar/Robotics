@@ -1,0 +1,23 @@
+<targets>
+	<library libs="raspicam">
+		<sources>
+			mRaspberryPieCamera.cpp
+			tRaspberryPieCamera.cpp
+		</sources>
+	</library>
+	<program name="finroc_test_raspberry-pie-camera">
+		<sources>
+			pRaspberryPieCamera.cpp
+		</sources>
+	</program>
+	<program name="finroc_test_raspberry-pie-camera_indep" libs="raspicam">
+		<sources>
+			raspicam.cpp
+		</sources>
+	</program>
+	<program name="finroc_test_raspicam">
+		<sources>
+			test_raspicam.cpp
+		</sources>
+	</program>
+</targets>
