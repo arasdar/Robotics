@@ -19,107 +19,73 @@
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
 //----------------------------------------------------------------------
-/*!\file    projects/test/tRaspberryPieCamera.h
+/*!\file    projects/test/pRaspberryPiCameraTest.cpp
  *
  * \author  Aras Dar
  *
- * \date    2018-04-06
+ * \date    2018-04-08
  *
- * \brief   Contains tRaspberryPieCamera
+ * \brief Contains mRaspberryPiCameraTest
  *
- * \b tRaspberryPieCamera
+ * \b pRaspberryPiCameraTest
  *
- * This is the class to serialize the Raspberry Pie Camera class.
+ * This is the part for executing/running the raspberry pie camera process and testing the serialized and rttied class.
  *
  */
 //----------------------------------------------------------------------
-#ifndef __projects__test__tRaspberryPieCamera_h__
-#define __projects__test__tRaspberryPieCamera_h__
+#include "plugins/structure/default_main_wrapper.h"
 
 //----------------------------------------------------------------------
 // External includes (system with <>, local with "")
 //----------------------------------------------------------------------
-#include "rrlib/serialization/serialization.h"
-#include <raspicam/raspicam.h>
-#include "rrlib/math/tPose2D.h"
+#include <chrono>
 
 //----------------------------------------------------------------------
 // Internal includes with ""
 //----------------------------------------------------------------------
+#include "projects/test/mRaspberryPiCameraTest.h"
+//#include "projects/test/gRaspberryPiCameraTest.h"
 
 //----------------------------------------------------------------------
-// Namespace declaration
+// Debugging
 //----------------------------------------------------------------------
-namespace finroc
-{
-namespace test
-{
+#include <cassert>
+
+//----------------------------------------------------------------------
+// Namespace usage
+//----------------------------------------------------------------------
 
 //----------------------------------------------------------------------
 // Forward declarations / typedefs / enums
 //----------------------------------------------------------------------
 
 //----------------------------------------------------------------------
-// Class declaration
+// Const values
 //----------------------------------------------------------------------
-//! SHORT_DESCRIPTION
-/*!
- * This is the class to serialize the Raspberry Pie Camera class.
- */
-class tRaspberryPieCamera
+const std::string cPROGRAM_DESCRIPTION = "This program executes the RaspberryPiCameraTest module/group.";
+const std::string cCOMMAND_LINE_ARGUMENTS = "";
+const std::string cADDITIONAL_HELP_TEXT = "";
+bool make_all_port_links_unique = true;
+
+//----------------------------------------------------------------------
+// Implementation
+//----------------------------------------------------------------------
+
+//----------------------------------------------------------------------
+// StartUp
+//----------------------------------------------------------------------
+void StartUp()
+{}
+
+//----------------------------------------------------------------------
+// CreateMainGroup
+//----------------------------------------------------------------------
+void CreateMainGroup(const std::vector<std::string> &remaining_arguments)
 {
+  finroc::structure::tTopLevelThreadContainer<> *main_thread = new finroc::structure::tTopLevelThreadContainer<>("Main Thread", __FILE__".xml", true, make_all_port_links_unique);
 
-//----------------------------------------------------------------------
-// Public methods and typedefs
-//----------------------------------------------------------------------
-public:
+  new finroc::test::mRaspberryPiCameraTest(main_thread);
+//  new finroc::test::gRaspberryPiCameraTest(main_thread);
 
-  tRaspberryPieCamera();
-
-  ~tRaspberryPieCamera();   //You need this destructor if you allocated memory on the heap that must be free'd.
-  //Delete otherwise!
-
-  //Here is the right place for your public methods. Replace this line by your declarations!
-  void GetData(); //Data Acquistion
-  void SaveData(); // Data Recording
-
-  //allocate memory: This is an array of char with the size of data_type (char) x data_shape (NxCxHxW or NCHW or NHWC and Cis RGB or 3 channels)
-  unsigned char* data;
-
-//----------------------------------------------------------------------
-// Private fields and methods
-//----------------------------------------------------------------------
-private:
-  //Here is the right place for your variables.
-  //Replace this line by your declarations!
-
-  //Camera object: This is one big class and it is safer/better not to be addressed dynamicly but staticly like Pascal or array-like;
-  raspicam::RaspiCam Camera;
-
-
-};
-
-rrlib::serialization::tOutputStream& operator << (rrlib::serialization::tOutputStream& stream, const tRaspberryPieCamera& Camera);
-rrlib::serialization::tInputStream& operator >> (rrlib::serialization::tInputStream& stream, tRaspberryPieCamera& Camera);
-
-//struct tAnnotatedPose2D
-//{
-////	tAnnotatedPose2D(const std::string& initial_name);
-//	rrlib::math::tPose2D pose;
-//	std::string name;
-////  rrlib::time::tTime last_visit;
-//};
-//
-//
-//
-//rrlib::serialization::tOutputStream& operator << (rrlib::serialization::tOutputStream& stream, const tAnnotatedPose2D& pose);
-//rrlib::serialization::tInputStream& operator >> (rrlib::serialization::tInputStream& stream, tAnnotatedPose2D& pose);
-
-//----------------------------------------------------------------------
-// End of namespace declaration
-//----------------------------------------------------------------------
-}// test
-}// finroc
-
-
-#endif
+  main_thread->SetCycleTime(std::chrono::milliseconds(50));
+}

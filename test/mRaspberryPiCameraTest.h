@@ -19,33 +19,33 @@
 // 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
 //----------------------------------------------------------------------
-/*!\file    projects/test/tRaspberryPieCamera.h
+/*!\file    projects/test/mRaspberryPiCameraTest.h
  *
  * \author  Aras Dar
  *
- * \date    2018-04-06
+ * \date    2018-04-08
  *
- * \brief   Contains tRaspberryPieCamera
+ * \brief Contains mRaspberryPiCameraTest
  *
- * \b tRaspberryPieCamera
+ * \b mRaspberryPiCameraTest
  *
- * This is the class to serialize the Raspberry Pie Camera class.
+ * This is the module for testing the serialized and run-type data type idetified/informed.
  *
  */
 //----------------------------------------------------------------------
-#ifndef __projects__test__tRaspberryPieCamera_h__
-#define __projects__test__tRaspberryPieCamera_h__
+#ifndef __projects__test__mRaspberryPiCameraTest_h__
+#define __projects__test__mRaspberryPiCameraTest_h__
+
+#include "plugins/structure/tModule.h"
 
 //----------------------------------------------------------------------
 // External includes (system with <>, local with "")
 //----------------------------------------------------------------------
-#include "rrlib/serialization/serialization.h"
-#include <raspicam/raspicam.h>
-#include "rrlib/math/tPose2D.h"
 
 //----------------------------------------------------------------------
 // Internal includes with ""
 //----------------------------------------------------------------------
+#include "projects/test/tRaspberryPieCamera.h"
 
 //----------------------------------------------------------------------
 // Namespace declaration
@@ -64,62 +64,70 @@ namespace test
 //----------------------------------------------------------------------
 //! SHORT_DESCRIPTION
 /*!
- * This is the class to serialize the Raspberry Pie Camera class.
+ * This is the module for testing the serialized and run-type data type idetified/informed.
  */
-class tRaspberryPieCamera
+class mRaspberryPiCameraTest : public structure::tModule
 {
+
+//----------------------------------------------------------------------
+// Ports (These are the only variables that may be declared public)
+//----------------------------------------------------------------------
+public:
+
+  tStaticParameter<double> static_parameter_1;   //Example for a static parameter. Replace or delete it!
+
+  tParameter<double> par_parameter_1;   //Example for a runtime parameter named "Parameter 1". Replace or delete it!
+
+  tInput<double> in_signal_1;   //Example for input ports named "Signal 1" and "Signal 2". Replace or delete them!
+  tInput<double> in_signal_2;
+
+  tOutput<double> out_signal_1;   //Examples for output ports named "Signal 1" and "Signal 2". Replace or delete them!
+  tOutput<double> out_signal_2;
+
+//	tInput<tRaspberryPieCamera> in_camera;
+//	tOutput<tRaspberryPieCamera> out_camera;
+
+  tInput<tAnnotatedPose2D> in_pose;
+  tOutput<tAnnotatedPose2D> out_pose;
+
 
 //----------------------------------------------------------------------
 // Public methods and typedefs
 //----------------------------------------------------------------------
 public:
 
-  tRaspberryPieCamera();
-
-  ~tRaspberryPieCamera();   //You need this destructor if you allocated memory on the heap that must be free'd.
-  //Delete otherwise!
-
-  //Here is the right place for your public methods. Replace this line by your declarations!
-  void GetData(); //Data Acquistion
-  void SaveData(); // Data Recording
-
-  //allocate memory: This is an array of char with the size of data_type (char) x data_shape (NxCxHxW or NCHW or NHWC and Cis RGB or 3 channels)
-  unsigned char* data;
+  mRaspberryPiCameraTest(core::tFrameworkElement *parent, const std::string &name = "RaspberryPiCameraTest");
 
 //----------------------------------------------------------------------
 // Private fields and methods
 //----------------------------------------------------------------------
 private:
+
   //Here is the right place for your variables.
   //Replace this line by your declarations!
+//  tRaspberryPieCamera camera;
 
-  //Camera object: This is one big class and it is safer/better not to be addressed dynamicly but staticly like Pascal or array-like;
-  raspicam::RaspiCam Camera;
+  /*! Destructor
+   *
+   * The destructor of modules is declared private to avoid accidental deletion. Deleting
+   * modules is already handled by the framework.
+   */
+  ~mRaspberryPiCameraTest();
 
+  virtual void OnStaticParameterChange() override;   //Might be needed to process static parameters. Delete otherwise!
+
+  virtual void OnParameterChange() override;   //Might be needed to react to changes in parameters independent from Update() calls. Delete otherwise!
+
+  virtual void Update() override;
 
 };
-
-rrlib::serialization::tOutputStream& operator << (rrlib::serialization::tOutputStream& stream, const tRaspberryPieCamera& Camera);
-rrlib::serialization::tInputStream& operator >> (rrlib::serialization::tInputStream& stream, tRaspberryPieCamera& Camera);
-
-//struct tAnnotatedPose2D
-//{
-////	tAnnotatedPose2D(const std::string& initial_name);
-//	rrlib::math::tPose2D pose;
-//	std::string name;
-////  rrlib::time::tTime last_visit;
-//};
-//
-//
-//
-//rrlib::serialization::tOutputStream& operator << (rrlib::serialization::tOutputStream& stream, const tAnnotatedPose2D& pose);
-//rrlib::serialization::tInputStream& operator >> (rrlib::serialization::tInputStream& stream, tAnnotatedPose2D& pose);
 
 //----------------------------------------------------------------------
 // End of namespace declaration
 //----------------------------------------------------------------------
-}// test
-}// finroc
+}
+}
+
 
 
 #endif

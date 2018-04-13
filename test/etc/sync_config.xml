@@ -1,0 +1,34 @@
+<sync_config>
+
+  <target name="ubuntu-mate">
+  
+	<username>
+		arasdar
+	</username>
+
+    <hostname>
+    	131.128.51.5
+    </hostname>
+    
+  </target>
+
+	<!-- enum-strings library -->
+  <directories>
+    <lib>finroc/lib</lib>
+  </directories>
+
+	<!-- finroc-projects binaries -->
+  <misc relative_path="$FINROC_HOME/export/$FINROC_TARGET" subdir="finroc">
+    bin/finroc_test*
+    lib/libfinroc*
+    lib/librrlib*
+    lib/libenum_strings.so.14.08
+  </misc>
+
+	<!-- indep-projects binaries-->
+  <misc relative_path="$HOME/indep-projects/export/$FINROC_TARGET" subdir="finroc">
+	lib/libboost_system.so.1.66.0    
+  </misc>
+
+</sync_config>
+
