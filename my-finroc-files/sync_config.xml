@@ -23,7 +23,7 @@
   </misc>
 
 	<!-- indep-projects binaries-->
-  <misc relative_path="$HOME/indep-projects/export/$FINROC_TARGET" subdir="finroc">
+  <misc relative_path="$HOME/indep-projects/export/linux_arm_debug" subdir="finroc">
 	*    
   </misc>
 

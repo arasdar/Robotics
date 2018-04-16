@@ -1,0 +1,17 @@
+[ui]
+username = Aras Dar <arasdar@uri.edu>
+merge = kdiff3
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+kdiff3.premerge = true
+
+[auth]
+finroc_org.prefix = https://finroc.org/hg
+finroc_org.username = anonymous
+finroc_org.password = arasdar@uri.edu
+
+[auth]
+rrlab.prefix = https://agrosy.informatik.uni-kl.de/hg
+rrlab.username = anonymous
+rrlab.password = arasdar@uri.edu
