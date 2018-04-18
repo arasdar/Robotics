@@ -1,0 +1,10 @@
+<targets>
+
+  <library libs="wiring_pi">
+    <sources>
+      Adafruit_MotorHAT.cpp
+      PWM.cpp
+    </sources>
+  </library>
+  
+</targets>

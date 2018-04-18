@@ -1,0 +1,43 @@
+<sync_config>
+
+  <target name="ubuntu-mate">
+  
+	<username>
+		arasdar
+	</username>
+
+    <hostname>
+	    131.128.51.123
+    </hostname>
+    
+  </target>
+
+	<!-- enum-strings library -->
+  <directories>
+	<lib>finroc-Gozdeh/lib</lib>
+  </directories>
+
+	<!-- finroc-export-binaries -->
+  <misc relative_path="$HOME/finroc-Gozdeh/export/linux_arm_debug" subdir="finroc-Gozdeh">
+    lib/*
+    bin/*
+  </misc>
+
+	<!-- finroc-projects-xml files -->
+	<!--
+  <misc relative_path="$HOME/finroc-Gozdeh/sources/cpp/projects/crash_course" subdir="finroc-Gozdeh/etc">
+    gSimulation.h.xml
+    control/gControl.h.xml
+    etc/fragile_bot.xml
+  </misc>
+  -->
+
+	<!-- indep-projects binaries-->
+  <misc relative_path="$HOME/indep-projects/export/linux_arm_debug" subdir="finroc-Gozdeh">
+	lib/libxml*
+	lib/libcppunit-1.14*
+	lib/libboost_system.so.1.67.0
+	bin/*
+  </misc>
+
+</sync_config>
