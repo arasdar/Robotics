@@ -1,0 +1,12 @@
+arasdar@ubuntu-desktop:~/finroc-app$ sudo ln -s /usr/bin/llvm-config-3.8 /usr/local/bin/llvm-config
+sudo apt-get install libclang-dev clang
+
+$ git clone git://git.drogon.net/wiringPi
+sudo ./build
+
+https://bitbucket.org/Mongo/canfestival-3-asc
+libpcan for can-peak
+
+http://www.finroc.org/browser/make_builder/etc/fetchlibs/ubuntu/10.04/fetch-Newton.sh?rev=410
+
+https://developer.nvidia.com/cuda-downloads
