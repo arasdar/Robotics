@@ -1,3 +1,23 @@
+[ui]
+username = Your Name <your@email.address>
+merge = kdiff3
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+kdiff3.premerge = true
+
+[auth]
+finroc_org.prefix = https://finroc.org/hg
+finroc_org.username = anonymous
+finroc_org.password = your@email.address
+Configuring the merge tool is optional, but our recommendation.
+
+If you did not install the Ubuntu packages mentioned above, a hostfingerprints entry is currently needed in the ~/.hgrc (until the server gets a properly assured SSL certificate):
+[hostfingerprints]
+finroc.org = AD:C4:C9:99:88:71:EF:BD:75:09:1A:AC:89:06:7A:8F:7B:F4:15:AD
+
+
+
 arasdar@ubuntu-desktop:~/finroc-app$ sudo ln -s /usr/bin/llvm-config-3.8 /usr/local/bin/llvm-config
 sudo apt-get install libclang-dev clang
 
