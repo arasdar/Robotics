@@ -15,3 +15,7 @@ finroc_org.password = arasdar@uri.edu
 rrlab.prefix = https://agrosy.informatik.uni-kl.de/hg
 rrlab.username = anonymous
 rrlab.password = arasdar@uri.edu
+
+[hostfingerprints]
+finroc.org = AD:C4:C9:99:88:71:EF:BD:75:09:1A:AC:89:06:7A:8F:7B:F4:15:AD
+

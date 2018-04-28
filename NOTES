@@ -33,6 +33,7 @@ finroc.org = AD:C4:C9:99:88:71:EF:BD:75:09:1A:AC:89:06:7A:8F:7B:F4:15:AD
 
 
 
+// This is tested successfully.
 arasdar@ubuntu-desktop:~/finroc-app$ sudo ln -s /usr/bin/llvm-config-3.8 /usr/local/bin/llvm-config
 sudo apt-get install llvm clang libclang-dev
 The first two is for compiling CLANGuage and last one for AST/AST.h for enumstring
