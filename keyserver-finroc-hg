@@ -1,0 +1,3 @@
+~# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5C9E0513
+
+This is the key to the finroc.org server to hg clone the finroc.

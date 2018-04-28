@@ -10,3 +10,12 @@ libpcan for can-peak
 http://www.finroc.org/browser/make_builder/etc/fetchlibs/ubuntu/10.04/fetch-Newton.sh?rev=410
 
 https://developer.nvidia.com/cuda-downloads
+
+
+Installing finroc from scratch and installing all the independecies:
+First of all, we should clone/check out finroc from finroc.org repository.
+To do this, serverkey from ubuntu is required:
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5C9E0513
+
+After checkingout/ cloning finroc:
+the key for repository is also needed to start checking out other components inside finroc.
