@@ -1,3 +1,18 @@
+What is Raspbian?
+Raspbian is an unofficial port of Debian wheezy armhf with compilation settings adjusted to produce code that uses "hardware floating point", the "hard float" ABI and will run on the Raspberry Pi.
+The port is necessary because the official Debian wheezy armhf release is compatible only with versions of the ARM architecture later than the one used on the Raspberry Pi (ARMv7-A CPUs and higher, vs the Raspberry Pi's ARMv6 CPU).
+The Debian squeeze image issued by the Raspberry Pi foundation was based on debian armel which uses software floating point and the "soft float" ABI. The foundation used the existing Debian port for less capable ARM devices. Therefore, it did not use of the Pi's processor's floating point hardware - reducing the Pi's performance during floating point intensive applications - or the advanced instructions of the ARMv6 CPU.
+
+What do you mean by "soft float ABI" and "hard float ABI"?
+ABI stands for application binary interface. The term has slightly different meanings in different contexts but in this context it refers to the set of rules used to set up registers and the stack when calling and returning from functions and other details that are required for binaries to be compatible with each other.
+The "soft float" ABI passes floating point parameters in integer registers while the "hard float ABI" passes them in vfp (floating point) registers. The two ABIs are not compatible because they use different registers. It is possible to use hardware floating point with the soft-float ABI but doing so means that whenever a floating point value is passed to or returned from a function it must be transferred to an integer register incurring a performance penalty
+
+
+dpkg --print-architecture
+will output the primary architecture of the machine it's run on. This will be armhf on a machine running 32-bit ARM Debian or Ubuntu (or a derivative), arm64 on a machine running 64-bit ARM.
+Note that the running architecture may be different from the hardware architecture or even the kernel architecture. It's possible to run i386 Debian on a 64-bit Intel or AMD CPU, and I believe it's possible to run armhf on a 64-bit ARM CPU. It's even possible to have mostly i386 binaries (so the primary architecture is i386) on an amd64 kern
+
+
 [ui]
 username = Your Name <your@email.address>
 merge = kdiff3
