@@ -1,0 +1,23 @@
+[ui]
+username = Aras Dar <arasdar@uri.edu>
+merge = kdiff3
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+kdiff3.premerge = true
+
+[auth]
+finroc_org.prefix = https://finroc.org/hg
+finroc_org.username = anonymous
+finroc_org.password = arasdar@uri.edu
+
+#[hostfingerprints]
+#finroc.org = AD:C4:C9:99:88:71:EF:BD:75:09:1A:AC:89:06:7A:8F:7B:F4:15:AD
+
+#(SHA-1 fingerprint for finroc.org found in legacy [hostfingerprints] section; if you trust this fingerprint, remove the old SHA-1 fingerprint from [hostfingerprints] and add the following entry to the new [hostsecurity] section: finroc.org:fingerprints=sha256:56:3b:19:0f:0c:bc:2d:a3:f5:33:14:0d:4a:61:ef:1a:c5:70:44:56:c3:00:0c:4b:06:25:19:43:73:ed:00:31)
+
+#(SHA-1 fingerprint for finroc.org found in legacy [hostfingerprints] section; if you trust this fingerprint, remove the old SHA-1 fingerprint from [hostfingerprints] and add the following entry to the new [hostsecurity] section: finroc.org:fingerprints=sha256:56:3b:19:0f:0c:bc:2d:a3:f5:33:14:0d:4a:61:ef:1a:c5:70:44:56:c3:00:0c:4b:06:25:19:43:73:ed:00:31)
+
+#[hostsecurity]
+#finroc.org:fingerprints=sha256:56:3b:19:0f:0c:bc:2d:a3:f5:33:14:0d:4a:61:ef:1a:c5:70:44:56:c3:00:0c:4b:06:25:19:43:73:ed:00:31
+
