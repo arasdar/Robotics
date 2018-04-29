@@ -1,0 +1,92 @@
+arasdar@ubuntu-mate-amd64-16:~$ ifconfig 
+enp0s25   Link encap:Ethernet  HWaddr 48:4d:7e:eb:95:da  
+          inet addr:131.128.51.143  Bcast:131.128.51.255  Mask:255.255.255.0
+          inet6 addr: fe80::bd1b:655f:ad89:440f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2594628 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:403266 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2640254570 (2.6 GB)  TX bytes:111566730 (111.5 MB)
+          Interrupt:20 Memory:f1100000-f1120000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:3872 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3872 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:695936 (695.9 KB)  TX bytes:695936 (695.9 KB)
+
+
+// my ASUS laptop
+arasdar@ubuntu-mate-amd64-16:~$ ssh ^C
+arasdar@ubuntu-mate-amd64-16:~$ ssh arasdar@172.20.12.247
+The authenticity of host '172.20.12.247 (172.20.12.247)' can't be established.
+ECDSA key fingerprint is SHA256:P2WjkVzSn4tTZFJi0SAHvX+5JvXT7YHD2bmLMgbCkkE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '172.20.12.247' (ECDSA) to the list of known hosts.
+arasdar@172.20.12.247's password: 
+Welcome to Ubuntu 18.04 LTS (GNU/Linux 4.15.0-20-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+0 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+arasdar@amd64-ubuntuDesktop-18:~$ 
+arasdar@amd64-ubuntuDesktop-18:~$ 
+arasdar@amd64-ubuntuDesktop-18:~$ ls
+cloudpath-uri-secure  finroc-app  finroc-gui  Robotics
+arasdar@amd64-ubuntuDesktop-18:~$ ifconfig ^C
+arasdar@amd64-ubuntuDesktop-18:~$ 
+
+
+
+// my armhf-32 rpi
+arasdar@ubuntu-mate:~/finroc-app$ ifconfig 
+enxb827eb037b0c Link encap:Ethernet  HWaddr b8:27:eb:03:7b:0c  
+          inet addr:131.128.51.50  Bcast:131.128.51.255  Mask:255.255.255.0
+          inet6 addr: fe80::ca7a:63ed:ff92:a5c4/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:280707 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:90853 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:137465809 (137.4 MB)  TX bytes:10318733 (10.3 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:371 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:371 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:49163 (49.1 KB)  TX bytes:49163 (49.1 KB)
+
+wlan0     Link encap:Ethernet  HWaddr b8:27:eb:56:2e:59  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:9107 errors:0 dropped:9107 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3165771 (3.1 MB)  TX bytes:0 (0.0 B)
+
+arasdar@ubuntu-mate:~/finroc-app$ 
+
+
+
