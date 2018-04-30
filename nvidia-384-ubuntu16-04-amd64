@@ -1,0 +1,2 @@
+sudo apt-get purge/autoremove nvidia*
+sudo apt-get install nvidia344-dev
