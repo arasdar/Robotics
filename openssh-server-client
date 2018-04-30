@@ -1,0 +1,3 @@
+This is neccessary to ssh into as a client or using rsyn for tranferring the files/folders.
+openssh-client to ssh ino and openssh-server for being ssh into.
+
