@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include <iostream>
 #include <signal.h>
-#include "../AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
+#include "projects/AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
 
 Adafruit_MotorHAT hat;
 

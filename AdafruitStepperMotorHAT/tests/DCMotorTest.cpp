@@ -19,7 +19,7 @@
 #include <netdb.h>
 #include <errno.h>
 #include <string.h>
-#include "../AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
+#include "projects/AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
 
 void error(char *msg)
 {

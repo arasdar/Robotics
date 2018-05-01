@@ -14,21 +14,6 @@ Type "make" to compile
 
 
 <!--  
-  <program name="DCMotorTest">
-    <sources>
-      tests/DCMotorTest.cpp
-    </sources>
-  </program>
-
-  <program name="MotorOFF">
-    <sources>
-		tests/MotorOFF.cpp
-    </sources>
-  </program>
-
-      
-	  tests/MotorON.cpp
-      tests/StepperMotorTest.cpp
       
       write-ur-own-name: -I/the-path-to-include/folder -L/the-path-to-the-lib-folder/ -llibname
       

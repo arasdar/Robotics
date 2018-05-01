@@ -7,8 +7,10 @@
 #include <iostream>
 
 // internal
-#include "rrlib/AdafruitStepperMotorHAT/PWM.h"
-#include "rrlib/AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
+//#include "rrlib/AdafruitStepperMotorHAT/PWM.h"
+//#include "rrlib/AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
+#include "projects/AdafruitStepperMotorHAT/PWM.h"
+#include "projects/AdafruitStepperMotorHAT/Adafruit_MotorHAT.h"
 
 const unsigned char Adafruit_StepperMotor::MICROSTEP_CURVE[9] = {0, 50, 98, 142, 180, 212, 236, 250, 255};
 const int Adafruit_StepperMotor::step2coils[8][4] = {
