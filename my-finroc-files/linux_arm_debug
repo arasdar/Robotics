@@ -1,5 +1,0 @@
-CFLAGS=-ggdb -ftrack-macro-expansion=0
-CXXFLAGS=$(CFLAGS) -std=c++11
-
-CC=arm-linux-gnueabihf-gcc
-CXX=arm-linux-gnueabihf-g++
