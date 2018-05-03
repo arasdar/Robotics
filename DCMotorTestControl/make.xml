@@ -1,0 +1,13 @@
+<targets>
+	<library libs='crypt'>
+		<sources>
+			m*
+		</sources>
+	</library>
+	
+	<program name="finroc_DCMotorControl">
+		<sources>
+			p*
+		</sources>
+	</program>
+</targets>
