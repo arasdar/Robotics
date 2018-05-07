@@ -1,0 +1,12 @@
+<targets>
+	<library>
+		<sources>
+			g*
+		</sources>
+	</library>
+	<testprogram>
+		<sources>
+			p*
+		</sources>
+	</testprogram>
+</targets>
