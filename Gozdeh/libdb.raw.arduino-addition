@@ -1,0 +1,168 @@
+3dv:		-I<3dv.h> -l3dv
+amicom:     -I<'AmIComInterface.h','VSApplInterface.h','VSCommunication_VSApplInterface.h','App2SdlFormats.h'> -lVSApplInterface -lAmIComInterface
+ann:        -I<ANN/ANN.h> -lANN
+ann:        -I<ANN/ANN.h> -lann
+archive: 	-I<archive_entry.h> -larchive
+aria:       -I<Aria.h> -lAria -ldl
+asn:        -I<asn_application.h> -lasn1c 
+asound:     -I<alsa/asoundlib.h> -lasound
+asr:        -Ilibraries/dialog_system -Wl,-rpath,libraries/dialog_system -Llibraries/dialog_system -lmv5de -ltxt2phon -lamiasr
+assimp:	    -I/usr/include/assimp -lassimp
+ax10420:    -I<AX10420.h>
+bfl:        -I<filter/filter.h> -I<ltiUnifiedSymmetricEigenSystem_template.h> -lginac -lpthread -lcrypt -lorocos-bfl -lltir
+bfl:        -I<filter/filter.h> -lorocos-bfl -lginac
+boost:      -I<boost/any.hpp>
+boost_date_time:    -I<boost/date_time.hpp> -lboost_date_time
+boost_filesystem:   -I<boost/filesystem.hpp> -lboost_filesystem -lboost_system
+boost_graph:		-I<boost/graph/graph_traits.hpp> -lboost_graph
+boost_iostreams:    -I<boost/iostreams/stream.hpp> -lboost_iostreams
+boost_regex:    -I<boost/regex.hpp> -lboost_regex
+boost_serialization:	-I<boost/serialization/serialization.hpp> -lboost_serialization
+boost_thread:   -I<boost/thread/thread.hpp> -lboost_thread
+boost_system:   -I<boost/system/system_error.hpp> -lboost_system
+can_peak:   -I<pcan.h> -D _MCA_PEAK_CAN_ -lpcan
+can_cc_systems: -I<cccan_public.h> -D _MCA_CC_CAN_ 
+canfestival: -I<canfestival.h> -lcanfestival_unix -lcanfestival
+cg:         -I<Cg/cgGL.h> -lCg -lCgGL
+cgal:       -I<CGAL/basic.h> -lCGAL -lCGAL_Core -lmpfr -lgmp  -frounding-math -DCGAL_DISABLE_ROUNDING_MATH_CHECK=ON 
+cppunit:    -lcppunit
+cuda:       -I<cuda.h,builtin_types.h> -lcudart
+cudart:     -I<cuda_runtime.h>
+cufft:      -I<cufft.h> -L/usr/local/cuda/lib -L/opt/cuda/lib -l$(LIBNAME_CUFFT)
+curl:       -I<curl/curl.h> -lcurl
+curses:     -I<curses.h> -lcurses
+cutil:      -Llibraries/camera_sensor/cuda/cutil -Ilibraries/camera_sensor/cuda/cutil -lcutil_i386 -lm
+crypt:      -I<crypt.h> -lcrypt
+db++:       -I<db_cxx.h> -ldb_cxx
+dbxml:      -I<DbXml.hpp> -ldbxml
+dc1394:     -I<dc1394/control.h> -D _LIB_DC1394_PRESENT_ -ldc1394
+dl:         -ldl
+dscud:      -I<dscud.h,DMM32AT_type_defs.h>
+easy_vad:   -Ilibraries/audio/easy_vad -Llibraries/audio/easy_vad -lVAD
+easy_vad:   -Isources/cpp/mca2-legacy/libraries/audio/easy_vad -Lsources/cpp/mca2-legacy/libraries/audio/easy_vad -lVAD
+eigen:      -I<Eigen/Eigen>
+esd:        -lesd -I<esd.h>
+espeak:     -I<speak_lib.h> -lespeak
+est:        -I<EST.h> -lestbase -leststring -lestools
+ethercat:   -I /opt/etherlab/include/ -I /opt/etherlab/ -Wl,-rpath,/opt/etherlab/lib -lethercat
+festival:   -I<festival.h> -lFestival
+ffmpeg:     -I<libavcodec/avcodec.h> -lavcodec -D__STDC_CONSTANT_MACROS
+fftw3:      -I<fftw3.h> -lfftw3 -lfftw3_threads -lfftw3f -lfftw3f_threads
+flann:      -I<flann.h,flann.hpp> -lflann -lflann_cpp 
+flycap:     -lflycapture -I<FlyCapture2.h>
+freenect2:  -D LIBFREENECT2_THREADING_STDLIB -lfreenect2 -lglfw -I<libfreenect2/libfreenect2.hpp>
+glew:       -I<GL/glew.h> -lGLEW
+glut:       -I<GL/glut.h> -lglut -lGLU -lGL
+glui:       -I<GL/glui.h> -lglui -lGLU -IGL
+gpsd:       -I<libgpsmm.h> -lgps
+gsl:        -lgsl -lgslcblas
+hokuyo:     -I<urg_sensor.h,urg_connection.h,urg_tcpclient.h,urg_utils.h> -lurg_c
+jack:       -I<jack/jack.h> -ljack
+jaus:	    -I<jaus/core/Header.h> -ltinyxml-2.6.2 -lCxUtils -lJAUSCore -lJAUSEnvironment -lJAUSExtras -lJAUSMobility -lJAUSManipulator -lJAUSStatus
+java:       -I<jni.h,jawt.h,linux/jni_md.h> -I<jni_md.h,jawt_md.h> -ljava
+java:       -I<jni.h,jawt.h,jni_md.h> -ljava
+jni:        -I<jni.h,jawt.h,linux/jni_md.h> -I<jni_md.h,jawt_md.h>
+jni:        -I<jni.h,jawt.h,jni_md.h>
+ltdl:       -I<ltdl.h> -lltdl -Wl,--export-dynamic
+lti:        -I/usr/include/ltilib -L/usr/lib/ltilib -lltir
+lo:         -I<lo/lo.h> -llo
+loqtts:     -L/opt/Loquendo/LTTS7/bin -I/opt/Loquendo/LTTS7/include -lLoqTTS7 -lLTTS7Util -D _LIB_LOQUENDO_PRESENT_
+jpeg:		-ljpeg -I<jpeglib.h>
+libgmapping:   -I<gridfastslam/gridslamprocessor.h> -lgridfastslam -lconfigfile -llog -lscanmatcher -lsensor_base -lsensor_odometry -lsensor_range -lutils -L/usr/lib/gmapping -Wl,-rpath,/usr/lib/gmapping/
+matlab:     -I/opt/matlab/R2014b/extern/include -Wl,-rpath,/opt/matlab/R2014b/bin/glnxa64,-rpath-link,/opt/matlab/R2014b/bin/glnxa64 -L/opt/matlab/R2014b/bin/glnxa64 -lmat -lmx -leng -lm -D_MATLAB_PRESENT
+magick:     -fopenmp -I<Magick++.h> -lMagick++ -lMagickCore
+matio:      -I<matio.h> -lmatio  -D_MATIO_PRESENT
+mpfr:	    -lmpfr
+mrpt:		-lmrpt-base -lmrpt-slam -lmrpt-maps -lmrpt-obs -lmrpt-gui -lmrpt-opengl -lmrpt-nav -I<mrpt/base.h> -I<mrpt/slam.h> -I<mrpt/gui.h> -I<mrpt/config.h> -I<mrpt/slam/CMetricMap.h> -I<mrpt/slam/CPointsMap.h> -I<mrpt/opengl/CSetOfObjects.h> -I<mrpt/slam/CLandmarksMap.h> -I<mrpt/bayes/CKalmanFilterCapable.h> -I<mrpt/nav.h> -I<mrpt/graphs.h>
+mysqlcppconn:   -I<mysql_driver.h> -lmysqlcppconn
+mysqlc++:    -I<mysql.h> -lmysqlclient
+mxpeg:	    -I<mxpeg_sdk/static_component_bootstrap.h> -I/usr/include/qt4/QtCore -I/usr/include/qt4 -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtOpenGL -lmxFramework -lmxm_core -lmxmQt
+netpbm:     -D _LIB_NETPBM_PRESENT_ -I<pam.h> -lnetpbm
+newmat:     -I<newmat/newmat.h> -lnewmat
+newton:     -I<Newton.h> -lNewton
+nite:       -I/usr/include/ni -lOpenNI
+nmea:       -I<nmea/nmea.h> -lnmea
+npp32:      -I<npp.h> -lnpp32 -D_LIB_NPP_PRESENT_
+npp32:      -I<npp.h> -lnpp -D_LIB_NPP_PRESENT_
+nurbs:      -I<nurbs++/nurbs.h> -lnurbsd -lnurbsf -lmatrixN -lmatrixI -lmatrix
+obid:       -D_FEDM_COM_SUPPORT -D_FEDM_LINUX -D_FEDM_XML_SUPPORT -lfecom -lFedmIscCore -lfetcl -lfefu -lfeisc -lfetcp -lfeusb -I<'fecom.h'>
+ode:        -I<ode/ode.h> -lode
+ogre:		-I<Ogre.h> -lOgreMain
+oiv:        -D _LIB_OIV_PRESENT_  -I<Inventor/SoDB.h> -lCoin
+ompl:       -I<ompl/config.h> -lompl
+opc_ua:     -I<Application.h,ServerHistoryReadProcessedContinuationPoint.h> -I<tb5version.h,SessionSecurityDiagnosticsDataTypeStruct.h> -pthread -ltb5cpp -ltb5ot -ltb5util -ltb5stack -lcrypto -lrt
+opencv_core:    -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I<cxcore.h,cxmisc.h,cv.h> -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect
+opencv_all: -D_LIB_OPENCV_PRESENT_ -D_LIB_OPENCV_SVN_PRESENT_ -I<cxcore.h,cxmisc.h,cv.h,cvaux.h,highgui.h,ml.h> -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_objdetect -lopencv_legacy -lopencv_highgui -lopencv_video -lopencv_ml -lopencv_features2d
+opencv_core:    -D_LIB_OPENCV_PRESENT_ -I<cxcore.h,cxmisc.h,cv.h> -lcxcore -lcv 
+opencv_all: -D_LIB_OPENCV_PRESENT_ -I<cxcore.h,cxmisc.h,cv.h,cvaux.h,highgui.h,ml.h> -lcxcore -lcv -lcvaux -lhighgui -lml
+opencl:     -D _LIB_OPENCL_NVIDIA_PRESENT_ -I<CL/opencl.h>  -lOpenCL
+opencl:     -D _LIB_OPENCL_AMD_PRESENT_ -I<CL/cl.h> -I<CL/cl.hpp> -lOpenCL -lSDKUtil
+openmp:     -I<omp.h> -lgomp -fopenmp -D _LIB_OPENMP_PRESENT_
+openni:     -I<XnOS.h> -lOpenNI
+openssl:    -I<openssl/bio.h,openssl/evp.h> -lcrypto
+OSG:        -I<osg/Version> -losg -losgDB -losgGA -losgProducer -losgUtil
+pal:		-I<pal/palFactory.h> -lpal
+parapin:    -I<parapin.h,parapindriver.h>
+pcap:       -I<pcap/pcap.h> -lpcap
+pcl:        -I<pcl/pcl_base.h>  -lpcl_filters -lpcl_io -lpcl_segmentation -lpcl_common -lpcl_search -lpcl_surface -lpcl_visualization -lpcl_features
+physx:      -D _LIB_PHYSX_PRESENT_ -DLINUX -DCORELIB -DNX32 -DNX_DISABLE_FLUIDS -DNX_DISABLE_HARDWARE -lPhysXLoader -lPhysXCore -lNxCharacter -lNxCooking -ldl -I<Nx.h> -I<NxPhysics.h> -I<PhysXLoader.h> -lNXU -I<NXU_helper.h>
+physx33:    -DPX_PHYSX_STATIC_LIB -I<PxPhysics.h> -L/usr/lib/PhysX/ -Wl,--start-group -lLowLevelCHECKED -lLowLevelClothCHECKED -lPhysX3CHECKED -lPhysX3CharacterKinematicCHECKED -lPhysX3CommonCHECKED -lPhysX3CookingCHECKED -lPhysX3ExtensionsCHECKED -lPhysX3VehicleCHECKED -lPhysXProfileSDKCHECKED -lPhysXVisualDebuggerSDKCHECKED -lPvdRuntimeCHECKED -lSimulationControllerCHECKED -lSceneQueryCHECKED -lPxTaskCHECKED -lrt -lpthread -Wl,--end-group
+poco:       -I<Poco/Glob.h> -lPocoFoundation -lPocoNet
+postgres:   -lpq -I<pg_config.h,postgres.h>
+pdcom:      -I /opt/etherlab/include/ -I /opt/etherlab/ -Wl,-rpath,/opt/etherlab/lib -lpdcom -lethercat
+phonon:     -I<phonon/phononnamespace.h> -lphonon
+phononexperimental: -I<phonon/experimental/phononnamespace.h> -lphononexperimental
+plotter:    -I<plotter.h> -lplotter -DINCLUDE_PNG_SUPPORT
+prrt:       -I<prrt/prrt_sockets.h> -lprrt
+pwc:        -I<pwc-ioctl.h>
+pthread:    -I<pthread.h> -lpthread
+qt4:        -D _MCA_QT_4_ -D QT_THREAD_SUPPORT -D QT3_SUPPORT -D QT_NO_KEYWORDS -I<Qt/qdialog.h> -lQtCore -lQtGui -lQtNetwork -lQtAssistantClient -lQtOpenGL -lQt3Support
+qt4core:    -D _MCA_QT_4_ -D _MCA_QT_4_CORE_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtCore/qcoreapplication.h> -lQtCore
+qt4gui:     -D _MCA_QT_4_ -D _MCA_QT_4_GUI_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtGui/qapplication.h> -lQtCore -lQtGui
+qt4sql:     -D _MCA_QT_4_ -D _MCA_QT_4_SQL_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtSql/qsqldatabase.h> -lQtCore -lQtSql
+qt4xml:     -D _MCA_QT_4_ -D _MCA_QT_4_XML_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtXml/qxml.h> -lQtCore -lQtXml
+qt4opengl:  -D _MCA_QT_4_ -D _MCA_QT_4_OPENGL_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtOpenGL/qgl.h> -lQtCore -lQtOpenGL
+qt4webkit:  -D _MCA_QT_4_ -D _MCA_QT_4_WEBKIT_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtWebKit/qwebview.h> -lQtCore -lQtWebKit
+qt3support: -D _MCA_QT_4_ -D _MCA_QT_3_SUPPORT_FOR_QT_4_ -D QT_THREAD_SUPPORT -D QT3_SUPPORT -D QT_NO_KEYWORDS -I<Qt3Support/q3cstring.h> -lQtCore -lQt3Support
+qt4uitools: -D _MCA_QT_4_ -D _MCA_QT_4_UITOOLS_ -D QT_THREAD_SUPPORT -D QT_NO_KEYWORDS -I<QtUiTools/quiloader.h> -lQtUiTools
+qt4_no_debug:   -D QT_NO_DEBUG_OUTPUT
+qt4_no_warning: -D QT_NO_WARNING_OUTPUT
+qt4network: -D _MCA_QT_4_ -D _MCA_QT_4_NETWORK_ -D QT_THREAD_SUPPORT -I<QtNetwork/qftp.h> -lQtNetwork 
+quarter:    -I<Quarter/Quarter.h> -lQuarter
+qwt:        -I/usr/include/qwt -I<qwt_abstract_scale.h> -lqwt -I /usr/include/qt4/Qt -I /usr/include/qt4/QtGui
+readline:	-I<readline/readline.h> -lreadline
+ros:   -D _ROS_CORE_PRESENT_ -I<ros/ros.h,ros/exception.h,ros/serialized_message.h,ros/console.h,ros/time.h> -lroslib -lroscpp -lroscpp_serialization -lrosconsole -lrostime -lrospack -lxmlrpcpp -L/opt/ros/indigo/lib/ -Wl,-rpath,/opt/ros/indigo/lib
+ros-std_msgs: -I<std_msgs/String.h> -I<std_msgs/header_deprecated_def.h>
+ros-sensor_msgs: -I<sensor_msgs/LaserScan.h>
+ros-nav_msgs: -I<nav_msgs/OccupancyGrid.h>
+ros-geometry_msgs: -I<geometry_msgs/Pose.h>
+ros-tf:  -I<tf/tfMessage.h>
+ros-turtlesim: -I<turtlesim/Pose.h> -I<turtlesim/Velocity.h>
+ros-geometry-tf: -I<tf/tf.h>
+ros-geometry-bullet: -I<LinearMath/btTransform.h>
+ros-p2os_driver_msgs: -I<p2os_driver/SonarArray.h>
+ros-cpp_srvs:    -I<roscpp/GetLoggers.h>
+ros-cpp_msgs:    -I<roscpp/Logger.h>
+rt:         -lrt
+skyx:	    -I<SkyX.h> -lSkyX
+sndfile:    -I<sndfile.h> -lsndfile
+solid:      -I<SOLID/SOLID.h> -lsolid
+soqt:       -I<Inventor/Qt/SoQt.h> -I<qtconcurrentiteratekernel.h> -lSoQt4
+soqt:       -I<Inventor/Qt/SoQt.h> -include Qt/qglobal.h -lSoQt
+sopas:      -I<SopasBasicTypes.h> -lsopas_communication -lsopas_lms100 -lsopas_framer -lsopas_com
+speex:      -I<speex/speex.h> -lspeex -lspeexdsp
+tbb:        -I<tbb/spin_mutex.h,tbb/concurrent_hash_map.h> -ltbb
+triclops:   -I<pnmutils.h,triclops3d.h,triclopsbuffer.h,triclopscontext.h,triclops.h,triclopsimageio.h,triclopsrectify.h,triclopsstereo.h,triclopsvalidation.h> -ltriclops -lpnmutils
+usb:        -I<libusb.h> -lusb
+usb-1.0:    -I<libusb.h> -lusb-1.0
+uuid:       -I<uuid/uuid.h> -luuid
+v4l1:       -I<libv4l1-videodev.h>
+vrep:       -I/usr/include/vrep -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -D__linux -lvrepremoteapi -lpthread -D_VREP_PRESENT
+vtk:	    -I/usr/include/vtk-5.8 -lvtkCommon -lvtkFiltering -lvtkRendering -lvtkHybrid
+websockets: -lwebsockets
+wiring_pi:  -I<wiringPi.h> -lwiringPi
+x264:       -I<x264.h> -lx264
+xerces:     -I<xercesc/util/PlatformUtils.hpp> -lxerces-c
+xml2:       -D _LIB_XML2_PRESENT_ -I<libxml/parser.h> -lxml2
+z:          -I<zlib.h> -lz
+arduino:	-I<arduino/Arduino.h> -I<avr/pgmspace.h> -I<new.h> -I<pins_arduino.h>

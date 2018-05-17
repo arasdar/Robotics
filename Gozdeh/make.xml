@@ -1,0 +1,12 @@
+<targets>
+	<testprogram libs='wiring_pi'> <!--wiringPi not wiring_pi or WiringPi-->  <!--libs='wiring_pi arduino'-->
+		<sources>
+			leddemo_org.cpp
+		</sources>
+	</testprogram>
+</targets>
+
+<!--
+apt-cache search arduino IDE
+sudo apt-get install arduino
+-->
