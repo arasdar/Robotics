@@ -1,0 +1,12 @@
+sudo apt-get purge/autoremove nvidia*
+sudo apt-get install nvidia344-dev
+
+This is tested one more time for Donyang's PC and GPU installation:
+Installing Ubnutu16.04
+sudo apt-autoremove nvidia*
+sudo apt-get install nvidia346-dev
+
+After this I installed anaconda:
+conda install jupyter-notebook and tensorflow-gpu
+
+After this, gpu was detected easily.
